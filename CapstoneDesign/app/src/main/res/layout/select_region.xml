@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capston Design : Team LAN"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:paddingBottom="16dp"/>
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_centerVertical="true">
+    </ExpandableListView>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="설정"
+        android:layout_below="@+id/lvExp"
+        android:layout_centerInParent="true"
+        android:id="@+id/settingButton" />
+</RelativeLayout>

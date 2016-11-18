@@ -75,6 +75,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/libs/aws-android-sdk-ddb-mapper-2.3.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="318e28890e6048caa524995f9e960dd304674810">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/2/aws-android-sdk-ddb-mapper-2.3.3_8cd572b97f676f88744ceb60de0e010cb484b072/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -97,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="b1a3ee4f2a1cb20e6fc4c5b7aa6c0d938780c710">
+        sha1="a683e9da51ffebda0c0d44cde859ec3310b496cc">
         <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5f353d75d24bc6060c3ab359728b08b1cce21bf3/classes.dex" />
     </item>
     <item
@@ -120,6 +129,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/libs/aws-android-sdk-s3-2.3.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b6b02130c945bdad38bda0ed60a50d212738faa5">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/2/aws-android-sdk-s3-2.3.3_56e9b622c93ffa330a23a60178edd8d39efa9400/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -138,11 +156,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/libs/aws-android-sdk-core-2.3.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f8214e759455107411c2899622f365548611b5bb">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/2/aws-android-sdk-core-2.3.3_d10cf43ecedf067e74fab0d76cd71201bc7becff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="73083ada4effa676265042fe8bde8ca620ef97a8">
+        sha1="e52a7cede4478f867ae9387590955d1e083eff59">
         <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_401cc5b43bd5f89d229fa1b7368c5fa5b5c46349/classes.dex" />
     </item>
     <item
@@ -225,6 +252,24 @@
         revision="24.0.2"
         sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
         <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_5b46581b7e055bff33392c38d521859c3e0bd431/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/libs/aws-android-sdk-cognito-2.3.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9ad72b624c6e1330b1405de27d51684e1731742f">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/2/aws-android-sdk-cognito-2.3.3_332aa4fd62399337a6c6659e9cf66301b14c319f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/libs/aws-android-sdk-ddb-2.3.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c62840941fe217f5e48ac6936b1a9a508d3d4239">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/2/aws-android-sdk-ddb-2.3.3_dbd554f4aaea7c1f0701b7bed5ae8c7937ecc455/classes.dex" />
     </item>
 
 </items>

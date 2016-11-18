@@ -5,29 +5,29 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="49197956399432"
+    timestamp="15618332036334"
     token="448963093667423382"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="2312" />
+        duration="295" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="644" />
+        duration="22" />
     <task
         name="verifier"
-        duration="2" />
+        duration="0" />
 
     <artifact
         location="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="49197956399432"
+        timestamp="15618332036334"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/outputs/apk/app-debug.apk"

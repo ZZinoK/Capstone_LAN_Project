@@ -36,6 +36,10 @@
         "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_seekbar_track_material.xml"
     },
     {
+        "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable/lan_team_logo.png",
+        "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/res/drawable/lan_team_logo.png"
+    },
+    {
         "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
         "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_textfield_search_material.xml"
     },
@@ -100,12 +104,12 @@
         "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_edit_text_material.xml"
     },
     {
-        "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
-        "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_menu_overflow_material.xml"
-    },
-    {
         "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
         "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_menu_overflow_material.xml"
     },
     {
         "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
