@@ -1,12 +1,25 @@
 package com.lan.capstonedesign;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
+
+import com.amazonaws.AmazonServiceException;
+import com.amazonaws.auth.CognitoCachingCredentialsProvider;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBScanExpression;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.PaginatedScanList;
+import com.amazonaws.regions.Region;
+import com.amazonaws.regions.Regions;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
+import com.amazonaws.services.dynamodbv2.model.ScanRequest;
+import com.amazonaws.services.dynamodbv2.model.ScanResult;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,29 +35,57 @@ public class SelectRegionActivity extends Activity {
     List<String> listDataHeader;
     HashMap<String, List<String>> listDataChild;
     ArrayList<RegionInfo> regionInfoArrayList = new ArrayList<>();
-
+    static String TAG = "SelectRegionActiviry";
 
     double latitude = 0, longitude = 0;
+    int MT_ID = 0;
 
+    DynamoDBManager dbManager;
+    Runnable runnable = new Runnable() {
+        public void run() {
+            dbManager.dynamoDBSelect();
+            regionInfoArrayList = dbManager.getRegionInfoList();
+
+            for (RegionInfo up : regionInfoArrayList) {
+                //resultList.add(up);
+                //str += "Author : " + up.getAuthor() + " Title : " + up.getTitle();
+                Log.d(TAG, "MT_ID : " + up.getMountainID());
+                Log.d(TAG, "Region_NAme : " + up.getRegionName());
+                Log.d(TAG, "MT_Name : " + up.getMountainName());
+                Log.d(TAG, "Latitude : " + up.getLatitude());
+                Log.d(TAG, "Longitude : " + up.getLongitude());
+                Log.d(TAG, "Status : " + up.getMountainStatus());
+            }
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.select_region);
+
+        dbManager = DynamoDBManager.getInstance(this);
+        Thread mythread = new Thread(runnable);
+        mythread.start();
+        try {
+            mythread.sleep(1000);
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Button settingBtn = (Button) findViewById(R.id.settingButton);
         settingBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(latitude == 0 || longitude == 0){
+                if(MT_ID == 0){
                     Toast.makeText(getApplicationContext(),
                         "산사태 확인 할 지역을 선택하세요!",
                         Toast.LENGTH_SHORT).show();
                     return;
                 } else {
                     Intent intent = new Intent();
-                    intent.putExtra("latitude", latitude);
-                    intent.putExtra("longitude", longitude);
-//                    Toast.makeText(getApplicationContext(), " Latitude : " + latitude + " Longitude : " +
-//                            longitude, Toast.LENGTH_SHORT).show();
+                    //intent.putExtra("latitude", latitude);
+                    intent.putExtra("MT_ID", longitude);
+                    Toast.makeText(getApplicationContext(), " MT_ID : " + MT_ID, Toast.LENGTH_SHORT).show();
                     setResult(RESULT_OK, intent);
                     finish();
                 }
@@ -52,42 +93,31 @@ public class SelectRegionActivity extends Activity {
         });
 
         expListView = (ExpandableListView) findViewById(R.id.lvExp);
+
+
+
         prepareListData();
+
         listAdapter = new ExpandableListAdapter(SelectRegionActivity.this, listDataHeader, listDataChild);
         expListView.setAdapter(listAdapter);
         expListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
 
             @Override
-            public boolean onGroupClick(ExpandableListView parent, View v,
-                                        int groupPosition, long id) {
-                // Toast.makeText(getApplicationContext(),
-                // "Group Clicked " + listDataHeader.get(groupPosition),
-                // Toast.LENGTH_SHORT).show();
+            public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
                 return false;
             }
         });
 
         // Listview Group expanded listener
         expListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
-
             @Override
-            public void onGroupExpand(int groupPosition) {
-//                Toast.makeText(getApplicationContext(),
-//                        listDataHeader.get(groupPosition) + " Expanded",
-//                        Toast.LENGTH_SHORT).show();
-            }
+            public void onGroupExpand(int groupPosition) { }
         });
 
         // Listview Group collasped listener
         expListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
-
             @Override
-            public void onGroupCollapse(int groupPosition) {
-//                Toast.makeText(getApplicationContext(),
-//                        listDataHeader.get(groupPosition) + " Collapsed",
-//                        Toast.LENGTH_SHORT).show();
-
-            }
+            public void onGroupCollapse(int groupPosition) { }
         });
 
         // Listview on child click listener
@@ -106,21 +136,12 @@ public class SelectRegionActivity extends Activity {
                         break;
                     }
                 }
-                // TODO Auto-generated method stub
-//                Toast.makeText(
-//                        getApplicationContext(),
-//                        listDataHeader.get(groupPosition)
-//                                + " : "
-//                                + listDataChild.get(
-//                                listDataHeader.get(groupPosition)).get(
-//                                childPosition), Toast.LENGTH_SHORT)
-//                        .show();
+
                 return false;
             }
         });
     }
     public void settingRegionData(){
-
         regionInfoArrayList.add(new RegionInfo("관악산", 2, 37.442009, 126.963038));
         regionInfoArrayList.add(new RegionInfo("북한산", 3, 37.658221, 126.978898));
 
@@ -133,13 +154,8 @@ public class SelectRegionActivity extends Activity {
 
     }
     public void prepareListData() {
-        settingRegionData();
         listDataHeader = new ArrayList<>();
         listDataChild = new HashMap<String, List<String>>();
-//
-//        for(RegionInfo region : regionInfoArrayList){
-//            listDataHeader.add()
-//        }
 
         // Adding child data
         listDataHeader.add("서울");

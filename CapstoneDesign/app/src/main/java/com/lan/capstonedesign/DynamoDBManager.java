@@ -15,10 +15,14 @@
 
 package com.lan.capstonedesign;
 
+import android.content.Context;
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
 
 import com.amazonaws.AmazonServiceException;
+import com.amazonaws.auth.CognitoCachingCredentialsProvider;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBAttribute;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBHashKey;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBIndexHashKey;
@@ -27,6 +31,8 @@ import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBScanExpression;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBTable;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.PaginatedScanList;
+import com.amazonaws.regions.Region;
+import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 import com.amazonaws.services.dynamodbv2.model.AttributeDefinition;
 import com.amazonaws.services.dynamodbv2.model.CreateTableRequest;
@@ -38,25 +44,88 @@ import com.amazonaws.services.dynamodbv2.model.KeyType;
 import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;
 import com.amazonaws.services.dynamodbv2.model.ResourceNotFoundException;
 import com.amazonaws.services.dynamodbv2.model.ScalarAttributeType;
+import com.amazonaws.services.dynamodbv2.model.ScanRequest;
+import com.amazonaws.services.dynamodbv2.model.ScanResult;
 
 import java.util.ArrayList;
 
 public class DynamoDBManager {
 
     private static final String TAG = "DynamoDBManager";
+    public static AmazonDynamoDBClient ddb = null;
+    private static Context context;
+    public static ArrayList<RegionInfo> regionInfoArrayList = new ArrayList<>();
 
     /*
      * Creates a table with the following attributes: Table name: testTableName
      * Hash key: userNo type N Read Capacity Units: 10 Write Capacity Units: 5
      */
-    public static ArrayList<RegionInfo> regionInfoArrayList = new ArrayList<>();
+
+    public DynamoDBManager(Context context) {
+        this.context = context;
+    }
+
+    public static DynamoDBManager instance;
+
+    public static DynamoDBManager getInstance(Context context){
+        if(instance == null){
+            instance = new DynamoDBManager(context);
+            initClients(context);
+        }
+        return instance;
+    }
+    public void dynamoDBSelect(){
+        new DynamoDBManagerTask().execute(DynamoDBManagerType.LIST_USERS);
+    }
+
+    private static void initClients(Context context) {
+        if(ddb == null){
+            CognitoCachingCredentialsProvider credentials = new CognitoCachingCredentialsProvider(
+                    context,
+                    Constants.IDENTITY_POOL_ID,
+                    Regions.AP_NORTHEAST_2);
+            ddb = new AmazonDynamoDBClient(credentials);
+            ddb.setRegion(Region.getRegion(Regions.AP_NORTHEAST_2));
+        }
+
+    }
+
+    public static ArrayList<RegionInfo> getRegionInfoList() {
+        DynamoDBMapper mapper = new DynamoDBMapper(ddb);
+        Log.d(TAG, "이거 null? : " + mapper.toString());
+        DynamoDBScanExpression scanExpression = new DynamoDBScanExpression();
+        try {
+            PaginatedScanList<RegionInfo> result = mapper.scan(
+                    RegionInfo.class, scanExpression);
+
+            ArrayList<RegionInfo> resultList = new ArrayList<RegionInfo>();
+            for (RegionInfo up : result) {
+                resultList.add(up);
+                //str += "Author : " + up.getAuthor() + " Title : " + up.getTitle();
+                Log.d(TAG, "MT_ID : " + up.getMountainID());
+                Log.d(TAG, "Region_NAme : " + up.getRegionName());
+                Log.d(TAG, "MT_Name : " + up.getMountainName());
+                Log.d(TAG, "Latitude : " + up.getLatitude());
+                Log.d(TAG, "Longitude : " + up.getLongitude());
+                Log.d(TAG, "Status : " + up.getMountainStatus());
+
+            }
+
+
+            return resultList;
+
+        } catch (AmazonServiceException ex) {
+            wipeCredentialsOnAuthError(ex);
+        }
+
+        return null;
+    }
 
     public static void createTable() {
 
         Log.d(TAG, "Create table called");
 
-        AmazonDynamoDBClient ddb = DynamoDBExecutor.clientManager
-                .ddb();
+        //AmazonDynamoDBClient ddb = dbManger.ddb();
 
         KeySchemaElement kse = new KeySchemaElement().withAttributeName(
                 "MT_ID").withKeyType(KeyType.HASH);
@@ -80,8 +149,7 @@ public class DynamoDBManager {
             Log.d(TAG, "Create request response successfully recieved");
         } catch (AmazonServiceException ex) {
             Log.e(TAG, "Error sending create table request", ex);
-            DynamoDBExecutor.clientManager
-                    .wipeCredentialsOnAuthError(ex);
+            wipeCredentialsOnAuthError(ex);
         }
     }
 
@@ -91,8 +159,7 @@ public class DynamoDBManager {
     public static String getTestTableStatus() {
 
         try {
-            AmazonDynamoDBClient ddb = DynamoDBExecutor.clientManager
-                    .ddb();
+            /*AmazonDynamoDBClient ddb = ddb.;*/
 
             DescribeTableRequest request = new DescribeTableRequest()
                     .withTableName(Constants.TABLE_NAME);
@@ -103,8 +170,7 @@ public class DynamoDBManager {
 
         } catch (ResourceNotFoundException e) {
         } catch (AmazonServiceException ex) {
-            DynamoDBExecutor.clientManager
-                    .wipeCredentialsOnAuthError(ex);
+            wipeCredentialsOnAuthError(ex);
         }
 
         return "";
@@ -113,7 +179,7 @@ public class DynamoDBManager {
     /*
      * Inserts ten users with userNo from 1 to 10 and random names.
      */
-    public static void insertUsers() {
+    /*public static void insertUsers() {
         AmazonDynamoDBClient ddb = DynamoDBExecutor.clientManager
                 .ddb();
         DynamoDBMapper mapper = new DynamoDBMapper(ddb);
@@ -125,7 +191,7 @@ public class DynamoDBManager {
         regionInfoArrayList.add(new RegionInfo("광교산", 5, 37.343499, 127.019157));
 
         regionInfoArrayList.add(new RegionInfo("태백산", 6, 37.098211, 128.922869));
-        /*try {
+        *//*try {
             for (int i = 1; i <= 10; i++) {
                 Books book = new Books();
                 book.setTitle("Algorithm");
@@ -140,7 +206,7 @@ public class DynamoDBManager {
             Log.e(TAG, "Error inserting users");
             DynamoDBExecutor.clientManager
                     .wipeCredentialsOnAuthError(ex);
-        }*/
+        }*//*
         try {
             for(RegionInfo region : regionInfoArrayList){
                 RegionInfo r = new RegionInfo();
@@ -155,45 +221,122 @@ public class DynamoDBManager {
             }
         } catch (AmazonServiceException ex) {
             Log.e(TAG, "Error inserting users");
-            DynamoDBExecutor.clientManager.wipeCredentialsOnAuthError(ex);
+            wipeCredentialsOnAuthError(ex);
         }
-    }
+    }*/
 
     /*
      * Scans the table and returns the list of users.
      */
-    public static ArrayList<RegionInfo> getRegionInfoList() {
+    public static boolean wipeCredentialsOnAuthError(AmazonServiceException ex) {
+        Log.e(TAG, "Error, wipeCredentialsOnAuthError called" + ex);
+        if (
+            // STS
+            // http://docs.amazonwebservices.com/STS/latest/APIReference/CommonErrors.html
+                ex.getErrorCode().equals("IncompleteSignature")
+                        || ex.getErrorCode().equals("InternalFailure")
+                        || ex.getErrorCode().equals("InvalidClientTokenId")
+                        || ex.getErrorCode().equals("OptInRequired")
+                        || ex.getErrorCode().equals("RequestExpired")
+                        || ex.getErrorCode().equals("ServiceUnavailable")
 
-        AmazonDynamoDBClient ddb = DynamoDBExecutor.clientManager
-                .ddb();
-        DynamoDBMapper mapper = new DynamoDBMapper(ddb);
+                        // DynamoDB
+                        // http://docs.amazonwebservices.com/amazondynamodb/latest/developerguide/ErrorHandling.html#APIErrorTypes
+                        || ex.getErrorCode().equals("AccessDeniedException")
+                        || ex.getErrorCode().equals("IncompleteSignatureException")
+                        || ex.getErrorCode().equals(
+                        "MissingAuthenticationTokenException")
+                        || ex.getErrorCode().equals("ValidationException")
+                        || ex.getErrorCode().equals("InternalFailure")
+                        || ex.getErrorCode().equals("InternalServerError")) {
 
-        DynamoDBScanExpression scanExpression = new DynamoDBScanExpression();
-        try {
-            PaginatedScanList<RegionInfo> result = mapper.scan(
-                    RegionInfo.class, scanExpression);
-
-            ArrayList<RegionInfo> resultList = new ArrayList<RegionInfo>();
-            for (RegionInfo up : result) {
-                resultList.add(up);
-                //str += "Author : " + up.getAuthor() + " Title : " + up.getTitle();
-                Log.d(TAG, "MT_ID : " + up.getMountainID());
-                Log.d(TAG, "Region_NAme : " + up.getRegionName());
-                Log.d(TAG, "MT_Name : " + up.getMountainName());
-                Log.d(TAG, "Latitude : " + up.getLatitude());
-                Log.d(TAG, "Longitude : " + up.getLongitude());
-                Log.d(TAG, "Status : " + up.getMountainStatus());
-
-            }
-
-            return resultList;
-
-        } catch (AmazonServiceException ex) {
-            DynamoDBExecutor.clientManager
-                    .wipeCredentialsOnAuthError(ex);
+            return true;
         }
 
-        return null;
+        return false;
+    }
+    private class DynamoDBManagerTask extends AsyncTask<DynamoDBManagerType, Void, DynamoDBManagerTaskResult> {
+
+        protected DynamoDBManagerTaskResult doInBackground(
+                DynamoDBManagerType... types) {
+
+            String tableStatus = getTestTableStatus();
+
+            DynamoDBManagerTaskResult result = new DynamoDBManagerTaskResult();
+            Log.d(TAG, "table status : " + result.toString());
+            result.setTableStatus(tableStatus);
+            result.setTaskType(types[0]);
+
+            if (types[0] == DynamoDBManagerType.CREATE_TABLE) {
+                if (tableStatus.length() == 0) {
+                    createTable();
+                }
+            } /*else if (types[0] == DynamoDBManagerType.INSERT_USER) {
+                if (tableStatus.equalsIgnoreCase("ACTIVE")) {
+                    insertUsers();
+                }
+            } */else if (types[0] == DynamoDBManagerType.LIST_USERS) {
+                if (tableStatus.equalsIgnoreCase("ACTIVE")) {
+                    regionInfoArrayList = getRegionInfoList();
+                }
+            } /*else if (types[0] == DynamoDBManagerType.CLEAN_UP) {
+                if (tableStatus.equalsIgnoreCase("ACTIVE")) {
+                    DynamoDBManager.cleanUp();
+                }
+            }*/
+
+            return result;
+        }
+
+        /*protected void onPostExecute(DynamoDBManagerTaskResult result) {
+
+            if (result.getTaskType() == DynamoDBManagerType.CREATE_TABLE) {
+
+                if (result.getTableStatus().length() != 0) {
+                    Toast.makeText(context,
+                            "The test table already exists.\nTable Status: "
+                                    + result.getTableStatus(),
+                            Toast.LENGTH_LONG).show();
+                }
+            } else if (result.getTaskType() == DynamoDBManagerType.LIST_USERS
+                    && result.getTableStatus().equalsIgnoreCase("ACTIVE")) {
+
+
+            } else if (!result.getTableStatus().equalsIgnoreCase("ACTIVE")) {
+
+                Toast.makeText(context, "The test table is not ready yet.\nTable Status: "
+                                + result.getTableStatus(), Toast.LENGTH_LONG)
+                        .show();
+            } else if (result.getTableStatus().equalsIgnoreCase("ACTIVE")
+                    && result.getTaskType() == DynamoDBManagerType.INSERT_USER) {
+                Toast.makeText(context, "Users inserted successfully!", Toast.LENGTH_SHORT).show();
+            }
+        }*/
+    }
+
+    private enum DynamoDBManagerType {
+        GET_TABLE_STATUS, CREATE_TABLE, INSERT_USER, LIST_USERS, CLEAN_UP
+    }
+
+    private class DynamoDBManagerTaskResult {
+        private DynamoDBManagerType taskType;
+        private String tableStatus;
+
+        public DynamoDBManagerType getTaskType() {
+            return taskType;
+        }
+
+        public void setTaskType(DynamoDBManagerType taskType) {
+            this.taskType = taskType;
+        }
+
+        public String getTableStatus() {
+            return tableStatus;
+        }
+
+        public void setTableStatus(String tableStatus) {
+            this.tableStatus = tableStatus;
+        }
     }
 
     /*

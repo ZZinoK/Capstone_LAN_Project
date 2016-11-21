@@ -84,14 +84,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button awsDBCheckBtn = (Button) findViewById(R.id.dbCheck);
+        /*Button awsDBCheckBtn = (Button) findViewById(R.id.dbCheck);
         awsDBCheckBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DynamoDBExecutor.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
     }
 }
