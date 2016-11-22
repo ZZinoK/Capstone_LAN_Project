@@ -1,4 +1,3 @@
-/*
 package com.lan.capstonedesign;
 
 import android.app.Activity;
@@ -10,11 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-*/
 /**
  * Created by kslee7746 on 2016. 11. 5..
- *//*
-
+ */
 
 public class DynamoDBExecutor extends Activity {
     private static final String TAG = "DynamoDBExecutor";
@@ -59,8 +56,7 @@ public class DynamoDBExecutor extends Activity {
             }
         });
 
-        */
-/*final Button deleteTableBttn = (Button) findViewById(R.id.delete_table_bttn);
+        /*final Button deleteTableBttn = (Button) findViewById(R.id.delete_table_bttn);
         deleteTableBttn.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -68,8 +64,7 @@ public class DynamoDBExecutor extends Activity {
 
                 new DynamoDBManagerTask().execute(DynamoDBManagerType.CLEAN_UP);
             }
-        });*//*
-
+        });*/
     }
 
 
@@ -79,32 +74,31 @@ public class DynamoDBExecutor extends Activity {
         protected DynamoDBManagerTaskResult doInBackground(
                 DynamoDBManagerType... types) {
 
-            String tableStatus = DynamoDBManager.getTestTableStatus();
-
+            DynamoDBManager dbManager = DynamoDBManager.getInstance(DynamoDBExecutor.this);
+            String tableStatus = dbManager.getTestTableStatus();
             DynamoDBManagerTaskResult result = new DynamoDBManagerTaskResult();
+
             Log.d(TAG, "table status : " + result.toString());
             result.setTableStatus(tableStatus);
             result.setTaskType(types[0]);
 
             if (types[0] == DynamoDBManagerType.CREATE_TABLE) {
                 if (tableStatus.length() == 0) {
-                    DynamoDBManager.createTable();
+                    dbManager.createTable();
                 }
             } else if (types[0] == DynamoDBManagerType.INSERT_USER) {
                 if (tableStatus.equalsIgnoreCase("ACTIVE")) {
-                    DynamoDBManager.insertUsers();
+                    dbManager.insertUsers();
                 }
             } else if (types[0] == DynamoDBManagerType.LIST_USERS) {
                 if (tableStatus.equalsIgnoreCase("ACTIVE")) {
-                    DynamoDBManager.getRegionInfoList();
+                    dbManager.getRegionInfoList();
                 }
-            } */
-/*else if (types[0] == DynamoDBManagerType.CLEAN_UP) {
+            } /*else if (types[0] == DynamoDBManagerType.CLEAN_UP) {
                 if (tableStatus.equalsIgnoreCase("ACTIVE")) {
                     DynamoDBManager.cleanUp();
                 }
-            }*//*
-
+            }*/
 
             return result;
         }
@@ -167,7 +161,6 @@ public class DynamoDBExecutor extends Activity {
         }
     }
 }
-*/
 /*CognitoCachingCredentialsProvider credentialsProvider = new CognitoCachingCredentialsProvider(
                 getApplicationContext(),
                 "ap-northeast-2:a358038b-dc9e-4fdb-beaa-bb83c1324559",

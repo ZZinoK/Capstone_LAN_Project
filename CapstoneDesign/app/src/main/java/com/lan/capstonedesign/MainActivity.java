@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     double lat = 0, lon = 0;
     int SECOND_ACTIVITY = 2;
     String status = "safe";
+    int mt_id = 0;
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -21,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == SECOND_ACTIVITY) {
             if(resultCode == RESULT_OK){
-                lat = data.getDoubleExtra("latitude", 000.000000);
-                lon = data.getDoubleExtra("longitude", 000.000000);
-                //Toast.makeText(MainActivity.this, "위도 : " + lat + " 경도 : " + lon, Toast.LENGTH_SHORT).show();
+                mt_id = data.getIntExtra("MT_ID", 0);
+                //lat = data.getDoubleExtra("latitude", 000.000000);
+                //lon = data.getDoubleExtra("longitude", 000.000000);
+                Toast.makeText(MainActivity.this, "MT_ID from user : " + mt_id, Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -78,20 +80,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DaumMapActivity.class);
-                intent.putExtra("lat", lat); // 인텐트에 데이터 위도 담아주기
-                intent.putExtra("lon", lon); // 인텐트에 데이터 경도 담아주기
-                intent.putExtra("status", status); // 인텐트에 산 상태 담아주기
+                intent.putExtra("MT_ID", mt_id);
                 startActivity(intent);
             }
         });
-        /*Button awsDBCheckBtn = (Button) findViewById(R.id.dbCheck);
+
+
+        Button awsDBCheckBtn = (Button) findViewById(R.id.dbCheck);
         awsDBCheckBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DynamoDBExecutor.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
     }
 }

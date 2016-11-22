@@ -15,17 +15,10 @@
 
 package com.lan.capstonedesign;
 
-import java.util.Random;
-
 public class Constants {
 
     public static final String IDENTITY_POOL_ID = "ap-northeast-2:e8134982-bc8e-429c-b06d-5d18a5c7c91d";
     // Note that spaces are not allowed in the table name
     public static final String TABLE_NAME = "RegionInfo";
 
-    public static final Random random = new Random();
-    public static final String[] NAMES = new String[] {
-            "Norm", "Jim", "Jason", "Zach", "Matt", "Glenn", "Will", "Wade", "Trevor", "Jeremy",
-            "Ryan", "Matty", "Steve", "Pavel"
-    };
 }

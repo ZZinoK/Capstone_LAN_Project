@@ -1828,6 +1828,7 @@ containing a value of this type.
         public static final int icon=0x7f0b002c;
         public static final int ifRoom=0x7f0b001f;
         public static final int image=0x7f0b0029;
+        public static final int imgView=0x7f0b006a;
         public static final int info=0x7f0b0068;
         public static final int insert_users_bttn=0x7f0b0058;
         public static final int lblListHeader=0x7f0b005b;
@@ -1837,7 +1838,7 @@ containing a value of this type.
         public static final int listMode=0x7f0b0009;
         public static final int list_item=0x7f0b002b;
         public static final int list_users_bttn=0x7f0b0059;
-        public static final int lvExp=0x7f0b006a;
+        public static final int lvExp=0x7f0b006b;
         public static final int media_actions=0x7f0b0060;
         public static final int middle=0x7f0b001c;
         public static final int multiply=0x7f0b0014;
@@ -1864,7 +1865,7 @@ containing a value of this type.
         public static final int search_voice_btn=0x7f0b0052;
         public static final int selectRegion=0x7f0b0054;
         public static final int select_dialog_listview=0x7f0b0053;
-        public static final int settingButton=0x7f0b006b;
+        public static final int settingButton=0x7f0b006c;
         public static final int shortcut=0x7f0b003d;
         public static final int showCustom=0x7f0b000f;
         public static final int showHome=0x7f0b0010;

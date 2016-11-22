@@ -3,6 +3,8 @@ package com.lan.capstonedesign;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Toast;
@@ -12,22 +14,64 @@ import net.daum.mf.map.api.MapPOIItem;
 import net.daum.mf.map.api.MapPoint;
 import net.daum.mf.map.api.MapView;
 
-
+/*new Thread(new Runnable() {
+@Override
+public void run() {
+        try {
+        Thread.sleep(5000);
+        } catch (InterruptedException e) {
+        e.printStackTrace();
+        }
+        runOnUiThread(new Runnable() {
+@Override
+public void run() {
+        pic.get(0).setImageDrawable(getResources().getDrawable(R.drawable.coin));
+        }
+        });
+        }
+        }).start();
+       handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    t.start();
+                }
+            }, 1000);
+       */
 /**
  * Created by kslee7746 on 2016. 11. 3..
  */
 public class DaumMapActivity extends Activity implements MapView.MapViewEventListener {
     private MapView daumMapView;
     private String apikey = "0a103b404c5ab42d35918fd32b3efcd9";
-    private double latitude = 37.283077, longitude = 127.044908;
-    private String mt_status = null;
+//    private double latitude = 37.283077, longitude = 127.044908;
+    private double latitude = 0, longitude = 0;
+    private int MT_ID = 0;
+    private String mt_status = "warning";
+    private String TAG = "DaumMapActivity";
+
     MapCircle mt_circle;
+    Thread t;
+    DynamoDBManager dbManager;
+    RegionInfo region = null;
+
+    Runnable runnable = new Runnable() {
+        public void run() {
+            region = dbManager.userSelectedRegionInfo(MT_ID);
+            try {
+                latitude = region.getLatitude();
+                longitude = region.getLongitude();
+            } catch (Exception e){
+                e.printStackTrace();
+                showToast("지역 선택하고 오셈");
+            }
+        }
+    };
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
         finish();
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +79,18 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.daum_map);
 
+        dbManager = DynamoDBManager.getInstance(this);
+        t = new Thread(runnable);
+
         if(getIntent().getExtras() != null){
-            latitude = getIntent().getExtras().getDouble("lat");
-            longitude = getIntent().getExtras().getDouble("lon");
-            mt_status = getIntent().getExtras().getString("status");
+            MT_ID = getIntent().getExtras().getInt("MT_ID");
+            t.start();
+            //showToast("MT_ID from AWS : " + MT_ID);
+        }
+        try {
+            t.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
         try {
             daumMapView = new MapView(DaumMapActivity.this);
@@ -50,7 +102,6 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
         } catch (Exception e){
             e.printStackTrace();
         }
-
     }
     private void showToast(final String text) {
         runOnUiThread(new Runnable() {
@@ -105,8 +156,6 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
         } else {
             daumMapView.setMapCenterPointAndZoomLevel(MapPoint.mapPointWithGeoCoord(latitude, longitude), 4, true);
         }
-
-
         addLocationMarker(daumMapView, latitude, longitude, mt_status);
     }
 

@@ -20,9 +20,10 @@ public class RegionInfo {
     private double longitude;
     private String mountainStatus = "safe";
 
-    public RegionInfo(String mt_name, int mt_id, double lat, double lon){
-        setMountainName(mt_name);
+    public RegionInfo(int mt_id, String region_name, String mt_name, double lat, double lon){
         setMountainID(mt_id);
+        setRegionName(region_name);
+        setMountainName(mt_name);
         setLatitude(lat);
         setLongitude(lon);
     }

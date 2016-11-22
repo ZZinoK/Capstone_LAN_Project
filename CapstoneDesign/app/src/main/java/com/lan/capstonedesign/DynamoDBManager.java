@@ -74,9 +74,6 @@ public class DynamoDBManager {
         }
         return instance;
     }
-    public void dynamoDBSelect(){
-        new DynamoDBManagerTask().execute(DynamoDBManagerType.LIST_USERS);
-    }
 
     private static void initClients(Context context) {
         if(ddb == null){
@@ -108,11 +105,32 @@ public class DynamoDBManager {
                 Log.d(TAG, "Latitude : " + up.getLatitude());
                 Log.d(TAG, "Longitude : " + up.getLongitude());
                 Log.d(TAG, "Status : " + up.getMountainStatus());
-
             }
 
-
             return resultList;
+
+        } catch (AmazonServiceException ex) {
+            wipeCredentialsOnAuthError(ex);
+        }
+
+        return null;
+    }
+    public static RegionInfo userSelectedRegionInfo(int MT_ID) {
+        DynamoDBMapper mapper = new DynamoDBMapper(ddb);
+        try {
+            RegionInfo region = mapper.load(RegionInfo.class, MT_ID);
+            if(region != null){
+                Log.d(TAG, "MT_ID : " + region.getMountainID());
+                Log.d(TAG, "Region_NAme : " + region.getRegionName());
+                Log.d(TAG, "MT_Name : " + region.getMountainName());
+                Log.d(TAG, "Latitude : " + region.getLatitude());
+                Log.d(TAG, "Longitude : " + region.getLongitude());
+                Log.d(TAG, "Status : " + region.getMountainStatus());
+            } else {
+                Log.d(TAG, "Fucking Null");
+            }
+
+            return region;
 
         } catch (AmazonServiceException ex) {
             wipeCredentialsOnAuthError(ex);
@@ -159,8 +177,6 @@ public class DynamoDBManager {
     public static String getTestTableStatus() {
 
         try {
-            /*AmazonDynamoDBClient ddb = ddb.;*/
-
             DescribeTableRequest request = new DescribeTableRequest()
                     .withTableName(Constants.TABLE_NAME);
             DescribeTableResult result = ddb.describeTable(request);
@@ -176,37 +192,20 @@ public class DynamoDBManager {
         return "";
     }
 
-    /*
-     * Inserts ten users with userNo from 1 to 10 and random names.
+    /* Inserts ten users with userNo from 1 to 10 and random names.
+
      */
-    /*public static void insertUsers() {
-        AmazonDynamoDBClient ddb = DynamoDBExecutor.clientManager
-                .ddb();
+    public static void insertUsers() {
         DynamoDBMapper mapper = new DynamoDBMapper(ddb);
-        regionInfoArrayList.add(new RegionInfo("관악산", 1, 37.442009, 126.963038));
-        regionInfoArrayList.add(new RegionInfo("북한산", 2, 37.658221, 126.978898));
+        regionInfoArrayList.add(new RegionInfo(1, "서울", "관악산", 37.442009, 126.963038));
+        regionInfoArrayList.add(new RegionInfo(2, "서울", "북한산", 37.658221, 126.978898));
 
-        regionInfoArrayList.add(new RegionInfo("청계산", 3, 37.422564, 127.042691));
-        regionInfoArrayList.add(new RegionInfo("팔달산", 4, 37.279145, 127.009727));
-        regionInfoArrayList.add(new RegionInfo("광교산", 5, 37.343499, 127.019157));
+        regionInfoArrayList.add(new RegionInfo(3, "경기도", "청계산", 37.422564, 127.042691));
+        regionInfoArrayList.add(new RegionInfo(4, "경기도", "팔달산", 37.279145, 127.009727));
+        regionInfoArrayList.add(new RegionInfo(5, "경기도", "광교산", 37.343499, 127.019157));
 
-        regionInfoArrayList.add(new RegionInfo("태백산", 6, 37.098211, 128.922869));
-        *//*try {
-            for (int i = 1; i <= 10; i++) {
-                Books book = new Books();
-                book.setTitle("Algorithm");
-                book.setIsbn(Constants.getRandomName());
-                book.setAuthor(Constants.getRandomName());
+        regionInfoArrayList.add(new RegionInfo(6, "강원도", "태백산", 37.098211, 128.922869));
 
-                Log.d(TAG, "Inserting users");
-                mapper.save(book);
-                Log.d(TAG, "Users inserted");
-            }
-        } catch (AmazonServiceException ex) {
-            Log.e(TAG, "Error inserting users");
-            DynamoDBExecutor.clientManager
-                    .wipeCredentialsOnAuthError(ex);
-        }*//*
         try {
             for(RegionInfo region : regionInfoArrayList){
                 RegionInfo r = new RegionInfo();
@@ -223,7 +222,7 @@ public class DynamoDBManager {
             Log.e(TAG, "Error inserting users");
             wipeCredentialsOnAuthError(ex);
         }
-    }*/
+    }
 
     /*
      * Scans the table and returns the list of users.
@@ -255,112 +254,6 @@ public class DynamoDBManager {
 
         return false;
     }
-    private class DynamoDBManagerTask extends AsyncTask<DynamoDBManagerType, Void, DynamoDBManagerTaskResult> {
-
-        protected DynamoDBManagerTaskResult doInBackground(
-                DynamoDBManagerType... types) {
-
-            String tableStatus = getTestTableStatus();
-
-            DynamoDBManagerTaskResult result = new DynamoDBManagerTaskResult();
-            Log.d(TAG, "table status : " + result.toString());
-            result.setTableStatus(tableStatus);
-            result.setTaskType(types[0]);
-
-            if (types[0] == DynamoDBManagerType.CREATE_TABLE) {
-                if (tableStatus.length() == 0) {
-                    createTable();
-                }
-            } /*else if (types[0] == DynamoDBManagerType.INSERT_USER) {
-                if (tableStatus.equalsIgnoreCase("ACTIVE")) {
-                    insertUsers();
-                }
-            } */else if (types[0] == DynamoDBManagerType.LIST_USERS) {
-                if (tableStatus.equalsIgnoreCase("ACTIVE")) {
-                    regionInfoArrayList = getRegionInfoList();
-                }
-            } /*else if (types[0] == DynamoDBManagerType.CLEAN_UP) {
-                if (tableStatus.equalsIgnoreCase("ACTIVE")) {
-                    DynamoDBManager.cleanUp();
-                }
-            }*/
-
-            return result;
-        }
-
-        /*protected void onPostExecute(DynamoDBManagerTaskResult result) {
-
-            if (result.getTaskType() == DynamoDBManagerType.CREATE_TABLE) {
-
-                if (result.getTableStatus().length() != 0) {
-                    Toast.makeText(context,
-                            "The test table already exists.\nTable Status: "
-                                    + result.getTableStatus(),
-                            Toast.LENGTH_LONG).show();
-                }
-            } else if (result.getTaskType() == DynamoDBManagerType.LIST_USERS
-                    && result.getTableStatus().equalsIgnoreCase("ACTIVE")) {
-
-
-            } else if (!result.getTableStatus().equalsIgnoreCase("ACTIVE")) {
-
-                Toast.makeText(context, "The test table is not ready yet.\nTable Status: "
-                                + result.getTableStatus(), Toast.LENGTH_LONG)
-                        .show();
-            } else if (result.getTableStatus().equalsIgnoreCase("ACTIVE")
-                    && result.getTaskType() == DynamoDBManagerType.INSERT_USER) {
-                Toast.makeText(context, "Users inserted successfully!", Toast.LENGTH_SHORT).show();
-            }
-        }*/
-    }
-
-    private enum DynamoDBManagerType {
-        GET_TABLE_STATUS, CREATE_TABLE, INSERT_USER, LIST_USERS, CLEAN_UP
-    }
-
-    private class DynamoDBManagerTaskResult {
-        private DynamoDBManagerType taskType;
-        private String tableStatus;
-
-        public DynamoDBManagerType getTaskType() {
-            return taskType;
-        }
-
-        public void setTaskType(DynamoDBManagerType taskType) {
-            this.taskType = taskType;
-        }
-
-        public String getTableStatus() {
-            return tableStatus;
-        }
-
-        public void setTableStatus(String tableStatus) {
-            this.tableStatus = tableStatus;
-        }
-    }
-
-    /*
-     * Retrieves all of the attribute/value pairs for the specified user.
-     */
-    /*public static UserPreference getUserPreference(int userNo) {
-
-        AmazonDynamoDBClient ddb = MainActivity.clientManager
-                .ddb();
-        DynamoDBMapper mapper = new DynamoDBMapper(ddb);
-
-        try {
-            UserPreference userPreference = mapper.load(UserPreference.class,
-                    userNo);
-
-            return userPreference;
-
-        } catch (AmazonServiceException ex) {
-            MainActivity.clientManager
-                    .wipeCredentialsOnAuthError(ex);
-        }
-
-        return null;
-    }*/
 
     /*
      * Updates one attribute/value pair for the specified user.
