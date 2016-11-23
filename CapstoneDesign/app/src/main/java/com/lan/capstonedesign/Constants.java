@@ -20,5 +20,6 @@ public class Constants {
     public static final String IDENTITY_POOL_ID = "ap-northeast-2:e8134982-bc8e-429c-b06d-5d18a5c7c91d";
     // Note that spaces are not allowed in the table name
     public static final String TABLE_NAME = "RegionInfo";
+    public static final String NODE_TABLE_NAME = "NodeInfo";
 
 }

@@ -14,6 +14,8 @@ import net.daum.mf.map.api.MapPOIItem;
 import net.daum.mf.map.api.MapPoint;
 import net.daum.mf.map.api.MapView;
 
+import java.util.ArrayList;
+
 /*new Thread(new Runnable() {
 @Override
 public void run() {
@@ -46,24 +48,32 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
 //    private double latitude = 37.283077, longitude = 127.044908;
     private double latitude = 0, longitude = 0;
     private int MT_ID = 0;
+    private boolean AdminLoginStatus = false;
     private String mt_status = "warning";
     private String TAG = "DaumMapActivity";
+    private ArrayList<NodeInfo> nodeInfoArrayList;
 
-    MapCircle mt_circle;
-    Thread t;
+
+    Thread regionTh, nodeTh;
     DynamoDBManager dbManager;
     RegionInfo region = null;
 
-    Runnable runnable = new Runnable() {
+    Runnable selectRegionRunnable = new Runnable() {
         public void run() {
             region = dbManager.userSelectedRegionInfo(MT_ID);
             try {
                 latitude = region.getLatitude();
                 longitude = region.getLongitude();
+                mt_status = region.getMountainStatus();
             } catch (Exception e){
                 e.printStackTrace();
                 showToast("지역 선택하고 오셈");
             }
+        }
+    };
+    Runnable selectNodeRunnable = new Runnable() {
+        public void run() {
+            nodeInfoArrayList = dbManager.getNodeInfoArrayList();
         }
     };
 
@@ -80,18 +90,22 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
         setContentView(R.layout.daum_map);
 
         dbManager = DynamoDBManager.getInstance(this);
-        t = new Thread(runnable);
+        regionTh = new Thread(selectRegionRunnable);
+        nodeTh = new Thread(selectNodeRunnable);
 
         if(getIntent().getExtras() != null){
             MT_ID = getIntent().getExtras().getInt("MT_ID");
-            t.start();
-            //showToast("MT_ID from AWS : " + MT_ID);
+            AdminLoginStatus = getIntent().getExtras().getBoolean("Admin");
+            try {
+                regionTh.start();
+                nodeTh.start();
+                regionTh.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            showToast("너는 관리자야");
         }
-        try {
-            t.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         try {
             daumMapView = new MapView(DaumMapActivity.this);
             daumMapView.setDaumMapApiKey(apikey);
@@ -111,58 +125,63 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
             }
         });
     }
-    private void addLocationMarker(MapView mapView, Double latitude, Double longitude, String name){
+    private void addLocationMarker(MapView mapView, Double latitude, Double longitude, int node_id){
         MapPoint ADD_MARKER_POINT = MapPoint.mapPointWithGeoCoord(latitude, longitude);
-
         MapPOIItem objPoiMarker = new MapPOIItem();
-        objPoiMarker.setItemName(name);
+        objPoiMarker.setItemName(""+node_id);
         objPoiMarker.setTag(0);
         objPoiMarker.setMapPoint(ADD_MARKER_POINT);
         objPoiMarker.setMarkerType(MapPOIItem.MarkerType.BluePin);
         objPoiMarker.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin);
         objPoiMarker.setShowAnimationType(MapPOIItem.ShowAnimationType.DropFromHeaven);
         mapView.addPOIItem(objPoiMarker);
-        Color color = new Color();
+
+        MapCircle mt_circle = new MapCircle(
+                MapPoint.mapPointWithGeoCoord(latitude, longitude), // center
+                100, // radius
+                0, // strokeColor
+                0 // fillColor
+        );
+
         if(mt_status.equals("danger")){
-            color.argb(128, 255, 0, 0);
-            color.argb(128, 255, 0, 0);
+            mt_circle.setFillColor(Color.argb(90, 255, 0, 0));
+            mt_circle.setStrokeColor(Color.argb(255, 255, 0, 0));
         } else if(mt_status.equals("safe")){
-            color.argb(128, 255, 0, 0);
-            color.argb(128, 255, 0, 0);
+            mt_circle.setFillColor(Color.argb(90, 0, 255, 0));
+            mt_circle.setStrokeColor(Color.argb(255, 0, 255, 0));
         } else {
-            color.argb(128, 255, 172, 0);
-            color.argb(128, 255, 172, 0);
+            mt_circle.setStrokeColor(Color.argb(90, 255, 172, 0));
+            mt_circle.setStrokeColor(Color.argb(255, 255, 172, 0));
         }
 
-        mt_circle = new MapCircle(
-                MapPoint.mapPointWithGeoCoord(latitude, longitude), // center
-                150, // radius
-                Color.argb(128, 255, 0, 0), // strokeColor
-                Color.argb(128, 255, 0, 0) // fillColor
-        );
+
         mt_circle.setTag(1234);
         mapView.addCircle(mt_circle);
     }
-//    private void setAllObjectMarker() {
-//        for(ObjectGPS obj : objPosList){
-//            addObjectMarker(daumMapView, obj.getLatitude(), obj.getLongitude(), obj.getObjName());
-//        }
-//    }
+    private void setAllNodeMarker() {
+        for(NodeInfo node : nodeInfoArrayList){
+            addLocationMarker(daumMapView, node.getLatitude(), node.getLongitude(), node.getNode_ID());
+        }
+    }
     @Override
     public void onMapViewInitialized(MapView mapView) {
-        if(latitude == 0 || longitude == 0){
+        if(MT_ID == 0){
             daumMapView.setCurrentLocationTrackingMode(MapView.CurrentLocationTrackingMode.TrackingModeOnWithoutHeading);
             showToast("지역을 선택하고 다시오셈");
         } else {
-            daumMapView.setMapCenterPointAndZoomLevel(MapPoint.mapPointWithGeoCoord(latitude, longitude), 4, true);
+            daumMapView.setCurrentLocationTrackingMode(MapView.CurrentLocationTrackingMode.TrackingModeOff);
+            daumMapView.setMapCenterPointAndZoomLevel(MapPoint.mapPointWithGeoCoord(latitude, longitude), 7, true);
+            if(MT_ID != 4) {
+                addLocationMarker(daumMapView, latitude, longitude, 0);
+                showToast("아직 서비스 예정인 지역입니다. 돌아가셈");
+            }
+            setAllNodeMarker();
         }
-        addLocationMarker(daumMapView, latitude, longitude, mt_status);
+
     }
 
     @Override
-    public void onMapViewCenterPointMoved(MapView mapView, MapPoint mapPoint) {
-
-    }
+    public void onMapViewCenterPointMoved(MapView mapView, MapPoint mapPoint) { }
 
     @Override
     public void onMapViewZoomLevelChanged(MapView mapView, int i) { }

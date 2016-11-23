@@ -55,6 +55,7 @@ public class DynamoDBManager {
     public static AmazonDynamoDBClient ddb = null;
     private static Context context;
     public static ArrayList<RegionInfo> regionInfoArrayList = new ArrayList<>();
+    public static ArrayList<NodeInfo> nodeInfoArrayList = new ArrayList<>();
 
     /*
      * Creates a table with the following attributes: Table name: testTableName
@@ -86,7 +87,34 @@ public class DynamoDBManager {
         }
 
     }
+    public static ArrayList<NodeInfo> getNodeInfoArrayList() {
+        DynamoDBMapper mapper = new DynamoDBMapper(ddb);
+        Log.d(TAG, "이거 null? : " + mapper.toString());
+        DynamoDBScanExpression scanExpression = new DynamoDBScanExpression();
+        try {
+            PaginatedScanList<NodeInfo> result = mapper.scan(
+                    NodeInfo.class, scanExpression);
 
+            ArrayList<NodeInfo> resultList = new ArrayList<NodeInfo>();
+            for (NodeInfo up : result) {
+                resultList.add(up);
+                //str += "Author : " + up.getAuthor() + " Title : " + up.getTitle();
+//                Log.d(TAG, "MT_ID : " + up.getMountainID());
+//                Log.d(TAG, "Region_NAme : " + up.getRegionName());
+//                Log.d(TAG, "MT_Name : " + up.getMountainName());
+//                Log.d(TAG, "Latitude : " + up.getLatitude());
+//                Log.d(TAG, "Longitude : " + up.getLongitude());
+//                Log.d(TAG, "Status : " + up.getMountainStatus());
+            }
+
+            return resultList;
+
+        } catch (AmazonServiceException ex) {
+            wipeCredentialsOnAuthError(ex);
+        }
+
+        return null;
+    }
     public static ArrayList<RegionInfo> getRegionInfoList() {
         DynamoDBMapper mapper = new DynamoDBMapper(ddb);
         Log.d(TAG, "이거 null? : " + mapper.toString());
@@ -115,6 +143,7 @@ public class DynamoDBManager {
 
         return null;
     }
+
     public static RegionInfo userSelectedRegionInfo(int MT_ID) {
         DynamoDBMapper mapper = new DynamoDBMapper(ddb);
         try {
@@ -149,15 +178,44 @@ public class DynamoDBManager {
                 "MT_ID").withKeyType(KeyType.HASH);
         AttributeDefinition ad = new AttributeDefinition()
                 .withAttributeName("Region_Name").withAttributeType(ScalarAttributeType.N);
-        /*.withAttributeName("MT_Name").withAttributeType(ScalarAttributeType.N)
-                .withAttributeName("Latitude").withAttributeType(ScalarAttributeType.N)
-                .withAttributeName("Longitude").withAttributeType(ScalarAttributeType.N)
-                .withAttributeName("Status").withAttributeType(ScalarAttributeType.N)*/
         ProvisionedThroughput pt = new ProvisionedThroughput()
                 .withReadCapacityUnits(10l).withWriteCapacityUnits(5l);
 
         CreateTableRequest request = new CreateTableRequest()
                 .withTableName(Constants.TABLE_NAME)
+                .withKeySchema(kse).withAttributeDefinitions(ad)
+                .withProvisionedThroughput(pt);
+
+        try {
+            Log.d(TAG, "Sending Create table request");
+            ddb.createTable(request);
+            Log.d(TAG, "Create request response successfully recieved");
+        } catch (AmazonServiceException ex) {
+            Log.e(TAG, "Error sending create table request", ex);
+            wipeCredentialsOnAuthError(ex);
+        }
+    }
+
+    public static void createNodeTable() {
+
+        Log.d(TAG, "Create table called");
+
+        //AmazonDynamoDBClient ddb = dbManger.ddb();
+
+        KeySchemaElement kse = new KeySchemaElement().withAttributeName(
+                "Node_ID").withKeyType(KeyType.HASH);
+        AttributeDefinition ad = new AttributeDefinition()
+                .withAttributeName("MT_ID").withAttributeType(ScalarAttributeType.N)
+        .withAttributeName("Route").withAttributeType(ScalarAttributeType.N)
+                .withAttributeName("Node_X").withAttributeType(ScalarAttributeType.N)
+                .withAttributeName("Node_Y").withAttributeType(ScalarAttributeType.N)
+                .withAttributeName("Node_Z").withAttributeType(ScalarAttributeType.N)
+                .withAttributeName("Variation");
+        ProvisionedThroughput pt = new ProvisionedThroughput()
+                .withReadCapacityUnits(5l).withWriteCapacityUnits(5l);
+
+        CreateTableRequest request = new CreateTableRequest()
+                .withTableName(Constants.NODE_TABLE_NAME)
                 .withKeySchema(kse).withAttributeDefinitions(ad)
                 .withProvisionedThroughput(pt);
 
@@ -178,7 +236,7 @@ public class DynamoDBManager {
 
         try {
             DescribeTableRequest request = new DescribeTableRequest()
-                    .withTableName(Constants.TABLE_NAME);
+                    .withTableName(Constants.NODE_TABLE_NAME);
             DescribeTableResult result = ddb.describeTable(request);
 
             String status = result.getTable().getTableStatus();
@@ -192,9 +250,40 @@ public class DynamoDBManager {
         return "";
     }
 
+    public static void insertNodeInfo() {
+        DynamoDBMapper mapper = new DynamoDBMapper(ddb);
+        nodeInfoArrayList.add(new NodeInfo(1, 4, 234, 37.277318, 127.010757, 22, 456, 100, 5));
+        nodeInfoArrayList.add(new NodeInfo(2, 4, 170, 37.278018, 127.011422,  444, 456, 100, 5));
+        nodeInfoArrayList.add(new NodeInfo(3, 4, 211, 37.277993, 127.009609,  32, 564, 100, 5));
+        nodeInfoArrayList.add(new NodeInfo(4, 4, 505, 37.279094, 127.011562, 125, 886, 100, 5));
+        nodeInfoArrayList.add(new NodeInfo(5, 4, 393, 37.279103, 127.010113, 351, 234, 100, 5));
+        nodeInfoArrayList.add(new NodeInfo(6, 4, 220, 37.279077, 127.009019, 234, 155, 100, 5));
+
+        try {
+            for(NodeInfo node : nodeInfoArrayList){
+                NodeInfo n = new NodeInfo();
+//                n.setNode_ID(node.getNode_ID());
+//                n.setMT_ID(node.getMT_ID());
+//                n.setRoute(node.getRoute());
+//                n.setNode_X(node.getNode_X());
+//                n.setNode_Y(node.getNode_Y());
+//                n.setNode_Z(node.getNode_Z());
+                mapper.save(node);
+            }
+        } catch (AmazonServiceException ex) {
+            Log.e(TAG, "Error inserting users");
+            wipeCredentialsOnAuthError(ex);
+        }
+    }
+
+
+
+
+
     /* Inserts ten users with userNo from 1 to 10 and random names.
 
      */
+
     public static void insertUsers() {
         DynamoDBMapper mapper = new DynamoDBMapper(ddb);
         regionInfoArrayList.add(new RegionInfo(1, "서울", "관악산", 37.442009, 126.963038));

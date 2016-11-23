@@ -13,6 +13,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
@@ -49,6 +50,7 @@
         <activity android:name="com.lan.capstonedesign.DaumMapActivity" />
         <activity android:name="com.lan.capstonedesign.SelectRegionActivity" />
         <activity android:name="com.lan.capstonedesign.DynamoDBExecutor" />
+        <activity android:name="com.lan.capstonedesign.AdminActivity" />
         <!-- [START firebase_service] -->
         <service android:name="com.lan.capstonedesign.MyFirebaseMessagingService" >
             <intent-filter>

@@ -84,11 +84,11 @@ public class DynamoDBExecutor extends Activity {
 
             if (types[0] == DynamoDBManagerType.CREATE_TABLE) {
                 if (tableStatus.length() == 0) {
-                    dbManager.createTable();
+                    dbManager.createNodeTable();
                 }
             } else if (types[0] == DynamoDBManagerType.INSERT_USER) {
                 if (tableStatus.equalsIgnoreCase("ACTIVE")) {
-                    dbManager.insertUsers();
+                    dbManager.insertNodeInfo();
                 }
             } else if (types[0] == DynamoDBManagerType.LIST_USERS) {
                 if (tableStatus.equalsIgnoreCase("ACTIVE")) {
