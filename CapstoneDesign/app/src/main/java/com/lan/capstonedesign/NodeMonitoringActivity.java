@@ -5,7 +5,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
 
+import org.w3c.dom.Node;
+
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Handler;
@@ -29,6 +33,7 @@ public class NodeMonitoringActivity extends Activity {
 
             while(true){
                 nodeInfoArrayList = dbManager.getNodeInfoArrayList();
+                Collections.sort(nodeInfoArrayList, new NoAscCompare());
 //                nodeInfoArrayList = dbManager.getLastetNodeInfo();
                 Log.d(TAG, "Thread 돌고 있당~!");
                 try {
@@ -52,13 +57,18 @@ public class NodeMonitoringActivity extends Activity {
 
         }
     };
-    Runnable onUiRunnable = new Runnable() {
+    static class NoAscCompare implements Comparator<NodeInfo> {
+
+        /**
+         * 오름차순(ASC)
+         */
         @Override
-        public void run() {
-            node_adapter.notifyDataSetChanged();
-            Log.d(TAG, "UI Thread 돌고 있당~!");
+        public int compare(NodeInfo arg0, NodeInfo arg1) {
+            // TODO Auto-generated method stub
+            return arg0.getNode_ID() < arg1.getNode_ID() ? -1 : arg0.getNode_ID() > arg1.getNode_ID() ? 1:0;
         }
-    };
+
+    }
 
     @Override
     protected void onResume() {

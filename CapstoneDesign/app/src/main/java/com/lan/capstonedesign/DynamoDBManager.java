@@ -319,6 +319,7 @@ public class DynamoDBManager {
                 n.setNode_X(node.getNode_X());
                 n.setNode_Y(node.getNode_Y());
                 n.setNode_Z(node.getNode_Z());
+                n.setVariation(node.getVariation());
                 mapper.save(n);
             }
         } catch (AmazonServiceException ex) {
