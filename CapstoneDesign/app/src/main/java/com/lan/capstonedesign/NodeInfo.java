@@ -18,6 +18,8 @@ public class NodeInfo {
     private int Node_Y;
     private int Node_Z;
     private int Variation;
+    private String Time;
+
 
     public NodeInfo(int node_id, int mt_id, int route, double latitude, double longitude, int node_X, int node_Y, int node_Z, int variation){
         setNode_ID(node_id);
@@ -99,6 +101,8 @@ public class NodeInfo {
     public void setVariation(int variation) {
         Variation = variation;
     }
-
+    @DynamoDBAttribute(attributeName = "Time")
+    public void setTime(String time) { Time = time; }
+    public String getTime() { return Time; }
 }
 

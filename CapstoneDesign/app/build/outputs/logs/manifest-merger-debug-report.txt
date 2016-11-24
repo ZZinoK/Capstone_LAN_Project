@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:2:1-58:12
+ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:2:1-59:12
 	package
 		ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml
@@ -47,7 +47,7 @@ ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.
 	android:name
 		ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:10:22-76
 application
-ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:12:5-56:19
+ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:12:5-57:19
 MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.2.1] /Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] /Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:25:5-20
@@ -117,26 +117,30 @@ activity#com.lan.capstonedesign.AdminActivity
 ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:39:9-50
 	android:name
 		ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:39:19-48
+activity#com.lan.capstonedesign.NodeMonitoringActivity
+ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:40:9-59
+	android:name
+		ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:40:19-57
 service#com.lan.capstonedesign.MyFirebaseMessagingService
-ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:41:9-46:19
+ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:42:9-47:19
 	android:name
-		ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:42:13-55
+		ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:43:13-55
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:43:13-45:29
+ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:44:13-46:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:44:17-77
+ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:45:17-77
 	android:name
-		ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:44:25-75
+		ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:45:25-75
 service#com.lan.capstonedesign.MyFirebaseInstanceIDService
-ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:49:9-54:19
+ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:50:9-55:19
 	android:name
-		ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:50:13-56
+		ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:51:13-56
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:51:13-53:29
+ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:52:13-54:29
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:52:17-79
+ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:53:17-79
 	android:name
-		ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:52:25-77
+		ADDED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml:53:25-77
 uses-sdk
 INJECTED from /Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:21:5-23:78

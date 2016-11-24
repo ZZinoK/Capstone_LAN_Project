@@ -39,6 +39,7 @@ public class SelectRegionActivity extends Activity {
     Thread mythread;
     double latitude = 0, longitude = 0;
     int MT_ID = 0;
+    String MT_Name = null;
 
     DynamoDBManager dbManager;
     Runnable runnable = new Runnable() {
@@ -94,8 +95,9 @@ public class SelectRegionActivity extends Activity {
                 for(int i=0; i<regionInfoArrayList.size(); i++) {
                     if (selectedChildName.equals(regionInfoArrayList.get(i).getMountainName())) {
                         MT_ID = regionInfoArrayList.get(i).getMountainID();
-                        latitude = regionInfoArrayList.get(i).getLatitude();
-                        longitude = regionInfoArrayList.get(i).getLongitude();
+                        MT_Name = regionInfoArrayList.get(i).getMountainName();
+//                        latitude = regionInfoArrayList.get(i).getLatitude();
+//                        longitude = regionInfoArrayList.get(i).getLongitude();
                         Toast.makeText(getApplicationContext(), "MT_ID" + MT_ID, Toast.LENGTH_SHORT).show();
                         break;
                     }
@@ -115,6 +117,7 @@ public class SelectRegionActivity extends Activity {
                 } else {
                     Intent intent = new Intent();
                     //intent.putExtra("latitude", latitude);
+                    intent.putExtra("MT_NAME", MT_Name);
                     intent.putExtra("MT_ID", MT_ID);
                     setResult(RESULT_OK, intent);
                     finish();
@@ -142,23 +145,6 @@ public class SelectRegionActivity extends Activity {
             listDataChild.put(listDataHeader.get(i), regionArray);
         }
 
-        /*// Adding child data
-        List<String> seoul = new ArrayList<String>();
-
-        seoul.add(regionInfoArrayList.get(0).getMountainName());
-        seoul.add(regionInfoArrayList.get(1).getMountainName());
-
-        List<String> gyunki = new ArrayList<String>();
-        gyunki.add(regionInfoArrayList.get(2).getMountainName());
-        gyunki.add(regionInfoArrayList.get(3).getMountainName());
-        gyunki.add(regionInfoArrayList.get(4).getMountainName());
-
-        List<String> gangone = new ArrayList<String>();
-        gangone.add(regionInfoArrayList.get(5).getMountainName());
-
-        listDataChild.put(listDataHeader.get(0), seoul); // Header, Child data
-        listDataChild.put(listDataHeader.get(1), gyunki);
-        listDataChild.put(listDataHeader.get(2), gangone);*/
     }
 
     @Override

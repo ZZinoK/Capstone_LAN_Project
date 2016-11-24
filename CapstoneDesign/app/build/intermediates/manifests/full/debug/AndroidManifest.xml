@@ -51,6 +51,7 @@
         <activity android:name="com.lan.capstonedesign.SelectRegionActivity" />
         <activity android:name="com.lan.capstonedesign.DynamoDBExecutor" />
         <activity android:name="com.lan.capstonedesign.AdminActivity" />
+        <activity android:name="com.lan.capstonedesign.NodeMonitoringActivity" />
         <!-- [START firebase_service] -->
         <service android:name="com.lan.capstonedesign.MyFirebaseMessagingService" >
             <intent-filter>

@@ -28,13 +28,17 @@ import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBHashKey;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBIndexHashKey;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBIndexRangeKey;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapperConfig;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBQueryExpression;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBScanExpression;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBTable;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.PaginatedQueryList;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.PaginatedScanList;
 import com.amazonaws.regions.Region;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 import com.amazonaws.services.dynamodbv2.model.AttributeDefinition;
+import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.amazonaws.services.dynamodbv2.model.CreateTableRequest;
 import com.amazonaws.services.dynamodbv2.model.DeleteTableRequest;
 import com.amazonaws.services.dynamodbv2.model.DescribeTableRequest;
@@ -48,6 +52,7 @@ import com.amazonaws.services.dynamodbv2.model.ScanRequest;
 import com.amazonaws.services.dynamodbv2.model.ScanResult;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class DynamoDBManager {
 
@@ -87,24 +92,68 @@ public class DynamoDBManager {
         }
 
     }
-    public static ArrayList<NodeInfo> getNodeInfoArrayList() {
+    public static ArrayList<NodeInfo> getLastetNodeInfo(){
         DynamoDBMapper mapper = new DynamoDBMapper(ddb);
-        Log.d(TAG, "이거 null? : " + mapper.toString());
-        DynamoDBScanExpression scanExpression = new DynamoDBScanExpression();
+        HashMap<String, String> expressionAttributeNames = new HashMap<>();
+        HashMap<String, AttributeValue> expressionAttributeValues = new HashMap<>();
+        expressionAttributeNames.put("#nodeid", "Node_ID");
+        expressionAttributeNames.put("#time", "Time");
+        expressionAttributeValues.put(":hashNumber", new AttributeValue("0"));
+        expressionAttributeValues.put(":latestTime", new AttributeValue("2016-11-11 00:30"));
+//        DynamoDBScanExpression scanExpression = new DynamoDBScanExpression();
+//        scanExpression
+//                .withFilterExpression("#nodeid > :hashNumber")
+//                .withFilterExpression("#time > :latestTime")
+//                .withExpressionAttributeNames(expressionAttributeNames)
+//                .withExpressionAttributeValues(expressionAttributeValues);
+        NodeInfo node = new NodeInfo();
+        node.setNode_ID(3);
+        DynamoDBQueryExpression<NodeInfo> queryExpression = new DynamoDBQueryExpression<>();
+
+        queryExpression
+//                .withHashKeyValues(node)
+                .withFilterExpression("#nodeid > :hashNumber")
+                .withFilterExpression("#time > :latestTime")
+                .withExpressionAttributeNames(expressionAttributeNames)
+                .withExpressionAttributeValues(expressionAttributeValues);
+        DynamoDBMapperConfig mapperConfig = new DynamoDBMapperConfig(DynamoDBMapperConfig.ConsistentReads.CONSISTENT);
         try {
-            PaginatedScanList<NodeInfo> result = mapper.scan(
-                    NodeInfo.class, scanExpression);
+            PaginatedQueryList<NodeInfo> result = mapper.query(NodeInfo.class, queryExpression, mapperConfig);
 
             ArrayList<NodeInfo> resultList = new ArrayList<NodeInfo>();
             for (NodeInfo up : result) {
                 resultList.add(up);
-                //str += "Author : " + up.getAuthor() + " Title : " + up.getTitle();
-//                Log.d(TAG, "MT_ID : " + up.getMountainID());
-//                Log.d(TAG, "Region_NAme : " + up.getRegionName());
-//                Log.d(TAG, "MT_Name : " + up.getMountainName());
-//                Log.d(TAG, "Latitude : " + up.getLatitude());
-//                Log.d(TAG, "Longitude : " + up.getLongitude());
-//                Log.d(TAG, "Status : " + up.getMountainStatus());
+//                str += "Author : " + up.getAuthor() + " Title : " + up.getTitle();
+                Log.d(TAG, "Node_ID : " + up.getNode_ID());
+                Log.d(TAG, "Node_X : " + up.getNode_X());
+                Log.d(TAG, "Node_Y : " + up.getNode_Y());
+                Log.d(TAG, "Node_Z : " + up.getLatitude());
+            }
+
+            return resultList;
+
+        } catch (AmazonServiceException ex) {
+            wipeCredentialsOnAuthError(ex);
+        }
+        return null;
+
+    }
+    public static ArrayList<NodeInfo> getNodeInfoArrayList() {
+        DynamoDBMapper mapper = new DynamoDBMapper(ddb);
+        Log.d(TAG, "이거 null? : " + mapper.toString());
+        DynamoDBScanExpression scanExpression = new DynamoDBScanExpression();
+
+        try {
+            PaginatedScanList<NodeInfo> result = mapper.scan(NodeInfo.class, scanExpression);
+
+            ArrayList<NodeInfo> resultList = new ArrayList<NodeInfo>();
+            for (NodeInfo up : result) {
+                resultList.add(up);
+//                str += "Author : " + up.getAuthor() + " Title : " + up.getTitle();
+                Log.d(TAG, "Node_ID : " + up.getNode_ID());
+                Log.d(TAG, "Node_X : " + up.getNode_X());
+                Log.d(TAG, "Node_Y : " + up.getNode_Y());
+                Log.d(TAG, "Node_Z : " + up.getLatitude());
             }
 
             return resultList;
@@ -115,6 +164,7 @@ public class DynamoDBManager {
 
         return null;
     }
+
     public static ArrayList<RegionInfo> getRegionInfoList() {
         DynamoDBMapper mapper = new DynamoDBMapper(ddb);
         Log.d(TAG, "이거 null? : " + mapper.toString());
@@ -125,6 +175,7 @@ public class DynamoDBManager {
 
             ArrayList<RegionInfo> resultList = new ArrayList<RegionInfo>();
             for (RegionInfo up : result) {
+
                 resultList.add(up);
                 //str += "Author : " + up.getAuthor() + " Title : " + up.getTitle();
                 Log.d(TAG, "MT_ID : " + up.getMountainID());
@@ -262,13 +313,13 @@ public class DynamoDBManager {
         try {
             for(NodeInfo node : nodeInfoArrayList){
                 NodeInfo n = new NodeInfo();
-//                n.setNode_ID(node.getNode_ID());
-//                n.setMT_ID(node.getMT_ID());
-//                n.setRoute(node.getRoute());
-//                n.setNode_X(node.getNode_X());
-//                n.setNode_Y(node.getNode_Y());
-//                n.setNode_Z(node.getNode_Z());
-                mapper.save(node);
+                n.setNode_ID(node.getNode_ID());
+                n.setMT_ID(node.getMT_ID());
+                n.setRoute(node.getRoute());
+                n.setNode_X(node.getNode_X());
+                n.setNode_Y(node.getNode_Y());
+                n.setNode_Z(node.getNode_Z());
+                mapper.save(n);
             }
         } catch (AmazonServiceException ex) {
             Log.e(TAG, "Error inserting users");

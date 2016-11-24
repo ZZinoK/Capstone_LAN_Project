@@ -3,6 +3,7 @@ package com.lan.capstonedesign;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.provider.Settings;
@@ -14,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.google.firebase.messaging.FirebaseMessaging;
 
@@ -33,10 +35,12 @@ public class MainActivity extends AppCompatActivity {
     int SECOND_ACTIVITY = 2;
     String status = "safe";
     int mt_id = 0;
+    String mt_name = null;
     private static final String adminID = "admin";
     private static final String adminPwd = "1234";
-    private DynamoDBManager dbManager;
     private String networkState = null;
+    private TextView mt_status_view;
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -44,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == SECOND_ACTIVITY) {
             if(resultCode == RESULT_OK){
                 mt_id = data.getIntExtra("MT_ID", 0);
+                mt_name = data.getStringExtra("MT_NAME");
+
+                SharedPreferences userData = getSharedPreferences("Setting", MODE_PRIVATE);
+                SharedPreferences.Editor editor = userData.edit();
+                editor.putInt("MT_ID", mt_id);
+                editor.putString("MT_NAME", mt_name);
+                mt_status_view.setText("너가 선택한 산 이름 : " + mt_name);
+                editor.commit();
                 //lat = data.getDoubleExtra("latitude", 000.000000);
                 //lon = data.getDoubleExtra("longitude", 000.000000);
                 Toast.makeText(MainActivity.this, "MT_ID from user : " + mt_id, Toast.LENGTH_SHORT).show();
@@ -59,15 +71,23 @@ public class MainActivity extends AppCompatActivity {
         ConnectivityManager manager = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo mobile = manager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
         NetworkInfo wifi = manager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+        mt_status_view = (TextView) findViewById(R.id.mt_status);
+
         // wifi 또는 모바일 네트워크 어느 하나라도 연결이 되어있다면,
         if (!wifi.isConnected()){
             networkState = "WIFI";
             alertCheckNetwork();
-        } else if(!mobile.isConnected()){
+        } /*else if(!mobile.isConnected()){
             networkState = "DATA";
             alertCheckNetwork();
-        }
+        }*/
         // [START handle_data_extras]
+        // User Shared Data
+        SharedPreferences saveData = getSharedPreferences("Setting", MODE_PRIVATE);
+        mt_name = saveData.getString("MT_NAME", "산 선택하고 오라고~");
+        mt_id = saveData.getInt("MT_ID", 0);
+        // User Shared Data End
+        mt_status_view.setText("너가 선택한 산 이름 : " + mt_name);
         if (getIntent().getExtras() != null) {
             for (String key : getIntent().getExtras().keySet()) {
                 Object value = getIntent().getExtras().get(key);
@@ -76,19 +96,15 @@ public class MainActivity extends AppCompatActivity {
                 if(key.equals("MT_ID")){
                     mt_id = Integer.parseInt(value.toString());
                 }
-
             }
-            //Toast.makeText(MainActivity.this, "위도 : " + lat + " 경도 : " + lon + " 상태 : " + status, Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(MainActivity.this, DaumMapActivity.class);//푸시알람 클릭시 띄울 다음 지도
-//            intent.putExtra("lat", lat); // 인텐트에 데이터 위도 담아주기
-//            intent.putExtra("lon", lon); // 인텐트에 데이터 경도 담아주기
-//            intent.putExtra("status", status); // 인텐트에 산 상태 담아주기
             intent.putExtra("MT_ID", mt_id);
             startActivity(intent);
 
         }
         // [END handle_data_extras]
+
+
 
         Button subscribeButton = (Button) findViewById(R.id.selectRegion);
         subscribeButton.setOnClickListener(new View.OnClickListener() {

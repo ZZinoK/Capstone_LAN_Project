@@ -48,11 +48,11 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
 //    private double latitude = 37.283077, longitude = 127.044908;
     private double latitude = 0, longitude = 0;
     private int MT_ID = 0;
+    private String mt_name = null;
     private boolean AdminLoginStatus = false;
     private String mt_status = "warning";
     private String TAG = "DaumMapActivity";
     private ArrayList<NodeInfo> nodeInfoArrayList;
-
 
     Thread regionTh, nodeTh;
     DynamoDBManager dbManager;
@@ -62,6 +62,7 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
         public void run() {
             region = dbManager.userSelectedRegionInfo(MT_ID);
             try {
+                mt_name = region.getMountainName();
                 latitude = region.getLatitude();
                 longitude = region.getLongitude();
                 mt_status = region.getMountainStatus();
@@ -103,7 +104,10 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            showToast("너는 관리자야");
+            if(AdminLoginStatus)
+                showToast("너는 관리자야");
+            else
+                showToast("너는 양민이야");
         }
 
         try {
@@ -128,7 +132,7 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
     private void addLocationMarker(MapView mapView, Double latitude, Double longitude, int node_id){
         MapPoint ADD_MARKER_POINT = MapPoint.mapPointWithGeoCoord(latitude, longitude);
         MapPOIItem objPoiMarker = new MapPOIItem();
-        objPoiMarker.setItemName(""+node_id);
+        objPoiMarker.setItemName(mt_name +" TelosB_"+node_id);
         objPoiMarker.setTag(0);
         objPoiMarker.setMapPoint(ADD_MARKER_POINT);
         objPoiMarker.setMarkerType(MapPOIItem.MarkerType.BluePin);
@@ -137,11 +141,8 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
         mapView.addPOIItem(objPoiMarker);
 
         MapCircle mt_circle = new MapCircle(
-                MapPoint.mapPointWithGeoCoord(latitude, longitude), // center
-                100, // radius
-                0, // strokeColor
-                0 // fillColor
-        );
+                //mapPointWithGeoCoord(center, radius, strokeColor, fillColor)
+                MapPoint.mapPointWithGeoCoord(latitude, longitude), 100, 0, 0);
 
         if(mt_status.equals("danger")){
             mt_circle.setFillColor(Color.argb(90, 255, 0, 0));
@@ -154,9 +155,19 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
             mt_circle.setStrokeColor(Color.argb(255, 255, 172, 0));
         }
 
-
         mt_circle.setTag(1234);
         mapView.addCircle(mt_circle);
+    }
+    private void defaultMarker(MapView mapView, Double latitude, Double longitude, int node_id){
+        MapPoint ADD_MARKER_POINT = MapPoint.mapPointWithGeoCoord(latitude, longitude);
+        MapPOIItem objPoiMarker = new MapPOIItem();
+        objPoiMarker.setItemName(mt_name);
+        objPoiMarker.setTag(0);
+        objPoiMarker.setMapPoint(ADD_MARKER_POINT);
+        objPoiMarker.setMarkerType(MapPOIItem.MarkerType.BluePin);
+        objPoiMarker.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin);
+        objPoiMarker.setShowAnimationType(MapPOIItem.ShowAnimationType.DropFromHeaven);
+        mapView.addPOIItem(objPoiMarker);
     }
     private void setAllNodeMarker() {
         for(NodeInfo node : nodeInfoArrayList){
@@ -165,17 +176,19 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
     }
     @Override
     public void onMapViewInitialized(MapView mapView) {
+        mapView.setMapType(MapView.MapType.Hybrid);
         if(MT_ID == 0){
             daumMapView.setCurrentLocationTrackingMode(MapView.CurrentLocationTrackingMode.TrackingModeOnWithoutHeading);
             showToast("지역을 선택하고 다시오셈");
         } else {
             daumMapView.setCurrentLocationTrackingMode(MapView.CurrentLocationTrackingMode.TrackingModeOff);
-            daumMapView.setMapCenterPointAndZoomLevel(MapPoint.mapPointWithGeoCoord(latitude, longitude), 7, true);
+            daumMapView.setMapCenterPointAndZoomLevel(MapPoint.mapPointWithGeoCoord(latitude, longitude), 3, true);
             if(MT_ID != 4) {
-                addLocationMarker(daumMapView, latitude, longitude, 0);
+                defaultMarker(daumMapView, latitude, longitude, 0);
                 showToast("아직 서비스 예정인 지역입니다. 돌아가셈");
+            } else {
+                setAllNodeMarker();
             }
-            setAllNodeMarker();
         }
 
     }

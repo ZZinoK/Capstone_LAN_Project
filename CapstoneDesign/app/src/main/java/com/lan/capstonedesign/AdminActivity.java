@@ -2,6 +2,7 @@ package com.lan.capstonedesign;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,18 +23,22 @@ import java.net.UnknownHostException;
 
 public class AdminActivity extends Activity {
     private static final String TAG = "AdminActivity";
+    private int mt_id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_main);
 
+        SharedPreferences saveData = getSharedPreferences("Setting", MODE_PRIVATE);
+        mt_id = saveData.getInt("MT_ID", 0);
+
         Button monitoringBtn = (Button) findViewById(R.id.networkCheck);
+
         monitoringBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminActivity.this, DaumMapActivity.class);
-                intent.putExtra("Admin", true);
-                intent.putExtra("MT_ID", "3");
+                Intent intent = new Intent(AdminActivity.this, NodeMonitoringActivity.class);
+                intent.putExtra("MT_ID", mt_id);
                 startActivity(intent);
             }
         });

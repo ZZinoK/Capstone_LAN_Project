@@ -37,6 +37,7 @@
         <activity android:name=".SelectRegionActivity"/>
         <activity android:name=".DynamoDBExecutor"/>
         <activity android:name=".AdminActivity"/>
+        <activity android:name=".NodeMonitoringActivity"/>
         <!-- [START firebase_service] -->
         <service
             android:name=".MyFirebaseMessagingService">
