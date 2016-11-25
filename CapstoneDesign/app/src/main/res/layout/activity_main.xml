@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.lan.capstonedesign.MainActivity">
+    tools:context="com.lan.capstonedesign.MainActivity"
+    android:weightSum="1">
 
     <ImageView
         android:layout_width="77dp"
@@ -58,4 +59,27 @@
         android:id="@+id/mt_status"
         android:text="설정된 산 이름 : "/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/weather_center"
+            android:clickable="true"
+            android:id="@+id/weather_btn"
+            android:layout_weight="5"/>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/forest_center"
+            android:clickable="true"
+            android:id="@+id/forest_btn"
+            android:layout_weight="5" />
+    </LinearLayout>
 </LinearLayout>
