@@ -6,8 +6,13 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
@@ -24,6 +29,8 @@ import java.net.UnknownHostException;
 public class AdminActivity extends Activity {
     private static final String TAG = "AdminActivity";
     private int mt_id;
+    private boolean AdminLoginStatus = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +39,7 @@ public class AdminActivity extends Activity {
         SharedPreferences saveData = getSharedPreferences("Setting", MODE_PRIVATE);
         mt_id = saveData.getInt("MT_ID", 0);
 
-        Button monitoringBtn = (Button) findViewById(R.id.networkCheck);
+        Button monitoringBtn = (Button) findViewById(R.id.monitoringNodeBtn);
 
         monitoringBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +47,18 @@ public class AdminActivity extends Activity {
                 Intent intent = new Intent(AdminActivity.this, NodeMonitoringActivity.class);
                 intent.putExtra("MT_ID", mt_id);
                 startActivity(intent);
+            }
+        });
+
+        Button showNodeMap = (Button) findViewById(R.id.showNodeMap);
+        showNodeMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminActivity.this, DaumMapActivity.class);
+                intent.putExtra("Admin", AdminLoginStatus);
+                intent.putExtra("MT_ID", 4);
+                startActivity(intent);
+
             }
         });
 
@@ -58,91 +77,36 @@ public class AdminActivity extends Activity {
 
 
     }
-    HttpURLConnection conn = null;
-
-    public void method() {
-        try {
-        URL url = new URL("https://fcm.googleapis.com/fcm/send"); //요청 URL을 입력
-        conn = (HttpURLConnection) url.openConnection();
-        conn.setRequestMethod("POST"); //요청 방식을 설정 (default : GET)
-        conn.setDoInput(true); //input을 사용하도록 설정 (default : true)
-        conn.setDoOutput(true); //output을 사용하도록 설정 (default : false)
-
-        conn.setConnectTimeout(60); //타임아웃 시간 설정 (default : 무한대기)
-
-        OutputStream out = conn.getOutputStream();
-        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(out, "UTF-8")); //캐릭터셋 설정
-
-        writer.write(
-                "=value1" +"&key2=value2"+"&key3=value3"
-        ); //요청 파라미터를 입력
-        writer.flush();
-        writer.close();
-        out.close();
-            conn.connect();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    /*Thread thread = new Thread() {
-        @Override
-        public void run() {
-            HttpClient httpClient = new H();
-
-            String urlString = "http://192.168.1.101/login";
-            try {
-                URI url = new URI(urlString);
-
-                HttpPost httpPost = new HttpPost();
-                httpPost.setURI(url);
-
-                List<BasicNameValuePair> nameValuePairs = new ArrayList<BasicNameValuePair>(2);
-                nameValuePairs.add(new BasicNameValuePair("userId", "saltfactory"));
-                nameValuePairs.add(new BasicNameValuePair("password", "password"));
-
-                httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-
-
-                HttpResponse response = httpClient.execute(httpPost);
-                String responseString = EntityUtils.toString(response.getEntity(), HTTP.UTF_8);
-
-                Log.d(TAG, responseString);
-
-            } catch (URISyntaxException e) {
-                Log.e(TAG, e.getLocalizedMessage());
-                e.printStackTrace();
-            } catch (ClientProtocolException e) {
-                Log.e(TAG, e.getLocalizedMessage());
-                e.printStackTrace();
-            } catch (IOException e) {
-                Log.e(TAG, e.getLocalizedMessage());
-                e.printStackTrace();
-            }
-
-        }
-    };*/
 
     //thread.start();
     private void sendPushToFCMServer(){
         Socket socket;
         final int SERVERPORT = 8888;
-        final String SERVER_IP = "192.168.0.96";
+        final String SERVER_IP = "172.20.10.10"; //"192.168.0.96";
+        boolean receivedAck = false;
+
 
         try {
             InetAddress serverAddr = InetAddress.getByName(SERVER_IP);
             socket = new Socket(serverAddr, SERVERPORT);
+            InputStream in = socket.getInputStream();
             OutputStream out = socket.getOutputStream();
+            BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
             PrintWriter output = new PrintWriter(out);
             output.flush();
             output.print("send");
+
+//            while(!receivedAck){
+//                String readData = input.readLine();
+//                if(readData.equals("Success")){
+//                    Toast.makeText(this, readData, Toast.LENGTH_SHORT).show();
+//                    break;
+//                }
+//            }
             output.close();
             socket.close();
-        } catch(UnknownHostException e1) {
-            e1.printStackTrace();
-        } catch(IOException e1) {
-            e1.printStackTrace();
+        } catch(Exception e) {
+            e.printStackTrace();
         }
     }
 }

@@ -2,24 +2,36 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--<ImageView-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_weight="4"-->
+        <!--app:srcCompat="@drawable/lan_team_logo"-->
+        <!--android:id="@+id/imgView" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
 
-        app:srcCompat="@drawable/lan_team_logo"
-        android:id="@+id/imgView"/>
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="Capston Design : Team LAN"
-        android:id="@+id/textView"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="6"
+            android:text="Capston Design : Team LAN"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:id="@+id/textView"/>
+    </LinearLayout>
 
     <ExpandableListView
         android:id="@+id/lvExp"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_centerVertical="true">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        >
     </ExpandableListView>
 
     <Button

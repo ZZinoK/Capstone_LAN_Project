@@ -61,9 +61,9 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService{
 
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        PowerManager pm = (PowerManager) this.getSystemService(Context.POWER_SERVICE);
-        PowerManager.WakeLock wakelock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP, "TAG");
-        wakelock.acquire(5000);
+//        PowerManager pm = (PowerManager) this.getSystemService(Context.POWER_SERVICE);
+//        PowerManager.WakeLock wakelock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP, "TAG");
+//        wakelock.acquire(5000);
 
         notificationManager.notify(0 /* ID of notification */, notificationBuilder.build());
     }

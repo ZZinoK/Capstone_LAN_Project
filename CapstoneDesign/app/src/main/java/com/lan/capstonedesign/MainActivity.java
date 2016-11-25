@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = userData.edit();
                 editor.putInt("MT_ID", mt_id);
                 editor.putString("MT_NAME", mt_name);
-                mt_status_view.setText("너가 선택한 산 이름 : " + mt_name);
+                mt_status_view.setText("설정된 산 이름 : " + mt_name);
                 editor.commit();
                 //lat = data.getDoubleExtra("latitude", 000.000000);
                 //lon = data.getDoubleExtra("longitude", 000.000000);
@@ -84,10 +84,10 @@ public class MainActivity extends AppCompatActivity {
         // [START handle_data_extras]
         // User Shared Data
         SharedPreferences saveData = getSharedPreferences("Setting", MODE_PRIVATE);
-        mt_name = saveData.getString("MT_NAME", "산 선택하고 오라고~");
+        mt_name = saveData.getString("MT_NAME", "지역을 선택해주세요.");
         mt_id = saveData.getInt("MT_ID", 0);
         // User Shared Data End
-        mt_status_view.setText("너가 선택한 산 이름 : " + mt_name);
+        mt_status_view.setText("설정된 산 이름 : " + mt_name);
         if (getIntent().getExtras() != null) {
             for (String key : getIntent().getExtras().keySet()) {
                 Object value = getIntent().getExtras().get(key);

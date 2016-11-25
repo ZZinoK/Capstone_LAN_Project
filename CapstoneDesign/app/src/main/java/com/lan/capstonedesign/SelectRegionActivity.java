@@ -57,7 +57,7 @@ public class SelectRegionActivity extends Activity {
         mythread = new Thread(runnable);
         mythread.start();
         try {
-            mythread.sleep(1000);
+            mythread.sleep(1200);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

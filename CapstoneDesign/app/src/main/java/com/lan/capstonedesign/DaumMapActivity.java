@@ -16,29 +16,6 @@ import net.daum.mf.map.api.MapView;
 
 import java.util.ArrayList;
 
-/*new Thread(new Runnable() {
-@Override
-public void run() {
-        try {
-        Thread.sleep(5000);
-        } catch (InterruptedException e) {
-        e.printStackTrace();
-        }
-        runOnUiThread(new Runnable() {
-@Override
-public void run() {
-        pic.get(0).setImageDrawable(getResources().getDrawable(R.drawable.coin));
-        }
-        });
-        }
-        }).start();
-       handler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    t.start();
-                }
-            }, 1000);
-       */
 /**
  * Created by kslee7746 on 2016. 11. 3..
  */
@@ -53,6 +30,9 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
     private String mt_status = "warning";
     private String TAG = "DaumMapActivity";
     private ArrayList<NodeInfo> nodeInfoArrayList;
+    private static final int SAFE = 1;
+    private static final int WARNING = 2;
+    private static final int DANGER = 3;
 
     Thread regionTh, nodeTh;
     DynamoDBManager dbManager;
@@ -65,10 +45,8 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
                 mt_name = region.getMountainName();
                 latitude = region.getLatitude();
                 longitude = region.getLongitude();
-                mt_status = region.getMountainStatus();
             } catch (Exception e){
                 e.printStackTrace();
-                showToast("지역 선택하고 오셈");
             }
         }
     };
@@ -105,9 +83,7 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
                 e.printStackTrace();
             }
             if(AdminLoginStatus)
-                showToast("너는 관리자야");
-            else
-                showToast("너는 양민이야");
+                showToast("너는 " + mt_name + " 산의 관리자야");
         }
 
         try {
@@ -129,14 +105,16 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
             }
         });
     }
-    private void addLocationMarker(MapView mapView, Double latitude, Double longitude, int node_id){
+    private void addLocationMarker(MapView mapView, Double latitude, Double longitude, int node_id, int variation){
         MapPoint ADD_MARKER_POINT = MapPoint.mapPointWithGeoCoord(latitude, longitude);
         MapPOIItem objPoiMarker = new MapPOIItem();
-        objPoiMarker.setItemName(mt_name +" TelosB_"+node_id);
-        objPoiMarker.setTag(0);
         objPoiMarker.setMapPoint(ADD_MARKER_POINT);
-        objPoiMarker.setMarkerType(MapPOIItem.MarkerType.BluePin);
-        objPoiMarker.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin);
+        if(AdminLoginStatus) {
+            objPoiMarker.setItemName(mt_name + " TelosB_" + node_id);
+            objPoiMarker.setTag(0);
+            objPoiMarker.setMarkerType(MapPOIItem.MarkerType.BluePin);
+            objPoiMarker.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin);
+        }
         objPoiMarker.setShowAnimationType(MapPOIItem.ShowAnimationType.DropFromHeaven);
         mapView.addPOIItem(objPoiMarker);
 
@@ -144,14 +122,14 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
                 //mapPointWithGeoCoord(center, radius, strokeColor, fillColor)
                 MapPoint.mapPointWithGeoCoord(latitude, longitude), 100, 0, 0);
 
-        if(mt_status.equals("danger")){
+        if(variation == DANGER){
             mt_circle.setFillColor(Color.argb(90, 255, 0, 0));
             mt_circle.setStrokeColor(Color.argb(255, 255, 0, 0));
-        } else if(mt_status.equals("safe")){
+        } else if(variation == SAFE){
             mt_circle.setFillColor(Color.argb(90, 0, 255, 0));
             mt_circle.setStrokeColor(Color.argb(255, 0, 255, 0));
         } else {
-            mt_circle.setStrokeColor(Color.argb(90, 255, 172, 0));
+            mt_circle.setFillColor(Color.argb(90, 255, 172, 0));
             mt_circle.setStrokeColor(Color.argb(255, 255, 172, 0));
         }
 
@@ -171,7 +149,7 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
     }
     private void setAllNodeMarker() {
         for(NodeInfo node : nodeInfoArrayList){
-            addLocationMarker(daumMapView, node.getLatitude(), node.getLongitude(), node.getNode_ID());
+            addLocationMarker(daumMapView, node.getLatitude(), node.getLongitude(), node.getNode_ID(), node.getVariation());
         }
     }
     @Override

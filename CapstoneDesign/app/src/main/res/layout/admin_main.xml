@@ -16,14 +16,28 @@
         android:layout_marginBottom="16dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/lan_team_logo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="관리자 화면"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
 
     <Button
-        android:id="@+id/networkCheck"
+        android:id="@+id/monitoringNodeBtn"
         android:layout_width="@dimen/standard_field_width"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:text="산사태 모니터링" />
+        android:text="산사태 센서 모니터링" />
+    <Button
+        android:id="@+id/showNodeMap"
+        android:layout_width="@dimen/standard_field_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="토폴로지 상태 확인" />
+
 
     <Button
         android:id="@+id/sendPush"

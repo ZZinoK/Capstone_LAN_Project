@@ -1,18 +1,15 @@
 package com.lan.capstonedesign;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
-
-import org.w3c.dom.Node;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.logging.Handler;
 
 /**
  * Created by kslee7746 on 2016. 11. 10..
@@ -27,11 +24,13 @@ public class NodeMonitoringActivity extends Activity {
     private Thread t;
     private static final String TAG = "MonitoringAdapter";
     private int mt_id = 0;
+    private String mt_name = null;
+    private Boolean threadState = true;
 
     Runnable selectNodeRunnable = new Runnable() {
         public void run() {
 
-            while(true){
+            while(threadState){
                 nodeInfoArrayList = dbManager.getNodeInfoArrayList();
                 Collections.sort(nodeInfoArrayList, new NoAscCompare());
 //                nodeInfoArrayList = dbManager.getLastetNodeInfo();
@@ -52,53 +51,30 @@ public class NodeMonitoringActivity extends Activity {
                     e.printStackTrace();
                 }
             }
-
-
-
         }
     };
     static class NoAscCompare implements Comparator<NodeInfo> {
-
-        /**
-         * 오름차순(ASC)
-         */
         @Override
         public int compare(NodeInfo arg0, NodeInfo arg1) {
             // TODO Auto-generated method stub
             return arg0.getNode_ID() < arg1.getNode_ID() ? -1 : arg0.getNode_ID() > arg1.getNode_ID() ? 1:0;
         }
-
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        t.interrupt();
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        t.interrupt();
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.node_listview);
+        SharedPreferences saveData = getSharedPreferences("Setting", MODE_PRIVATE);
+        mt_name = saveData.getString("MT_NAME", "서비스 준비 중인 지역입니다.");
 
         if(getIntent().getExtras() != null) {
             mt_id = getIntent().getExtras().getInt("MT_ID");
         }
         Log.d(TAG, "Adpater onCreate!");
         dbManager = DynamoDBManager.getInstance(this);
-
+        TextView mtTxtView = (TextView) findViewById(R.id.mt_name_txtView);
+        mtTxtView.setText(mt_name + "의 현재 노드 상태");
 
         t = new Thread(selectNodeRunnable);
         t.start();
@@ -111,5 +87,22 @@ public class NodeMonitoringActivity extends Activity {
         node_adapter.setNodeArrayList(nodeInfoArrayList);
         m_ListView = (ListView) findViewById(R.id.node_listview);
         m_ListView.setAdapter(node_adapter);
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        threadState = false;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        threadState = false;
     }
 }

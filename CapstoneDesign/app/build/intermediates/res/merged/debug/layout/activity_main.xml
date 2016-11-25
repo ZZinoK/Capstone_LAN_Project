@@ -16,6 +16,13 @@
         android:layout_marginBottom="16dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/lan_team_logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="산사태 메인 화면"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
 
     <Button
         android:id="@+id/selectRegion"
@@ -43,10 +50,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="관리자 로그인" />
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:id="@+id/mt_status"
-        android:text="너가 설정한 산 번호 : "/>
+        android:text="설정된 산 이름 : "/>
 
 </LinearLayout>

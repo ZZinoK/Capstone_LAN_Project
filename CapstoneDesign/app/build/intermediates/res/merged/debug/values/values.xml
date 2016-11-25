@@ -330,7 +330,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">산사태!!!</string>
+    <string name="app_name">산사태</string>
     <string name="common_google_play_services_unknown_issue"><ns1:g id="app_name">%1$s</ns1:g> is having trouble with Google Play services. Please try again.</string>
     <string name="default_web_client_id" translatable="false">46431669712-7gc78eerlkeq3qktctrkffi2end39u8h.apps.googleusercontent.com</string>
     <string name="firebase_database_url" translatable="false">https://capstonedesign-d26e1.firebaseio.com</string>
