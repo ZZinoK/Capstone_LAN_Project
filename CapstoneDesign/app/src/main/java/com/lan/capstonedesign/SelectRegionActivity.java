@@ -102,7 +102,7 @@ public class SelectRegionActivity extends Activity {
                         MT_Name = regionInfoArrayList.get(i).getMountainName();
 //                        latitude = regionInfoArrayList.get(i).getLatitude();
 //                        longitude = regionInfoArrayList.get(i).getLongitude();
-                        Toast.makeText(getApplicationContext(), "MT_ID" + MT_ID, Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(), "MT_ID" + MT_ID, Toast.LENGTH_SHORT).show();
                         break;
                     }
                 }

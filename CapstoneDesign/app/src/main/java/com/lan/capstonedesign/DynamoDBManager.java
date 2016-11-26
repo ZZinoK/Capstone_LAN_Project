@@ -330,10 +330,6 @@ public class DynamoDBManager {
         }
     }
 
-
-
-
-
     /* Inserts ten users with userNo from 1 to 10 and random names.
 
      */

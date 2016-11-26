@@ -30,14 +30,17 @@
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/ic_stat_ic_notification" />
+            android:resource="@drawable/lan_team_logo" />
         <!--
              Set color used with incoming notification messages. This is used when no color is set for the incoming
              notification message. See README(https://goo.gl/6BKBk7) for more.
         -->
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_color"
-            android:resource="@color/colorAccent" />
+        <!-- <meta-data -->
+        <!-- android:name="com.google.firebase.messaging.default_notification_color" -->
+        <!-- android:resource="@color/colorAccent" /> -->
+        <!-- android:resource="#000000"/> -->
+
+
         <!-- [END fcm_default_icon] -->
 
         <activity android:name="com.lan.capstonedesign.MainActivity" >

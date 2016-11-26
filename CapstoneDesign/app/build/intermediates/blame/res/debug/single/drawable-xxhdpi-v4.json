@@ -172,12 +172,12 @@
         "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
     },
     {
-        "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png",
-        "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
         "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
         "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png",
+        "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png",

@@ -46,24 +46,27 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService{
     private void sendNotification(String messageBody) {
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("MT_ID", 4);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
                 PendingIntent.FLAG_ONE_SHOT);
 
-        Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        //Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+        Uri defaultSoundUri= Uri.parse("android.resource://"+getPackageName()+"/" + R.raw.warning);
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
-                .setSmallIcon(R.drawable.ic_stat_ic_notification)
+                .setSmallIcon(R.drawable.lan_team_logo)
                 .setContentTitle("Capstone Design")
                 .setVibrate(new long[] { 600, 600, 600, 600, 600 })
                 .setContentText(messageBody)
                 .setAutoCancel(true)
-                .setSound(defaultSoundUri).setLights(000000255,500,2000)
+                .setSound(defaultSoundUri)
+                .setLights(000000255,500,2000)
                 .setContentIntent(pendingIntent);
 
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-//        PowerManager pm = (PowerManager) this.getSystemService(Context.POWER_SERVICE);
-//        PowerManager.WakeLock wakelock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP, "TAG");
-//        wakelock.acquire(5000);
+        PowerManager pm = (PowerManager) this.getSystemService(Context.POWER_SERVICE);
+        PowerManager.WakeLock wakelock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP, "TAG");
+        wakelock.acquire(5000);
 
         notificationManager.notify(0 /* ID of notification */, notificationBuilder.build());
     }

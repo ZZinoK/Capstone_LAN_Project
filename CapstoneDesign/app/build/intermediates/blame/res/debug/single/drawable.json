@@ -120,12 +120,12 @@
         "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable/custom_map_present.png",
         "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/res/drawable/custom_map_present.png"
+    },
+    {
+        "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable/weather_center.png",
