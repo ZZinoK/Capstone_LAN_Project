@@ -44,7 +44,11 @@ public class SelectRegionActivity extends Activity {
     DynamoDBManager dbManager;
     Runnable runnable = new Runnable() {
         public void run() {
-            regionInfoArrayList = dbManager.getRegionInfoList();
+            try{
+                regionInfoArrayList = dbManager.getRegionInfoList();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
         }
     };
 

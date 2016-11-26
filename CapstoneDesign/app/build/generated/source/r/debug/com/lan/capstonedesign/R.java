@@ -1825,7 +1825,7 @@ containing a value of this type.
         public static final int end_padder=0x7f0b007d;
         public static final int expand_activities_button=0x7f0b0028;
         public static final int expanded_menu=0x7f0b003b;
-        public static final int forest_btn=0x7f0b005a;
+        public static final int forest_btn=0x7f0b0059;
         public static final int home=0x7f0b0004;
         public static final int homeAsUp=0x7f0b000d;
         public static final int icon=0x7f0b002c;
@@ -1849,7 +1849,7 @@ containing a value of this type.
         public static final int middle=0x7f0b001c;
         public static final int monitoringNodeBtn=0x7f0b005b;
         public static final int mt_name_txtView=0x7f0b006e;
-        public static final int mt_status=0x7f0b0058;
+        public static final int mt_status=0x7f0b005a;
         public static final int multiply=0x7f0b0014;
         public static final int never=0x7f0b0020;
         public static final int node_id=0x7f0b0068;
@@ -1911,7 +1911,7 @@ containing a value of this type.
         public static final int topPanel=0x7f0b0031;
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b0012;
-        public static final int weather_btn=0x7f0b0059;
+        public static final int weather_btn=0x7f0b0058;
         public static final int withText=0x7f0b0021;
         public static final int wrap_content=0x7f0b0019;
     }

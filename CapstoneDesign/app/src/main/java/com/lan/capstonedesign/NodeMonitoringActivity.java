@@ -31,20 +31,20 @@ public class NodeMonitoringActivity extends Activity {
         public void run() {
 
             while(threadState){
-                nodeInfoArrayList = dbManager.getNodeInfoArrayList();
-                Collections.sort(nodeInfoArrayList, new NoAscCompare());
-//                nodeInfoArrayList = dbManager.getLastetNodeInfo();
-                Log.d(TAG, "Thread 돌고 있당~!");
                 try {
+                    nodeInfoArrayList = dbManager.getNodeInfoArrayList();
+                    if(nodeInfoArrayList.equals(null)){
+                        nodeInfoArrayList = dbManager.getNodeInfoArrayList();
+                        Thread.sleep(1500);
+                    }
+                    Collections.sort(nodeInfoArrayList, new NoAscCompare());
+                    Log.d(TAG, "Thread 돌고 있당~!");
                     Thread.sleep(5000);
                     node_adapter.setNodeArrayList(nodeInfoArrayList);
                     runOnUiThread(new Runnable(){
                         @Override
                         public void run() {
                             node_adapter.notifyDataSetChanged();
-//                            m_ListView.invalidateViews();
-//                            m_ListView.refreshDrawableState();
-
                         }
                     });
                 } catch (InterruptedException e) {

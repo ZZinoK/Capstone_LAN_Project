@@ -1,30 +1,28 @@
 package com.lan.capstonedesign;
 
 import android.app.Activity;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
-import java.net.HttpURLConnection;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.net.URL;
-import java.net.UnknownHostException;
+import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by kslee7746 on 2016. 11. 9..
@@ -34,12 +32,48 @@ public class AdminActivity extends Activity {
     private static final String TAG = "AdminActivity";
     private int mt_id;
     private boolean AdminLoginStatus = true;
-    private String SERVER_IP = "192.168.0.101"; //"172.20.10.10"; //"192.168.0.96";
+    private String SERVER_IP = "52.78.233.109"; //"172.20.10.10"; //"192.168.0.96";
+    private DynamoDBManager dbManager = null;
+    private ArrayList<NodeInfo> nodeInfoArrayList;
+    private int dangerCount = 0;
+    Runnable checkDangerRegion = new Runnable() {
+        public void run() {
+
+            while(true){
+                try {
+                    nodeInfoArrayList = dbManager.getNodeInfoArrayList();
+                    if(nodeInfoArrayList.equals(null)){
+                        nodeInfoArrayList = dbManager.getNodeInfoArrayList();
+                        Thread.sleep(1500);
+                    }
+                    for(NodeInfo node : nodeInfoArrayList){
+                        if(node.getVariation() == Constants.DANGER){
+                            dangerCount++;
+                        }
+                    }
+                    if(dangerCount > 3){
+                        sendPushToFCMServer("alert");
+                        Thread.sleep(10000);
+                        dangerCount = 0;
+                    }
+                    Log.d(TAG, "Check Thread 돌고 있당~!");
+                    Log.d(TAG, "Danger Count : " + dangerCount);
+                    Thread.sleep(3000);
+
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_main);
+        dbManager = DynamoDBManager.getInstance(this);
+        Thread th = new Thread(checkDangerRegion);
+        th.start();
 
         SharedPreferences saveData = getSharedPreferences("Setting", MODE_PRIVATE);
         mt_id = saveData.getInt("MT_ID", 0);
@@ -74,7 +108,7 @@ public class AdminActivity extends Activity {
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        sendPushToFCMServer();
+                        sendPushToFCMServer("send");
                     }
                 }).start();
             }
@@ -91,33 +125,23 @@ public class AdminActivity extends Activity {
     }
 
     //thread.start();
-    private void sendPushToFCMServer(){
+    private void sendPushToFCMServer(String msgType){
         Socket socket;
         final int SERVERPORT = 8888;
-        boolean receivedAck = false;
 
         try {
             InetAddress serverAddr = InetAddress.getByName(SERVER_IP);
             socket = new Socket(serverAddr, SERVERPORT);
-            InputStream in = socket.getInputStream();
             OutputStream out = socket.getOutputStream();
-            BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
             PrintWriter output = new PrintWriter(out);
             output.flush();
-            output.print("send");
+            output.print(msgType);
 
-//            while(!receivedAck){
-//                String readData = input.readLine();
-//                if(readData.equals("Success")){
-//                    Toast.makeText(this, readData, Toast.LENGTH_SHORT).show();
-//                    break;
-//                }
-//            }
             showToast("Push 메시지 전송 완료");
             output.close();
             socket.close();
         } catch(Exception e) {
-            showToast("FCM Server가 닫혀있습니다.\n관리자나 IP를 확인하세요.");
+            showToast("FCM Server가 닫혀있습니다.\nIP를 확인하세요.");
             e.printStackTrace();
         }
     }

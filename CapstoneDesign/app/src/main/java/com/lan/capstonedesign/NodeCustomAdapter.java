@@ -1,6 +1,7 @@
 package com.lan.capstonedesign;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,7 +42,12 @@ public class NodeCustomAdapter extends BaseAdapter{
 
     @Override
     public int getCount() {
-        return nodeInfoArrayList.size();
+        try {
+            return nodeInfoArrayList.size();
+        } catch (NullPointerException e){
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     @Override
@@ -82,6 +88,14 @@ public class NodeCustomAdapter extends BaseAdapter{
             node_y.setText(""+node.getNode_Y());
             node_z.setText(""+node.getNode_Z());
             node_variation.setText(""+node.getVariation());
+            if(node.getVariation() == Constants.SAFE){
+                node_variation.setBackgroundColor(Color.argb(90, 0, 255, 0));
+            } else if(node.getVariation() == Constants.DANGER){
+                node_variation.setBackgroundColor(Color.argb(90, 255, 0, 0));
+            } else {
+                node_variation.setBackgroundColor(Color.argb(90, 255, 172, 0));
+            }
+
             Log.d("CustomAdapter", node_id + " " + node_route + " " + node_x);
         }
 

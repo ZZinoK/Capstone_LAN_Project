@@ -3,8 +3,6 @@ package com.lan.capstonedesign;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Toast;
@@ -27,12 +25,9 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
     private int MT_ID = 0;
     private String mt_name = null;
     private boolean AdminLoginStatus = false;
-    private String mt_status = "warning";
     private String TAG = "DaumMapActivity";
     private ArrayList<NodeInfo> nodeInfoArrayList;
-    private static final int SAFE = 1;
-    private static final int WARNING = 2;
-    private static final int DANGER = 3;
+
 
     Thread regionTh, nodeTh;
     DynamoDBManager dbManager;
@@ -40,8 +35,8 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
 
     Runnable selectRegionRunnable = new Runnable() {
         public void run() {
-            region = dbManager.userSelectedRegionInfo(MT_ID);
             try {
+                region = dbManager.userSelectedRegionInfo(MT_ID);
                 mt_name = region.getMountainName();
                 latitude = region.getLatitude();
                 longitude = region.getLongitude();
@@ -52,7 +47,11 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
     };
     Runnable selectNodeRunnable = new Runnable() {
         public void run() {
-            nodeInfoArrayList = dbManager.getNodeInfoArrayList();
+            try{
+                nodeInfoArrayList = dbManager.getNodeInfoArrayList();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     };
 
@@ -122,10 +121,10 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
                 //mapPointWithGeoCoord(center, radius, strokeColor, fillColor)
                 MapPoint.mapPointWithGeoCoord(latitude, longitude), 100, 0, 0);
 
-        if(variation == DANGER){
+        if(variation == Constants.DANGER){
             mt_circle.setFillColor(Color.argb(90, 255, 0, 0));
             mt_circle.setStrokeColor(Color.argb(255, 255, 0, 0));
-        } else if(variation == SAFE){
+        } else if(variation == Constants.SAFE){
             mt_circle.setFillColor(Color.argb(90, 0, 255, 0));
             mt_circle.setStrokeColor(Color.argb(255, 0, 255, 0));
         } else {
@@ -163,7 +162,7 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
             daumMapView.setMapCenterPointAndZoomLevel(MapPoint.mapPointWithGeoCoord(latitude, longitude), 3, true);
             if(MT_ID != 4) {
                 defaultMarker(daumMapView, latitude, longitude, 0);
-                showToast("아직 서비스 예정인 지역입니다. 돌아가셈");
+                showToast("아직 서비스 예정인 지역입니다.\n현재 서비스 가능한 지역은 팔달산입니다.");
             } else {
                 setAllNodeMarker();
             }

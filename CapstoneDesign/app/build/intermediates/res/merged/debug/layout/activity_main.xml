@@ -52,17 +52,10 @@
         android:layout_gravity="center_horizontal"
         android:text="관리자 로그인" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:id="@+id/mt_status"
-        android:text="설정된 산 이름 : "/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_marginTop="100dp"
         >
         <ImageView
             android:layout_height="wrap_content"
@@ -82,4 +75,11 @@
             android:id="@+id/forest_btn"
             android:layout_weight="5" />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/mt_status"
+        android:text="설정 지역 : "/>
 </LinearLayout>

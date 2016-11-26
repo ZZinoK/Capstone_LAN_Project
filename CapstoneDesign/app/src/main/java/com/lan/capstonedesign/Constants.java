@@ -21,5 +21,8 @@ public class Constants {
     // Note that spaces are not allowed in the table name
     public static final String TABLE_NAME = "RegionInfo";
     public static final String NODE_TABLE_NAME = "NodeInfo";
+    public static final int SAFE = 1;
+    public static final int WARNING = 2;
+    public static final int DANGER = 3;
 
 }

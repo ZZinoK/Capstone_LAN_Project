@@ -5,40 +5,33 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="26937773140061"
+    timestamp="51582250060226"
     token="448963093667423382"
-    verifier="CLASS_ADDED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="196" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="57" />
+        duration="0" />
     <task
         name="verifier"
-        duration="8" />
+        duration="0" />
 
     <artifact
-        location="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
-        type="DEX" />
+        location="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="26767347509600"
+        timestamp="51582250060226"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="26937773140061"
-        verifier="CLASS_ADDED" >
-        <artifact
-            location="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>
