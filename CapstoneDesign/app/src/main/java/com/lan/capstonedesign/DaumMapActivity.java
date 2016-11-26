@@ -2,17 +2,22 @@ package com.lan.capstonedesign;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Toast;
 
+import net.daum.android.map.location.MapViewLocationManager;
 import net.daum.mf.map.api.MapCircle;
 import net.daum.mf.map.api.MapPOIItem;
 import net.daum.mf.map.api.MapPoint;
+import net.daum.mf.map.api.MapPolyline;
 import net.daum.mf.map.api.MapView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by kslee7746 on 2016. 11. 3..
@@ -82,7 +87,7 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
                 e.printStackTrace();
             }
             if(AdminLoginStatus)
-                showToast("너는 " + mt_name + " 산의 관리자야");
+                showToast("당신은 " + mt_name + " 산의 관리자입니다.");
         }
 
         try {
@@ -148,7 +153,42 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
     }
     private void setAllNodeMarker() {
         for(NodeInfo node : nodeInfoArrayList){
-            addLocationMarker(daumMapView, node.getLatitude(), node.getLongitude(), node.getNode_ID(), node.getVariation());
+            if(node.getVariation() == 0){
+                continue;
+            } else {
+                addLocationMarker(daumMapView, node.getLatitude(), node.getLongitude(), node.getNode_ID(), node.getVariation());
+            }
+        }
+    }
+    public int[] parsingNodeRoute(int route){
+        int num[] = new int[String.valueOf(route).length()];
+        int i = 0;
+
+        while(route > 0){
+            num[i] = route % 10;
+            route = route / 10;
+            Log.d("kslee", "parsing num : " + num[i]);
+            i++;
+
+        }
+        return num;
+    }
+    public void drawNodeRouteLine(){
+        int route[];
+        Collections.sort(nodeInfoArrayList, new NodeMonitoringActivity.NoAscCompare());
+
+        for(NodeInfo node : nodeInfoArrayList){
+            MapPolyline mapPolyline = new MapPolyline();
+            mapPolyline.setLineColor(Color.argb(128, 0, 0, 0));
+            route = parsingNodeRoute(node.getRoute());
+            if(route.length == 1){
+                continue;
+            }
+            for(int i = 0; i<route.length; i++){
+                mapPolyline.addPoint(MapPoint.mapPointWithGeoCoord(nodeInfoArrayList.get(route[i]-1).getLatitude(),
+                        nodeInfoArrayList.get(route[i]-1).getLongitude()));
+            }
+            daumMapView.addPolyline(mapPolyline);
         }
     }
     @Override
@@ -156,7 +196,7 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
         mapView.setMapType(MapView.MapType.Hybrid);
         if(MT_ID == 0){
             daumMapView.setCurrentLocationTrackingMode(MapView.CurrentLocationTrackingMode.TrackingModeOnWithoutHeading);
-            showToast("지역을 선택하고 다시오셈");
+            showToast("지역을 선택하고 오세요.");
         } else {
             daumMapView.setCurrentLocationTrackingMode(MapView.CurrentLocationTrackingMode.TrackingModeOff);
             daumMapView.setMapCenterPointAndZoomLevel(MapPoint.mapPointWithGeoCoord(latitude, longitude), 3, true);
@@ -164,7 +204,9 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
                 defaultMarker(daumMapView, latitude, longitude, 0);
                 showToast("아직 서비스 예정인 지역입니다.\n현재 서비스 가능한 지역은 팔달산입니다.");
             } else {
+                drawNodeRouteLine();
                 setAllNodeMarker();
+
             }
         }
 

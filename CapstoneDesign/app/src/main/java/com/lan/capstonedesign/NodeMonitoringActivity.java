@@ -56,7 +56,6 @@ public class NodeMonitoringActivity extends Activity {
     static class NoAscCompare implements Comparator<NodeInfo> {
         @Override
         public int compare(NodeInfo arg0, NodeInfo arg1) {
-            // TODO Auto-generated method stub
             return arg0.getNode_ID() < arg1.getNode_ID() ? -1 : arg0.getNode_ID() > arg1.getNode_ID() ? 1:0;
         }
     }

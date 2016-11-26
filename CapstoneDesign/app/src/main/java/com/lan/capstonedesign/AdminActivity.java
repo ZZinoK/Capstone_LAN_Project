@@ -17,6 +17,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.firebase.messaging.FirebaseMessaging;
+
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.InetAddress;
@@ -52,7 +55,7 @@ public class AdminActivity extends Activity {
                         }
                     }
                     if(dangerCount > 3){
-                        sendPushToFCMServer("alert");
+                        //sendPushToFCMServer("alert");
                         Thread.sleep(10000);
                         dangerCount = 0;
                     }
@@ -71,9 +74,10 @@ public class AdminActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_main);
+        FirebaseMessaging.getInstance().subscribeToTopic("admin"); //Setting Topic for receive Push
         dbManager = DynamoDBManager.getInstance(this);
-        Thread th = new Thread(checkDangerRegion);
-        th.start();
+        Thread checkDangerThread = new Thread(checkDangerRegion);
+        checkDangerThread.start();
 
         SharedPreferences saveData = getSharedPreferences("Setting", MODE_PRIVATE);
         mt_id = saveData.getInt("MT_ID", 0);

@@ -25,4 +25,5 @@ public class Constants {
     public static final int WARNING = 2;
     public static final int DANGER = 3;
 
+
 }

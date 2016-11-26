@@ -108,8 +108,6 @@ public class MainActivity extends AppCompatActivity {
         }
         // [END handle_data_extras]
 
-
-
         Button subscribeButton = (Button) findViewById(R.id.selectRegion);
         subscribeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,7 +126,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
         Button awsDBCheckBtn = (Button) findViewById(R.id.dbCheck);
         awsDBCheckBtn.setOnClickListener(new View.OnClickListener() {
@@ -165,10 +162,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
     }
     private void moveConfigWiFi(String networkStatus) {
         Intent intent;
@@ -218,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
                         String adminID = admin_id.getText().toString();
 
 
-                        Toast.makeText(MainActivity.this, "ID : " + adminID + " Pass : " + password, Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this, "ID : " + adminID + " Pass : " + password, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this, AdminActivity.class);
                         startActivity(intent);
                     }

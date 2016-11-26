@@ -150,10 +150,10 @@ public class DynamoDBManager {
             for (NodeInfo up : result) {
                 resultList.add(up);
 //                str += "Author : " + up.getAuthor() + " Title : " + up.getTitle();
-                Log.d(TAG, "Node_ID : " + up.getNode_ID());
-                Log.d(TAG, "Node_X : " + up.getNode_X());
-                Log.d(TAG, "Node_Y : " + up.getNode_Y());
-                Log.d(TAG, "Node_Z : " + up.getLatitude());
+//                Log.d(TAG, "Node_ID : " + up.getNode_ID());
+//                Log.d(TAG, "Node_X : " + up.getNode_X());
+//                Log.d(TAG, "Node_Y : " + up.getNode_Y());
+//                Log.d(TAG, "Node_Z : " + up.getLatitude());
             }
 
             return resultList;
@@ -303,12 +303,12 @@ public class DynamoDBManager {
 
     public static void insertNodeInfo() {
         DynamoDBMapper mapper = new DynamoDBMapper(ddb);
-        nodeInfoArrayList.add(new NodeInfo(1, 4, 234, 37.277318, 127.010757, 22, 456, 100, 5));
-        nodeInfoArrayList.add(new NodeInfo(2, 4, 170, 37.278018, 127.011422,  444, 456, 100, 5));
-        nodeInfoArrayList.add(new NodeInfo(3, 4, 211, 37.277993, 127.009609,  32, 564, 100, 5));
-        nodeInfoArrayList.add(new NodeInfo(4, 4, 505, 37.279094, 127.011562, 125, 886, 100, 5));
-        nodeInfoArrayList.add(new NodeInfo(5, 4, 393, 37.279103, 127.010113, 351, 234, 100, 5));
-        nodeInfoArrayList.add(new NodeInfo(6, 4, 220, 37.279077, 127.009019, 234, 155, 100, 5));
+        nodeInfoArrayList.add(new NodeInfo(1, 4, 0, 37.277318, 127.010757, 22, 456, 100, 1));
+        nodeInfoArrayList.add(new NodeInfo(2, 4, 12, 37.278018, 127.011422,  444, 456, 100, 2));
+        nodeInfoArrayList.add(new NodeInfo(3, 4, 13, 37.277993, 127.009609,  32, 564, 100, 3));
+        nodeInfoArrayList.add(new NodeInfo(4, 4, 124, 37.279094, 127.011562, 125, 886, 100, 1));
+        nodeInfoArrayList.add(new NodeInfo(5, 4, 125, 37.279103, 127.010113, 351, 234, 100, 1));
+        nodeInfoArrayList.add(new NodeInfo(6, 4, 136, 37.279077, 127.009019, 234, 155, 100, 3));
 
         try {
             for(NodeInfo node : nodeInfoArrayList){
@@ -316,6 +316,8 @@ public class DynamoDBManager {
                 n.setNode_ID(node.getNode_ID());
                 n.setMT_ID(node.getMT_ID());
                 n.setRoute(node.getRoute());
+                n.setLatitude(node.getLatitude());
+                n.setLongitude(node.getLongitude());
                 n.setNode_X(node.getNode_X());
                 n.setNode_Y(node.getNode_Y());
                 n.setNode_Z(node.getNode_Z());

@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="f9e59be2c43a1546b2b0ed50c8539fc30c0811c0">
+        sha1="413226b1b4470a990c50d93cde964396704c0fd8">
         <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5f353d75d24bc6060c3ab359728b08b1cce21bf3/classes.dex" />
     </item>
     <item
@@ -97,7 +97,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="d7fda32286d6ed14ffb7dcd07e2405101b4b98c8">
+        sha1="715e80ec22a6c7aeebc60c00243fd7e6a271874e">
         <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_401cc5b43bd5f89d229fa1b7368c5fa5b5c46349/classes.dex" />
     </item>
     <item
