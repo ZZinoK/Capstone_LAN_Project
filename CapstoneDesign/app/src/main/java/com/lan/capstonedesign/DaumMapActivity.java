@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Toast;
 
-import net.daum.android.map.location.MapViewLocationManager;
 import net.daum.mf.map.api.MapCircle;
 import net.daum.mf.map.api.MapPOIItem;
 import net.daum.mf.map.api.MapPoint;
@@ -25,7 +24,6 @@ import java.util.Collections;
 public class DaumMapActivity extends Activity implements MapView.MapViewEventListener {
     private MapView daumMapView;
     private String apikey = "0a103b404c5ab42d35918fd32b3efcd9";
-//    private double latitude = 37.283077, longitude = 127.044908;
     private double latitude = 0, longitude = 0;
     private int MT_ID = 0;
     private String mt_name = null;
@@ -87,7 +85,7 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
                 e.printStackTrace();
             }
             if(AdminLoginStatus)
-                showToast("당신은 " + mt_name + " 산의 관리자입니다.");
+                showToast("당신은 " + mt_name + "의 관리자입니다.");
         }
 
         try {
@@ -114,7 +112,11 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
         MapPOIItem objPoiMarker = new MapPOIItem();
         objPoiMarker.setMapPoint(ADD_MARKER_POINT);
         if(AdminLoginStatus) {
-            objPoiMarker.setItemName(mt_name + " TelosB_" + node_id);
+            if(node_id == 1) {
+                objPoiMarker.setItemName(mt_name + " TelosB_SinkNode");
+            } else {
+                objPoiMarker.setItemName(mt_name + " TelosB_" + node_id);
+            }
             objPoiMarker.setTag(0);
             objPoiMarker.setMarkerType(MapPOIItem.MarkerType.BluePin);
             objPoiMarker.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin);
@@ -167,9 +169,7 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
         while(route > 0){
             num[i] = route % 10;
             route = route / 10;
-            Log.d("kslee", "parsing num : " + num[i]);
             i++;
-
         }
         return num;
     }
@@ -181,6 +181,7 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
             MapPolyline mapPolyline = new MapPolyline();
             mapPolyline.setLineColor(Color.argb(128, 0, 0, 0));
             route = parsingNodeRoute(node.getRoute());
+
             if(route.length == 1){
                 continue;
             }
@@ -204,7 +205,8 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
                 defaultMarker(daumMapView, latitude, longitude, 0);
                 showToast("아직 서비스 예정인 지역입니다.\n현재 서비스 가능한 지역은 팔달산입니다.");
             } else {
-                drawNodeRouteLine();
+                if(AdminLoginStatus)
+                    drawNodeRouteLine();
                 setAllNodeMarker();
 
             }
@@ -214,37 +216,18 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
 
     @Override
     public void onMapViewCenterPointMoved(MapView mapView, MapPoint mapPoint) { }
-
     @Override
     public void onMapViewZoomLevelChanged(MapView mapView, int i) { }
-
     @Override
-    public void onMapViewSingleTapped(MapView mapView, MapPoint mapPoint) {
-
-    }
-
+    public void onMapViewSingleTapped(MapView mapView, MapPoint mapPoint) { }
     @Override
-    public void onMapViewDoubleTapped(MapView mapView, MapPoint mapPoint) {
-
-    }
-
+    public void onMapViewDoubleTapped(MapView mapView, MapPoint mapPoint) { }
     @Override
-    public void onMapViewLongPressed(MapView mapView, MapPoint mapPoint) {
-
-    }
-
+    public void onMapViewLongPressed(MapView mapView, MapPoint mapPoint) { }
     @Override
-    public void onMapViewDragStarted(MapView mapView, MapPoint mapPoint) {
-
-    }
-
+    public void onMapViewDragStarted(MapView mapView, MapPoint mapPoint) { }
     @Override
-    public void onMapViewDragEnded(MapView mapView, MapPoint mapPoint) {
-
-    }
-
+    public void onMapViewDragEnded(MapView mapView, MapPoint mapPoint) { }
     @Override
-    public void onMapViewMoveFinished(MapView mapView, MapPoint mapPoint) {
-
-    }
+    public void onMapViewMoveFinished(MapView mapView, MapPoint mapPoint) { }
 }

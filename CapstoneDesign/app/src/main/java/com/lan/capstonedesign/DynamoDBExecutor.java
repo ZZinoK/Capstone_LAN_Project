@@ -161,19 +161,3 @@ public class DynamoDBExecutor extends Activity {
         }
     }
 }
-/*CognitoCachingCredentialsProvider credentialsProvider = new CognitoCachingCredentialsProvider(
-                getApplicationContext(),
-                "ap-northeast-2:a358038b-dc9e-4fdb-beaa-bb83c1324559",
-                Regions.AP_NORTHEAST_2);// Region
-
-        AmazonDynamoDBClient ddClient = new AmazonDynamoDBClient(credentialsProvider);
-
-        Book book = new Book();
-        book.setTitle("Great Expectations");
-        book.setAuthor("Charles Dickens");
-        book.setPrice(1299);
-        book.setIsbn("1234567890");
-        book.setHardCover(false);
-
-        DynamoDBMapper mapper = new DynamoDBMapper(ddClient);
-        mapper.save(book);*/

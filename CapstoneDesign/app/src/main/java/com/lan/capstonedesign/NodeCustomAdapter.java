@@ -102,7 +102,4 @@ public class NodeCustomAdapter extends BaseAdapter{
 
         return convertView;
     }
-    public void add(NodeInfo node){
-        nodeInfoArrayList.add(node);
-    }
 }

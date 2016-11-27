@@ -39,24 +39,25 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="지역 상태 확인" />
-    <Button
-        android:id="@+id/dbCheck"
-        android:layout_width="@dimen/standard_field_width"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="AWS DB 확인" />
+
     <Button
         android:id="@+id/loginAdmin"
         android:layout_width="@dimen/standard_field_width"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="관리자 로그인" />
+    <Button
+        android:id="@+id/dbCheck"
+        android:layout_width="@dimen/standard_field_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="AWS DB 확인"
+        android:visibility="invisible"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        >
+        android:layout_marginTop="100dp">
         <ImageView
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"

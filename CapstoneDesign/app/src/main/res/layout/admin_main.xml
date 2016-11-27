@@ -43,6 +43,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="경고 보내기" />
+
+    <Button
+        android:id="@+id/alarmMode"
+        android:layout_width="@dimen/standard_field_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="모니터링 OFF" />
+
     <Button
         android:id="@+id/settingIP"
         android:layout_width="@dimen/standard_field_width"

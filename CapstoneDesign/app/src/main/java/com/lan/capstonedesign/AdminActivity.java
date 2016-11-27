@@ -35,36 +35,42 @@ public class AdminActivity extends Activity {
     private static final String TAG = "AdminActivity";
     private int mt_id;
     private boolean AdminLoginStatus = true;
-    private String SERVER_IP = "52.78.233.109"; //"172.20.10.10"; //"192.168.0.96";
+    private String SERVER_IP = "52.78.233.109"; //aws ec2 instance ip
     private DynamoDBManager dbManager = null;
     private ArrayList<NodeInfo> nodeInfoArrayList;
     private int dangerCount = 0;
+    private boolean checkThreadStatus = false;
+    private boolean alarmBtnStatus = false;
+    private Button alarmMode;
     Runnable checkDangerRegion = new Runnable() {
         public void run() {
 
             while(true){
-                try {
-                    nodeInfoArrayList = dbManager.getNodeInfoArrayList();
-                    if(nodeInfoArrayList.equals(null)){
+                if(checkThreadStatus){
+                    try {
                         nodeInfoArrayList = dbManager.getNodeInfoArrayList();
-                        Thread.sleep(1500);
-                    }
-                    for(NodeInfo node : nodeInfoArrayList){
-                        if(node.getVariation() == Constants.DANGER){
-                            dangerCount++;
+                        if(nodeInfoArrayList.equals(null)){
+                            nodeInfoArrayList = dbManager.getNodeInfoArrayList();
+                            Thread.sleep(1500);
                         }
-                    }
-                    if(dangerCount > 3){
-                        //sendPushToFCMServer("alert");
-                        Thread.sleep(10000);
-                        dangerCount = 0;
-                    }
-                    Log.d(TAG, "Check Thread 돌고 있당~!");
-                    Log.d(TAG, "Danger Count : " + dangerCount);
-                    Thread.sleep(3000);
+                        for(NodeInfo node : nodeInfoArrayList){
+                            if(node.getVariation() == Constants.DANGER){
+                                dangerCount++;
+                            }
+                        }
+                        if(dangerCount >= 2){
+                            sendPushToFCMServer("alert");
+                            Thread.sleep(15000);
+                            Log.d(TAG, "관리자 알람 보냄");
+                            dangerCount = 0;
+                        }
+                        Log.d(TAG, "Check Thread 돌고 있당~!");
+                        Log.d(TAG, "Danger Count : " + dangerCount);
+                        Thread.sleep(3000);
 
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }
@@ -125,13 +131,32 @@ public class AdminActivity extends Activity {
             }
         });
 
-
+        alarmMode = (Button) findViewById(R.id.alarmMode);
+        alarmMode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if(alarmBtnStatus){
+                            alarmMode.setText("모니터링 OFF");
+                            checkThreadStatus = false;
+                            alarmBtnStatus = false;
+                        } else {
+                            alarmMode.setText("모니터링 ON");
+                            checkThreadStatus = true;
+                            alarmBtnStatus = true;
+                        }
+                    }
+                });
+            }
+        });
     }
 
     //thread.start();
     private void sendPushToFCMServer(String msgType){
         Socket socket;
-        final int SERVERPORT = 8888;
+        final int SERVERPORT = 13588;
 
         try {
             InetAddress serverAddr = InetAddress.getByName(SERVER_IP);

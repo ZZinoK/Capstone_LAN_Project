@@ -33,9 +33,7 @@ import static java.lang.System.out;
 
 public class MainActivity extends AppCompatActivity {
     private final String TAG = "MainActivity";
-    double lat = 0, lon = 0;
     int SECOND_ACTIVITY = 2;
-    String status = "safe";
     int mt_id = 0;
     String mt_name = null;
     private static final String adminID = "admin";
@@ -62,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 editor.commit();
                 //lat = data.getDoubleExtra("latitude", 000.000000);
                 //lon = data.getDoubleExtra("longitude", 000.000000);
-                Toast.makeText(MainActivity.this, "MT_ID from user : " + mt_id, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "MT_ID from user : " + mt_id, Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -136,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         Button loginAdminBtn = (Button) findViewById(R.id.loginAdmin);
         loginAdminBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -207,11 +206,6 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("로그인", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
-                        String password = pwd.getText().toString();
-                        String adminID = admin_id.getText().toString();
-
-
-                        //Toast.makeText(MainActivity.this, "ID : " + adminID + " Pass : " + password, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this, AdminActivity.class);
                         startActivity(intent);
                     }

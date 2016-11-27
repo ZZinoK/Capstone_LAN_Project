@@ -100,18 +100,12 @@ public class DynamoDBManager {
         expressionAttributeNames.put("#time", "Time");
         expressionAttributeValues.put(":hashNumber", new AttributeValue("0"));
         expressionAttributeValues.put(":latestTime", new AttributeValue("2016-11-11 00:30"));
-//        DynamoDBScanExpression scanExpression = new DynamoDBScanExpression();
-//        scanExpression
-//                .withFilterExpression("#nodeid > :hashNumber")
-//                .withFilterExpression("#time > :latestTime")
-//                .withExpressionAttributeNames(expressionAttributeNames)
-//                .withExpressionAttributeValues(expressionAttributeValues);
+
         NodeInfo node = new NodeInfo();
         node.setNode_ID(3);
         DynamoDBQueryExpression<NodeInfo> queryExpression = new DynamoDBQueryExpression<>();
 
         queryExpression
-//                .withHashKeyValues(node)
                 .withFilterExpression("#nodeid > :hashNumber")
                 .withFilterExpression("#time > :latestTime")
                 .withExpressionAttributeNames(expressionAttributeNames)
@@ -123,7 +117,6 @@ public class DynamoDBManager {
             ArrayList<NodeInfo> resultList = new ArrayList<NodeInfo>();
             for (NodeInfo up : result) {
                 resultList.add(up);
-//                str += "Author : " + up.getAuthor() + " Title : " + up.getTitle();
                 Log.d(TAG, "Node_ID : " + up.getNode_ID());
                 Log.d(TAG, "Node_X : " + up.getNode_X());
                 Log.d(TAG, "Node_Y : " + up.getNode_Y());
@@ -149,11 +142,6 @@ public class DynamoDBManager {
             ArrayList<NodeInfo> resultList = new ArrayList<NodeInfo>();
             for (NodeInfo up : result) {
                 resultList.add(up);
-//                str += "Author : " + up.getAuthor() + " Title : " + up.getTitle();
-//                Log.d(TAG, "Node_ID : " + up.getNode_ID());
-//                Log.d(TAG, "Node_X : " + up.getNode_X());
-//                Log.d(TAG, "Node_Y : " + up.getNode_Y());
-//                Log.d(TAG, "Node_Z : " + up.getLatitude());
             }
 
             return resultList;
@@ -393,62 +381,5 @@ public class DynamoDBManager {
 
         return false;
     }
-
-    /*
-     * Updates one attribute/value pair for the specified user.
-     */
-    /*public static void updateUserPreference(UserPreference updateUserPreference) {
-
-        AmazonDynamoDBClient ddb = MainActivity.clientManager
-                .ddb();
-        DynamoDBMapper mapper = new DynamoDBMapper(ddb);
-
-        try {
-            mapper.save(updateUserPreference);
-
-        } catch (AmazonServiceException ex) {
-            MainActivity.clientManager
-                    .wipeCredentialsOnAuthError(ex);
-        }
-    }*/
-
-    /*
-     * Deletes the specified user and all of its attribute/value pairs.
-     */
-    /*public static void deleteUser(UserPreference deleteUserPreference) {
-
-        AmazonDynamoDBClient ddb = MainActivity.clientManager
-                .ddb();
-        DynamoDBMapper mapper = new DynamoDBMapper(ddb);
-
-        try {
-            mapper.delete(deleteUserPreference);
-
-        } catch (AmazonServiceException ex) {
-            MainActivity.clientManager
-                    .wipeCredentialsOnAuthError(ex);
-        }
-    }*/
-
-    /*
-     * Deletes the test table and all of its users and their attribute/value
-     * pairs.
-     */
-    /*public static void cleanUp() {
-
-        AmazonDynamoDBClient ddb = DynamoDBExecutor.clientManager
-                .ddb();
-
-        DeleteTableRequest request = new DeleteTableRequest()
-                .withTableName(Constants.TEST_TABLE_NAME);
-        try {
-            ddb.deleteTable(request);
-
-        } catch (AmazonServiceException ex) {
-            DynamoDBExecutor.clientManager
-                    .wipeCredentialsOnAuthError(ex);
-        }
-    }*/
-
 
 }

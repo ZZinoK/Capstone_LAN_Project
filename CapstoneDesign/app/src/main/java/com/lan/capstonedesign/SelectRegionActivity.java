@@ -21,8 +21,10 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 import com.amazonaws.services.dynamodbv2.model.ScanRequest;
 import com.amazonaws.services.dynamodbv2.model.ScanResult;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -100,9 +102,6 @@ public class SelectRegionActivity extends Activity {
                     if (selectedChildName.equals(regionInfoArrayList.get(i).getMountainName())) {
                         MT_ID = regionInfoArrayList.get(i).getMountainID();
                         MT_Name = regionInfoArrayList.get(i).getMountainName();
-//                        latitude = regionInfoArrayList.get(i).getLatitude();
-//                        longitude = regionInfoArrayList.get(i).getLongitude();
-                        //Toast.makeText(getApplicationContext(), "MT_ID" + MT_ID, Toast.LENGTH_SHORT).show();
                         break;
                     }
                 }
@@ -133,22 +132,28 @@ public class SelectRegionActivity extends Activity {
     public void prepareListData() {
         listDataHeader = new ArrayList<>();
         listDataChild = new HashMap<String, List<String>>();
-
+        ArrayList<String> regionName = new ArrayList<>();
+        HashSet hs = new HashSet();
         // Adding child data
-        String region_name[] = {"서울", "경기도", "강원도"};
+        //String region_name[] = {"서울", "경기도", "강원도", "충청도", "경상북도", "제주도"};
+        for(RegionInfo r : regionInfoArrayList){
+            regionName.add(r.getRegionName());
+        }
+        hs.addAll(regionName);
+        regionName.clear();
+        regionName.addAll(hs);
 
-        for(int i=0; i<region_name.length; i++){
+        for(int i=0; i<regionName.size(); i++){
             List<String> regionArray = new ArrayList<String>();
 
-            listDataHeader.add(region_name[i]);
+            listDataHeader.add(regionName.get(i));
             for(RegionInfo r : regionInfoArrayList){
-                if(region_name[i].equals(r.getRegionName())) {
+                if(regionName.get(i).equals(r.getRegionName())) {
                     regionArray.add(r.getMountainName());
                 }
             }
             listDataChild.put(listDataHeader.get(i), regionArray);
         }
-
     }
 
     @Override
