@@ -42,6 +42,7 @@ public class AdminActivity extends Activity {
     private boolean checkThreadStatus = false;
     private boolean alarmBtnStatus = false;
     private Button alarmMode;
+    Thread checkDangerThread;
     Runnable checkDangerRegion = new Runnable() {
         public void run() {
 
@@ -77,14 +78,22 @@ public class AdminActivity extends Activity {
     };
 
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        checkDangerThread.interrupt();
+        checkThreadStatus = false;
+        finish();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_main);
         FirebaseMessaging.getInstance().subscribeToTopic("admin"); //Setting Topic for receive Push
+        FirebaseMessaging.getInstance().unsubscribeFromTopic("lan");
         dbManager = DynamoDBManager.getInstance(this);
-        Thread checkDangerThread = new Thread(checkDangerRegion);
+        checkDangerThread = new Thread(checkDangerRegion);
         checkDangerThread.start();
-
         SharedPreferences saveData = getSharedPreferences("Setting", MODE_PRIVATE);
         mt_id = saveData.getInt("MT_ID", 0);
 
@@ -146,6 +155,7 @@ public class AdminActivity extends Activity {
                             alarmMode.setText("모니터링 ON");
                             checkThreadStatus = true;
                             alarmBtnStatus = true;
+
                         }
                     }
                 });
