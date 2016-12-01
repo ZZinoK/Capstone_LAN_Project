@@ -100,6 +100,10 @@
         "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable/draw_button.xml",
+        "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/res/drawable/draw_button.xml"
+    },
+    {
         "merged": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
         "source": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_item_background_holo_light.xml"
     },

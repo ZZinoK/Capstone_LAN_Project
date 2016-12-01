@@ -7,6 +7,8 @@ import android.util.Log;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.amazonaws.AmazonClientException;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -39,7 +41,7 @@ public class NodeMonitoringActivity extends Activity {
                     }
                     Collections.sort(nodeInfoArrayList, new NoAscCompare());
                     Log.d(TAG, "Thread 돌고 있당~!");
-                    Thread.sleep(5000);
+                    Thread.sleep(1500);
                     node_adapter.setNodeArrayList(nodeInfoArrayList);
                     runOnUiThread(new Runnable(){
                         @Override
@@ -47,7 +49,9 @@ public class NodeMonitoringActivity extends Activity {
                             node_adapter.notifyDataSetChanged();
                         }
                     });
-                } catch (InterruptedException e) {
+                } catch (InterruptedException e){
+                    e.printStackTrace();
+                } catch (AmazonClientException e){
                     e.printStackTrace();
                 }
             }
@@ -78,7 +82,7 @@ public class NodeMonitoringActivity extends Activity {
         t = new Thread(selectNodeRunnable);
         t.start();
         try {
-            t.sleep(1500);
+            t.sleep(1200);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -97,6 +101,7 @@ public class NodeMonitoringActivity extends Activity {
     protected void onStop() {
         super.onStop();
         threadState = false;
+        finish();
     }
 
     @Override

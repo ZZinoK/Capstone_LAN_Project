@@ -22,37 +22,49 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="산사태 메인 화면"
-        android:textSize="25dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
         android:textAlignment="center"/>
 
     <Button
         android:id="@+id/selectRegion"
-        android:layout_width="@dimen/standard_field_width"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:text="지역 선택 하기" />
+        android:text="지역 선택 하기"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/stateRegion"
         android:layout_width="@dimen/standard_field_width"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="지역 상태 확인" />
-
+        android:text="지역 상태 확인"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"/>
     <Button
         android:id="@+id/loginAdmin"
         android:layout_width="@dimen/standard_field_width"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="관리자 로그인" />
+        android:text="관리자 로그인"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"/>
     <Button
         android:id="@+id/dbCheck"
         android:layout_width="@dimen/standard_field_width"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="AWS DB 확인"
-        android:visibility="invisible"/>
+        android:textSize="25dp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:visibility="visible"/>
 
     <LinearLayout
         android:layout_width="match_parent"

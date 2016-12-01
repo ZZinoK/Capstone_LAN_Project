@@ -4267,7 +4267,7 @@
                     "startOffset": 35581,
                     "endLine": 364,
                     "endColumn": 12,
-                    "endOffset": 35895
+                    "endOffset": 35884
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/res/values/styles.xml",
@@ -4277,7 +4277,7 @@
                         "startOffset": 54,
                         "endLine": 8,
                         "endColumn": 12,
-                        "endOffset": 368
+                        "endOffset": 357
                     }
                 }
             },
@@ -4285,10 +4285,10 @@
                 "to": {
                     "startLine": 365,
                     "startColumn": 4,
-                    "startOffset": 35900,
+                    "startOffset": 35889,
                     "endLine": 371,
                     "endColumn": 12,
-                    "endOffset": 36396
+                    "endOffset": 36385
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4306,9 +4306,9 @@
                 "to": {
                     "startLine": 372,
                     "startColumn": 4,
-                    "startOffset": 36401,
+                    "startOffset": 36390,
                     "endColumn": 88,
-                    "endOffset": 36485
+                    "endOffset": 36474
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4325,10 +4325,10 @@
                 "to": {
                     "startLine": 373,
                     "startColumn": 4,
-                    "startOffset": 36490,
+                    "startOffset": 36479,
                     "endLine": 376,
                     "endColumn": 12,
-                    "endOffset": 36732
+                    "endOffset": 36721
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4346,10 +4346,10 @@
                 "to": {
                     "startLine": 377,
                     "startColumn": 4,
-                    "startOffset": 36737,
+                    "startOffset": 36726,
                     "endLine": 380,
                     "endColumn": 12,
-                    "endOffset": 37013
+                    "endOffset": 37002
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4367,10 +4367,10 @@
                 "to": {
                     "startLine": 381,
                     "startColumn": 4,
-                    "startOffset": 37018,
+                    "startOffset": 37007,
                     "endLine": 385,
                     "endColumn": 12,
-                    "endOffset": 37298
+                    "endOffset": 37287
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4388,10 +4388,10 @@
                 "to": {
                     "startLine": 386,
                     "startColumn": 4,
-                    "startOffset": 37303,
+                    "startOffset": 37292,
                     "endLine": 391,
                     "endColumn": 12,
-                    "endOffset": 37691
+                    "endOffset": 37680
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4409,10 +4409,10 @@
                 "to": {
                     "startLine": 392,
                     "startColumn": 4,
-                    "startOffset": 37696,
+                    "startOffset": 37685,
                     "endLine": 398,
                     "endColumn": 12,
-                    "endOffset": 38168
+                    "endOffset": 38157
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4430,10 +4430,10 @@
                 "to": {
                     "startLine": 399,
                     "startColumn": 4,
-                    "startOffset": 38173,
+                    "startOffset": 38162,
                     "endLine": 402,
                     "endColumn": 12,
-                    "endOffset": 38390
+                    "endOffset": 38379
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4451,10 +4451,10 @@
                 "to": {
                     "startLine": 403,
                     "startColumn": 4,
-                    "startOffset": 38395,
+                    "startOffset": 38384,
                     "endLine": 406,
                     "endColumn": 12,
-                    "endOffset": 38612
+                    "endOffset": 38601
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4472,10 +4472,10 @@
                 "to": {
                     "startLine": 407,
                     "startColumn": 4,
-                    "startOffset": 38617,
+                    "startOffset": 38606,
                     "endLine": 411,
                     "endColumn": 12,
-                    "endOffset": 38880
+                    "endOffset": 38869
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4493,10 +4493,10 @@
                 "to": {
                     "startLine": 412,
                     "startColumn": 4,
-                    "startOffset": 38885,
+                    "startOffset": 38874,
                     "endLine": 415,
                     "endColumn": 12,
-                    "endOffset": 39107
+                    "endOffset": 39096
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4514,10 +4514,10 @@
                 "to": {
                     "startLine": 416,
                     "startColumn": 4,
-                    "startOffset": 39112,
+                    "startOffset": 39101,
                     "endLine": 419,
                     "endColumn": 12,
-                    "endOffset": 39337
+                    "endOffset": 39326
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4535,10 +4535,10 @@
                 "to": {
                     "startLine": 420,
                     "startColumn": 4,
-                    "startOffset": 39342,
+                    "startOffset": 39331,
                     "endLine": 423,
                     "endColumn": 12,
-                    "endOffset": 39567
+                    "endOffset": 39556
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4556,10 +4556,10 @@
                 "to": {
                     "startLine": 424,
                     "startColumn": 4,
-                    "startOffset": 39572,
+                    "startOffset": 39561,
                     "endLine": 427,
                     "endColumn": 12,
-                    "endOffset": 39797
+                    "endOffset": 39786
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4577,10 +4577,10 @@
                 "to": {
                     "startLine": 428,
                     "startColumn": 4,
-                    "startOffset": 39802,
+                    "startOffset": 39791,
                     "endLine": 431,
                     "endColumn": 12,
-                    "endOffset": 40027
+                    "endOffset": 40016
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4598,10 +4598,10 @@
                 "to": {
                     "startLine": 432,
                     "startColumn": 4,
-                    "startOffset": 40032,
+                    "startOffset": 40021,
                     "endLine": 435,
                     "endColumn": 12,
-                    "endOffset": 40254
+                    "endOffset": 40243
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4619,10 +4619,10 @@
                 "to": {
                     "startLine": 436,
                     "startColumn": 4,
-                    "startOffset": 40259,
+                    "startOffset": 40248,
                     "endLine": 439,
                     "endColumn": 12,
-                    "endOffset": 40493
+                    "endOffset": 40482
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4640,10 +4640,10 @@
                 "to": {
                     "startLine": 440,
                     "startColumn": 4,
-                    "startOffset": 40498,
+                    "startOffset": 40487,
                     "endLine": 443,
                     "endColumn": 12,
-                    "endOffset": 40719
+                    "endOffset": 40708
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4661,10 +4661,10 @@
                 "to": {
                     "startLine": 444,
                     "startColumn": 4,
-                    "startOffset": 40724,
+                    "startOffset": 40713,
                     "endLine": 447,
                     "endColumn": 12,
-                    "endOffset": 40964
+                    "endOffset": 40953
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4682,10 +4682,10 @@
                 "to": {
                     "startLine": 448,
                     "startColumn": 4,
-                    "startOffset": 40969,
+                    "startOffset": 40958,
                     "endLine": 451,
                     "endColumn": 12,
-                    "endOffset": 41194
+                    "endOffset": 41183
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4703,10 +4703,10 @@
                 "to": {
                     "startLine": 452,
                     "startColumn": 4,
-                    "startOffset": 41199,
+                    "startOffset": 41188,
                     "endLine": 455,
                     "endColumn": 12,
-                    "endOffset": 41442
+                    "endOffset": 41431
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4724,10 +4724,10 @@
                 "to": {
                     "startLine": 456,
                     "startColumn": 4,
-                    "startOffset": 41447,
+                    "startOffset": 41436,
                     "endLine": 459,
                     "endColumn": 12,
-                    "endOffset": 41661
+                    "endOffset": 41650
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4745,10 +4745,10 @@
                 "to": {
                     "startLine": 460,
                     "startColumn": 4,
-                    "startOffset": 41666,
+                    "startOffset": 41655,
                     "endLine": 464,
                     "endColumn": 12,
-                    "endOffset": 41944
+                    "endOffset": 41933
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4766,10 +4766,10 @@
                 "to": {
                     "startLine": 465,
                     "startColumn": 4,
-                    "startOffset": 41949,
+                    "startOffset": 41938,
                     "endLine": 468,
                     "endColumn": 12,
-                    "endOffset": 42152
+                    "endOffset": 42141
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4787,10 +4787,10 @@
                 "to": {
                     "startLine": 469,
                     "startColumn": 4,
-                    "startOffset": 42157,
+                    "startOffset": 42146,
                     "endLine": 471,
                     "endColumn": 12,
-                    "endOffset": 42283
+                    "endOffset": 42272
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4808,10 +4808,10 @@
                 "to": {
                     "startLine": 472,
                     "startColumn": 4,
-                    "startOffset": 42288,
+                    "startOffset": 42277,
                     "endLine": 475,
                     "endColumn": 12,
-                    "endOffset": 42510
+                    "endOffset": 42499
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4829,10 +4829,10 @@
                 "to": {
                     "startLine": 476,
                     "startColumn": 4,
-                    "startOffset": 42515,
+                    "startOffset": 42504,
                     "endLine": 479,
                     "endColumn": 12,
-                    "endOffset": 42756
+                    "endOffset": 42745
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4850,10 +4850,10 @@
                 "to": {
                     "startLine": 480,
                     "startColumn": 4,
-                    "startOffset": 42761,
+                    "startOffset": 42750,
                     "endLine": 483,
                     "endColumn": 12,
-                    "endOffset": 42981
+                    "endOffset": 42970
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4871,10 +4871,10 @@
                 "to": {
                     "startLine": 484,
                     "startColumn": 4,
-                    "startOffset": 42986,
+                    "startOffset": 42975,
                     "endLine": 487,
                     "endColumn": 12,
-                    "endOffset": 43228
+                    "endOffset": 43217
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4892,10 +4892,10 @@
                 "to": {
                     "startLine": 488,
                     "startColumn": 4,
-                    "startOffset": 43233,
+                    "startOffset": 43222,
                     "endLine": 491,
                     "endColumn": 12,
-                    "endOffset": 43449
+                    "endOffset": 43438
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4913,10 +4913,10 @@
                 "to": {
                     "startLine": 492,
                     "startColumn": 4,
-                    "startOffset": 43454,
+                    "startOffset": 43443,
                     "endLine": 495,
                     "endColumn": 12,
-                    "endOffset": 43694
+                    "endOffset": 43683
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4934,10 +4934,10 @@
                 "to": {
                     "startLine": 496,
                     "startColumn": 4,
-                    "startOffset": 43699,
+                    "startOffset": 43688,
                     "endLine": 499,
                     "endColumn": 12,
-                    "endOffset": 43970
+                    "endOffset": 43959
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4955,10 +4955,10 @@
                 "to": {
                     "startLine": 500,
                     "startColumn": 4,
-                    "startOffset": 43975,
+                    "startOffset": 43964,
                     "endLine": 503,
                     "endColumn": 12,
-                    "endOffset": 44271
+                    "endOffset": 44260
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4976,10 +4976,10 @@
                 "to": {
                     "startLine": 504,
                     "startColumn": 4,
-                    "startOffset": 44276,
+                    "startOffset": 44265,
                     "endLine": 507,
                     "endColumn": 12,
-                    "endOffset": 44595
+                    "endOffset": 44584
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -4997,10 +4997,10 @@
                 "to": {
                     "startLine": 508,
                     "startColumn": 4,
-                    "startOffset": 44600,
+                    "startOffset": 44589,
                     "endLine": 511,
                     "endColumn": 12,
-                    "endOffset": 44886
+                    "endOffset": 44875
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5018,10 +5018,10 @@
                 "to": {
                     "startLine": 512,
                     "startColumn": 4,
-                    "startOffset": 44891,
+                    "startOffset": 44880,
                     "endLine": 515,
                     "endColumn": 12,
-                    "endOffset": 45200
+                    "endOffset": 45189
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5039,9 +5039,9 @@
                 "to": {
                     "startLine": 516,
                     "startColumn": 4,
-                    "startOffset": 45205,
+                    "startOffset": 45194,
                     "endColumn": 136,
-                    "endOffset": 45337
+                    "endOffset": 45326
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5058,9 +5058,9 @@
                 "to": {
                     "startLine": 517,
                     "startColumn": 4,
-                    "startOffset": 45342,
+                    "startOffset": 45331,
                     "endColumn": 130,
-                    "endOffset": 45468
+                    "endOffset": 45457
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5077,9 +5077,9 @@
                 "to": {
                     "startLine": 518,
                     "startColumn": 4,
-                    "startOffset": 45473,
+                    "startOffset": 45462,
                     "endColumn": 104,
-                    "endOffset": 45573
+                    "endOffset": 45562
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5096,10 +5096,10 @@
                 "to": {
                     "startLine": 519,
                     "startColumn": 4,
-                    "startOffset": 45578,
+                    "startOffset": 45567,
                     "endLine": 521,
                     "endColumn": 12,
-                    "endOffset": 45777
+                    "endOffset": 45766
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5117,10 +5117,10 @@
                 "to": {
                     "startLine": 522,
                     "startColumn": 4,
-                    "startOffset": 45782,
+                    "startOffset": 45771,
                     "endLine": 524,
                     "endColumn": 12,
-                    "endOffset": 45985
+                    "endOffset": 45974
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5138,10 +5138,10 @@
                 "to": {
                     "startLine": 525,
                     "startColumn": 4,
-                    "startOffset": 45990,
+                    "startOffset": 45979,
                     "endLine": 528,
                     "endColumn": 12,
-                    "endOffset": 46256
+                    "endOffset": 46245
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5159,9 +5159,9 @@
                 "to": {
                     "startLine": 529,
                     "startColumn": 4,
-                    "startOffset": 46261,
+                    "startOffset": 46250,
                     "endColumn": 111,
-                    "endOffset": 46368
+                    "endOffset": 46357
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5178,9 +5178,9 @@
                 "to": {
                     "startLine": 530,
                     "startColumn": 4,
-                    "startOffset": 46373,
+                    "startOffset": 46362,
                     "endColumn": 111,
-                    "endOffset": 46480
+                    "endOffset": 46469
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5197,9 +5197,9 @@
                 "to": {
                     "startLine": 531,
                     "startColumn": 4,
-                    "startOffset": 46485,
+                    "startOffset": 46474,
                     "endColumn": 104,
-                    "endOffset": 46585
+                    "endOffset": 46574
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5216,9 +5216,9 @@
                 "to": {
                     "startLine": 532,
                     "startColumn": 4,
-                    "startOffset": 46590,
+                    "startOffset": 46579,
                     "endColumn": 116,
-                    "endOffset": 46702
+                    "endOffset": 46691
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5235,10 +5235,10 @@
                 "to": {
                     "startLine": 533,
                     "startColumn": 4,
-                    "startOffset": 46707,
+                    "startOffset": 46696,
                     "endLine": 535,
                     "endColumn": 12,
-                    "endOffset": 46916
+                    "endOffset": 46905
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5256,10 +5256,10 @@
                 "to": {
                     "startLine": 536,
                     "startColumn": 4,
-                    "startOffset": 46921,
+                    "startOffset": 46910,
                     "endLine": 537,
                     "endColumn": 12,
-                    "endOffset": 47062
+                    "endOffset": 47051
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5277,10 +5277,10 @@
                 "to": {
                     "startLine": 538,
                     "startColumn": 4,
-                    "startOffset": 47067,
+                    "startOffset": 47056,
                     "endLine": 539,
                     "endColumn": 12,
-                    "endOffset": 47202
+                    "endOffset": 47191
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5298,10 +5298,10 @@
                 "to": {
                     "startLine": 540,
                     "startColumn": 4,
-                    "startOffset": 47207,
+                    "startOffset": 47196,
                     "endLine": 541,
                     "endColumn": 12,
-                    "endOffset": 47288
+                    "endOffset": 47277
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5319,10 +5319,10 @@
                 "to": {
                     "startLine": 542,
                     "startColumn": 4,
-                    "startOffset": 47293,
+                    "startOffset": 47282,
                     "endLine": 546,
                     "endColumn": 12,
-                    "endOffset": 47636
+                    "endOffset": 47625
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5340,9 +5340,9 @@
                 "to": {
                     "startLine": 547,
                     "startColumn": 4,
-                    "startOffset": 47641,
+                    "startOffset": 47630,
                     "endColumn": 87,
-                    "endOffset": 47724
+                    "endOffset": 47713
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5359,10 +5359,10 @@
                 "to": {
                     "startLine": 548,
                     "startColumn": 4,
-                    "startOffset": 47729,
+                    "startOffset": 47718,
                     "endLine": 551,
                     "endColumn": 12,
-                    "endOffset": 47954
+                    "endOffset": 47943
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5380,10 +5380,10 @@
                 "to": {
                     "startLine": 552,
                     "startColumn": 4,
-                    "startOffset": 47959,
+                    "startOffset": 47948,
                     "endLine": 557,
                     "endColumn": 12,
-                    "endOffset": 48372
+                    "endOffset": 48361
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5401,10 +5401,10 @@
                 "to": {
                     "startLine": 558,
                     "startColumn": 4,
-                    "startOffset": 48377,
+                    "startOffset": 48366,
                     "endLine": 561,
                     "endColumn": 12,
-                    "endOffset": 48605
+                    "endOffset": 48594
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5422,9 +5422,9 @@
                 "to": {
                     "startLine": 562,
                     "startColumn": 4,
-                    "startOffset": 48610,
+                    "startOffset": 48599,
                     "endColumn": 81,
-                    "endOffset": 48687
+                    "endOffset": 48676
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5441,10 +5441,10 @@
                 "to": {
                     "startLine": 563,
                     "startColumn": 4,
-                    "startOffset": 48692,
+                    "startOffset": 48681,
                     "endLine": 564,
                     "endColumn": 12,
-                    "endOffset": 48785
+                    "endOffset": 48774
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5462,10 +5462,10 @@
                 "to": {
                     "startLine": 565,
                     "startColumn": 4,
-                    "startOffset": 48790,
+                    "startOffset": 48779,
                     "endLine": 575,
                     "endColumn": 12,
-                    "endOffset": 49402
+                    "endOffset": 49391
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5483,9 +5483,9 @@
                 "to": {
                     "startLine": 576,
                     "startColumn": 4,
-                    "startOffset": 49407,
+                    "startOffset": 49396,
                     "endColumn": 99,
-                    "endOffset": 49502
+                    "endOffset": 49491
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5502,10 +5502,10 @@
                 "to": {
                     "startLine": 577,
                     "startColumn": 4,
-                    "startOffset": 49507,
+                    "startOffset": 49496,
                     "endLine": 580,
                     "endColumn": 12,
-                    "endOffset": 49738
+                    "endOffset": 49727
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5523,10 +5523,10 @@
                 "to": {
                     "startLine": 581,
                     "startColumn": 4,
-                    "startOffset": 49743,
+                    "startOffset": 49732,
                     "endLine": 586,
                     "endColumn": 12,
-                    "endOffset": 50162
+                    "endOffset": 50151
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5544,10 +5544,10 @@
                 "to": {
                     "startLine": 587,
                     "startColumn": 4,
-                    "startOffset": 50167,
+                    "startOffset": 50156,
                     "endLine": 590,
                     "endColumn": 12,
-                    "endOffset": 50401
+                    "endOffset": 50390
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5565,9 +5565,9 @@
                 "to": {
                     "startLine": 591,
                     "startColumn": 4,
-                    "startOffset": 50406,
+                    "startOffset": 50395,
                     "endColumn": 93,
-                    "endOffset": 50495
+                    "endOffset": 50484
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5584,9 +5584,9 @@
                 "to": {
                     "startLine": 592,
                     "startColumn": 4,
-                    "startOffset": 50500,
+                    "startOffset": 50489,
                     "endColumn": 88,
-                    "endOffset": 50584
+                    "endOffset": 50573
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5603,10 +5603,10 @@
                 "to": {
                     "startLine": 593,
                     "startColumn": 4,
-                    "startOffset": 50589,
+                    "startOffset": 50578,
                     "endLine": 596,
                     "endColumn": 12,
-                    "endOffset": 50821
+                    "endOffset": 50810
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5624,10 +5624,10 @@
                 "to": {
                     "startLine": 597,
                     "startColumn": 4,
-                    "startOffset": 50826,
+                    "startOffset": 50815,
                     "endLine": 622,
                     "endColumn": 12,
-                    "endOffset": 52772
+                    "endOffset": 52761
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5645,10 +5645,10 @@
                 "to": {
                     "startLine": 623,
                     "startColumn": 4,
-                    "startOffset": 52777,
+                    "startOffset": 52766,
                     "endLine": 626,
                     "endColumn": 12,
-                    "endOffset": 53014
+                    "endOffset": 53003
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5666,9 +5666,9 @@
                 "to": {
                     "startLine": 627,
                     "startColumn": 4,
-                    "startOffset": 53019,
+                    "startOffset": 53008,
                     "endColumn": 101,
-                    "endOffset": 53116
+                    "endOffset": 53105
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5685,10 +5685,10 @@
                 "to": {
                     "startLine": 628,
                     "startColumn": 4,
-                    "startOffset": 53121,
+                    "startOffset": 53110,
                     "endLine": 631,
                     "endColumn": 12,
-                    "endOffset": 53353
+                    "endOffset": 53342
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5706,10 +5706,10 @@
                 "to": {
                     "startLine": 632,
                     "startColumn": 4,
-                    "startOffset": 53358,
+                    "startOffset": 53347,
                     "endLine": 658,
                     "endColumn": 12,
-                    "endOffset": 55435
+                    "endOffset": 55424
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5727,10 +5727,10 @@
                 "to": {
                     "startLine": 659,
                     "startColumn": 4,
-                    "startOffset": 55440,
+                    "startOffset": 55429,
                     "endLine": 817,
                     "endColumn": 12,
-                    "endOffset": 65596
+                    "endOffset": 65585
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5748,10 +5748,10 @@
                 "to": {
                     "startLine": 818,
                     "startColumn": 4,
-                    "startOffset": 65601,
+                    "startOffset": 65590,
                     "endLine": 839,
                     "endColumn": 12,
-                    "endOffset": 66847
+                    "endOffset": 66836
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5769,10 +5769,10 @@
                 "to": {
                     "startLine": 840,
                     "startColumn": 4,
-                    "startOffset": 66852,
+                    "startOffset": 66841,
                     "endLine": 998,
                     "endColumn": 12,
-                    "endOffset": 77107
+                    "endOffset": 77096
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5790,10 +5790,10 @@
                 "to": {
                     "startLine": 999,
                     "startColumn": 4,
-                    "startOffset": 77112,
+                    "startOffset": 77101,
                     "endLine": 1020,
                     "endColumn": 12,
-                    "endOffset": 78370
+                    "endOffset": 78359
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5811,10 +5811,10 @@
                 "to": {
                     "startLine": 1021,
                     "startColumn": 4,
-                    "startOffset": 78375,
+                    "startOffset": 78364,
                     "endLine": 1042,
                     "endColumn": 12,
-                    "endOffset": 79635
+                    "endOffset": 79624
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5832,10 +5832,10 @@
                 "to": {
                     "startLine": 1043,
                     "startColumn": 4,
-                    "startOffset": 79640,
+                    "startOffset": 79629,
                     "endLine": 1049,
                     "endColumn": 12,
-                    "endOffset": 80171
+                    "endOffset": 80160
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5853,10 +5853,10 @@
                 "to": {
                     "startLine": 1050,
                     "startColumn": 4,
-                    "startOffset": 80176,
+                    "startOffset": 80165,
                     "endLine": 1054,
                     "endColumn": 12,
-                    "endOffset": 80501
+                    "endOffset": 80490
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5874,10 +5874,10 @@
                 "to": {
                     "startLine": 1055,
                     "startColumn": 4,
-                    "startOffset": 80506,
+                    "startOffset": 80495,
                     "endLine": 1076,
                     "endColumn": 12,
-                    "endOffset": 81766
+                    "endOffset": 81755
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5895,10 +5895,10 @@
                 "to": {
                     "startLine": 1077,
                     "startColumn": 4,
-                    "startOffset": 81771,
+                    "startOffset": 81760,
                     "endLine": 1081,
                     "endColumn": 12,
-                    "endOffset": 82022
+                    "endOffset": 82011
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5916,10 +5916,10 @@
                 "to": {
                     "startLine": 1082,
                     "startColumn": 4,
-                    "startOffset": 82027,
+                    "startOffset": 82016,
                     "endLine": 1086,
                     "endColumn": 12,
-                    "endOffset": 82258
+                    "endOffset": 82247
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5937,10 +5937,10 @@
                 "to": {
                     "startLine": 1087,
                     "startColumn": 4,
-                    "startOffset": 82263,
+                    "startOffset": 82252,
                     "endLine": 1096,
                     "endColumn": 12,
-                    "endOffset": 82805
+                    "endOffset": 82794
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5958,10 +5958,10 @@
                 "to": {
                     "startLine": 1097,
                     "startColumn": 4,
-                    "startOffset": 82810,
+                    "startOffset": 82799,
                     "endLine": 1105,
                     "endColumn": 12,
-                    "endOffset": 83299
+                    "endOffset": 83288
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -5979,10 +5979,10 @@
                 "to": {
                     "startLine": 1106,
                     "startColumn": 4,
-                    "startOffset": 83304,
+                    "startOffset": 83293,
                     "endLine": 1114,
                     "endColumn": 12,
-                    "endOffset": 83904
+                    "endOffset": 83893
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6000,10 +6000,10 @@
                 "to": {
                     "startLine": 1115,
                     "startColumn": 4,
-                    "startOffset": 83909,
+                    "startOffset": 83898,
                     "endLine": 1118,
                     "endColumn": 12,
-                    "endOffset": 84102
+                    "endOffset": 84091
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6021,10 +6021,10 @@
                 "to": {
                     "startLine": 1119,
                     "startColumn": 4,
-                    "startOffset": 84107,
+                    "startOffset": 84096,
                     "endLine": 1125,
                     "endColumn": 12,
-                    "endOffset": 84682
+                    "endOffset": 84671
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6042,10 +6042,10 @@
                 "to": {
                     "startLine": 1126,
                     "startColumn": 4,
-                    "startOffset": 84687,
+                    "startOffset": 84676,
                     "endLine": 1133,
                     "endColumn": 12,
-                    "endOffset": 85246
+                    "endOffset": 85235
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6063,10 +6063,10 @@
                 "to": {
                     "startLine": 1134,
                     "startColumn": 4,
-                    "startOffset": 85251,
+                    "startOffset": 85240,
                     "endLine": 1140,
                     "endColumn": 12,
-                    "endOffset": 85621
+                    "endOffset": 85610
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6084,9 +6084,9 @@
                 "to": {
                     "startLine": 1141,
                     "startColumn": 4,
-                    "startOffset": 85626,
+                    "startOffset": 85615,
                     "endColumn": 117,
-                    "endOffset": 85739
+                    "endOffset": 85728
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6103,10 +6103,10 @@
                 "to": {
                     "startLine": 1142,
                     "startColumn": 4,
-                    "startOffset": 85744,
+                    "startOffset": 85733,
                     "endLine": 1150,
                     "endColumn": 12,
-                    "endOffset": 86277
+                    "endOffset": 86266
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6124,10 +6124,10 @@
                 "to": {
                     "startLine": 1151,
                     "startColumn": 4,
-                    "startOffset": 86282,
+                    "startOffset": 86271,
                     "endLine": 1153,
                     "endColumn": 12,
-                    "endOffset": 86434
+                    "endOffset": 86423
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6145,10 +6145,10 @@
                 "to": {
                     "startLine": 1154,
                     "startColumn": 4,
-                    "startOffset": 86439,
+                    "startOffset": 86428,
                     "endLine": 1156,
                     "endColumn": 12,
-                    "endOffset": 86608
+                    "endOffset": 86597
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6166,10 +6166,10 @@
                 "to": {
                     "startLine": 1157,
                     "startColumn": 4,
-                    "startOffset": 86613,
+                    "startOffset": 86602,
                     "endLine": 1161,
                     "endColumn": 12,
-                    "endOffset": 86928
+                    "endOffset": 86917
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6187,10 +6187,10 @@
                 "to": {
                     "startLine": 1162,
                     "startColumn": 4,
-                    "startOffset": 86933,
+                    "startOffset": 86922,
                     "endLine": 1165,
                     "endColumn": 12,
-                    "endOffset": 87184
+                    "endOffset": 87173
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6208,10 +6208,10 @@
                 "to": {
                     "startLine": 1166,
                     "startColumn": 4,
-                    "startOffset": 87189,
+                    "startOffset": 87178,
                     "endLine": 1169,
                     "endColumn": 12,
-                    "endOffset": 87354
+                    "endOffset": 87343
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6229,10 +6229,10 @@
                 "to": {
                     "startLine": 1170,
                     "startColumn": 4,
-                    "startOffset": 87359,
+                    "startOffset": 87348,
                     "endLine": 1172,
                     "endColumn": 12,
-                    "endOffset": 87495
+                    "endOffset": 87484
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6250,9 +6250,9 @@
                 "to": {
                     "startLine": 1173,
                     "startColumn": 4,
-                    "startOffset": 87500,
+                    "startOffset": 87489,
                     "endColumn": 63,
-                    "endOffset": 87559
+                    "endOffset": 87548
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6269,10 +6269,10 @@
                 "to": {
                     "startLine": 1174,
                     "startColumn": 4,
-                    "startOffset": 87564,
+                    "startOffset": 87553,
                     "endLine": 1177,
                     "endColumn": 12,
-                    "endOffset": 87841
+                    "endOffset": 87830
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6290,10 +6290,10 @@
                 "to": {
                     "startLine": 1178,
                     "startColumn": 4,
-                    "startOffset": 87846,
+                    "startOffset": 87835,
                     "endLine": 1181,
                     "endColumn": 12,
-                    "endOffset": 88127
+                    "endOffset": 88116
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6311,10 +6311,10 @@
                 "to": {
                     "startLine": 1182,
                     "startColumn": 4,
-                    "startOffset": 88132,
+                    "startOffset": 88121,
                     "endLine": 1191,
                     "endColumn": 12,
-                    "endOffset": 88803
+                    "endOffset": 88792
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6332,10 +6332,10 @@
                 "to": {
                     "startLine": 1192,
                     "startColumn": 4,
-                    "startOffset": 88808,
+                    "startOffset": 88797,
                     "endLine": 1196,
                     "endColumn": 12,
-                    "endOffset": 89067
+                    "endOffset": 89056
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6353,10 +6353,10 @@
                 "to": {
                     "startLine": 1197,
                     "startColumn": 4,
-                    "startOffset": 89072,
+                    "startOffset": 89061,
                     "endLine": 1203,
                     "endColumn": 12,
-                    "endOffset": 89405
+                    "endOffset": 89394
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6374,10 +6374,10 @@
                 "to": {
                     "startLine": 1204,
                     "startColumn": 4,
-                    "startOffset": 89410,
+                    "startOffset": 89399,
                     "endLine": 1209,
                     "endColumn": 12,
-                    "endOffset": 89758
+                    "endOffset": 89747
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6395,9 +6395,9 @@
                 "to": {
                     "startLine": 1210,
                     "startColumn": 4,
-                    "startOffset": 89763,
+                    "startOffset": 89752,
                     "endColumn": 93,
-                    "endOffset": 89852
+                    "endOffset": 89841
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6414,10 +6414,10 @@
                 "to": {
                     "startLine": 1211,
                     "startColumn": 4,
-                    "startOffset": 89857,
+                    "startOffset": 89846,
                     "endLine": 1213,
                     "endColumn": 12,
-                    "endOffset": 90038
+                    "endOffset": 90027
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6435,10 +6435,10 @@
                 "to": {
                     "startLine": 1214,
                     "startColumn": 4,
-                    "startOffset": 90043,
+                    "startOffset": 90032,
                     "endLine": 1217,
                     "endColumn": 12,
-                    "endOffset": 90344
+                    "endOffset": 90333
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6456,10 +6456,10 @@
                 "to": {
                     "startLine": 1218,
                     "startColumn": 4,
-                    "startOffset": 90349,
+                    "startOffset": 90338,
                     "endLine": 1222,
                     "endColumn": 12,
-                    "endOffset": 90606
+                    "endOffset": 90595
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6477,10 +6477,10 @@
                 "to": {
                     "startLine": 1223,
                     "startColumn": 4,
-                    "startOffset": 90611,
+                    "startOffset": 90600,
                     "endLine": 1224,
                     "endColumn": 12,
-                    "endOffset": 90731
+                    "endOffset": 90720
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6498,10 +6498,10 @@
                 "to": {
                     "startLine": 1225,
                     "startColumn": 4,
-                    "startOffset": 90736,
+                    "startOffset": 90725,
                     "endLine": 1226,
                     "endColumn": 12,
-                    "endOffset": 90858
+                    "endOffset": 90847
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6519,10 +6519,10 @@
                 "to": {
                     "startLine": 1227,
                     "startColumn": 4,
-                    "startOffset": 90863,
+                    "startOffset": 90852,
                     "endLine": 1229,
                     "endColumn": 12,
-                    "endOffset": 91097
+                    "endOffset": 91086
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6540,10 +6540,10 @@
                 "to": {
                     "startLine": 1230,
                     "startColumn": 4,
-                    "startOffset": 91102,
+                    "startOffset": 91091,
                     "endLine": 1232,
                     "endColumn": 12,
-                    "endOffset": 91308
+                    "endOffset": 91297
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6561,10 +6561,10 @@
                 "to": {
                     "startLine": 1233,
                     "startColumn": 4,
-                    "startOffset": 91313,
+                    "startOffset": 91302,
                     "endLine": 1234,
                     "endColumn": 12,
-                    "endOffset": 91427
+                    "endOffset": 91416
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6582,10 +6582,10 @@
                 "to": {
                     "startLine": 1235,
                     "startColumn": 4,
-                    "startOffset": 91432,
+                    "startOffset": 91421,
                     "endLine": 1238,
                     "endColumn": 12,
-                    "endOffset": 91620
+                    "endOffset": 91609
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6603,10 +6603,10 @@
                 "to": {
                     "startLine": 1239,
                     "startColumn": 4,
-                    "startOffset": 91625,
+                    "startOffset": 91614,
                     "endLine": 1241,
                     "endColumn": 12,
-                    "endOffset": 91797
+                    "endOffset": 91786
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6624,10 +6624,10 @@
                 "to": {
                     "startLine": 1242,
                     "startColumn": 4,
-                    "startOffset": 91802,
+                    "startOffset": 91791,
                     "endLine": 1248,
                     "endColumn": 12,
-                    "endOffset": 92252
+                    "endOffset": 92241
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6645,10 +6645,10 @@
                 "to": {
                     "startLine": 1249,
                     "startColumn": 4,
-                    "startOffset": 92257,
+                    "startOffset": 92246,
                     "endLine": 1251,
                     "endColumn": 12,
-                    "endOffset": 92433
+                    "endOffset": 92422
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6666,10 +6666,10 @@
                 "to": {
                     "startLine": 1252,
                     "startColumn": 4,
-                    "startOffset": 92438,
+                    "startOffset": 92427,
                     "endLine": 1254,
                     "endColumn": 12,
-                    "endOffset": 92555
+                    "endOffset": 92544
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6687,10 +6687,10 @@
                 "to": {
                     "startLine": 1255,
                     "startColumn": 4,
-                    "startOffset": 92560,
+                    "startOffset": 92549,
                     "endLine": 1258,
                     "endColumn": 12,
-                    "endOffset": 92814
+                    "endOffset": 92803
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6708,10 +6708,10 @@
                 "to": {
                     "startLine": 1259,
                     "startColumn": 4,
-                    "startOffset": 92819,
+                    "startOffset": 92808,
                     "endLine": 1260,
                     "endColumn": 12,
-                    "endOffset": 92927
+                    "endOffset": 92916
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6729,10 +6729,10 @@
                 "to": {
                     "startLine": 1261,
                     "startColumn": 4,
-                    "startOffset": 92932,
+                    "startOffset": 92921,
                     "endLine": 1264,
                     "endColumn": 12,
-                    "endOffset": 93114
+                    "endOffset": 93103
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6750,10 +6750,10 @@
                 "to": {
                     "startLine": 1265,
                     "startColumn": 4,
-                    "startOffset": 93119,
+                    "startOffset": 93108,
                     "endLine": 1266,
                     "endColumn": 12,
-                    "endOffset": 93216
+                    "endOffset": 93205
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6771,10 +6771,10 @@
                 "to": {
                     "startLine": 1267,
                     "startColumn": 4,
-                    "startOffset": 93221,
+                    "startOffset": 93210,
                     "endLine": 1272,
                     "endColumn": 12,
-                    "endOffset": 93660
+                    "endOffset": 93649
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6792,10 +6792,10 @@
                 "to": {
                     "startLine": 1273,
                     "startColumn": 4,
-                    "startOffset": 93665,
+                    "startOffset": 93654,
                     "endLine": 1274,
                     "endColumn": 12,
-                    "endOffset": 93784
+                    "endOffset": 93773
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6813,10 +6813,10 @@
                 "to": {
                     "startLine": 1275,
                     "startColumn": 4,
-                    "startOffset": 93789,
+                    "startOffset": 93778,
                     "endLine": 1278,
                     "endColumn": 12,
-                    "endOffset": 94059
+                    "endOffset": 94048
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6834,10 +6834,10 @@
                 "to": {
                     "startLine": 1279,
                     "startColumn": 4,
-                    "startOffset": 94064,
+                    "startOffset": 94053,
                     "endLine": 1286,
                     "endColumn": 12,
-                    "endOffset": 94567
+                    "endOffset": 94556
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6855,10 +6855,10 @@
                 "to": {
                     "startLine": 1287,
                     "startColumn": 4,
-                    "startOffset": 94572,
+                    "startOffset": 94561,
                     "endLine": 1294,
                     "endColumn": 12,
-                    "endOffset": 95063
+                    "endOffset": 95052
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6876,10 +6876,10 @@
                 "to": {
                     "startLine": 1295,
                     "startColumn": 4,
-                    "startOffset": 95068,
+                    "startOffset": 95057,
                     "endLine": 1306,
                     "endColumn": 12,
-                    "endOffset": 95940
+                    "endOffset": 95929
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6897,10 +6897,10 @@
                 "to": {
                     "startLine": 1307,
                     "startColumn": 4,
-                    "startOffset": 95945,
+                    "startOffset": 95934,
                     "endLine": 1312,
                     "endColumn": 12,
-                    "endOffset": 96234
+                    "endOffset": 96223
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6918,10 +6918,10 @@
                 "to": {
                     "startLine": 1313,
                     "startColumn": 4,
-                    "startOffset": 96239,
+                    "startOffset": 96228,
                     "endLine": 1321,
                     "endColumn": 12,
-                    "endOffset": 96804
+                    "endOffset": 96793
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6939,10 +6939,10 @@
                 "to": {
                     "startLine": 1322,
                     "startColumn": 4,
-                    "startOffset": 96809,
+                    "startOffset": 96798,
                     "endLine": 1324,
                     "endColumn": 12,
-                    "endOffset": 96953
+                    "endOffset": 96942
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6960,10 +6960,10 @@
                 "to": {
                     "startLine": 1325,
                     "startColumn": 4,
-                    "startOffset": 96958,
+                    "startOffset": 96947,
                     "endLine": 1335,
                     "endColumn": 12,
-                    "endOffset": 97685
+                    "endOffset": 97674
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -6981,10 +6981,10 @@
                 "to": {
                     "startLine": 1336,
                     "startColumn": 4,
-                    "startOffset": 97690,
+                    "startOffset": 97679,
                     "endLine": 1338,
                     "endColumn": 12,
-                    "endOffset": 97857
+                    "endOffset": 97846
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7002,10 +7002,10 @@
                 "to": {
                     "startLine": 1339,
                     "startColumn": 4,
-                    "startOffset": 97862,
+                    "startOffset": 97851,
                     "endLine": 1343,
                     "endColumn": 12,
-                    "endOffset": 98193
+                    "endOffset": 98182
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7023,10 +7023,10 @@
                 "to": {
                     "startLine": 1344,
                     "startColumn": 4,
-                    "startOffset": 98198,
+                    "startOffset": 98187,
                     "endLine": 1357,
                     "endColumn": 12,
-                    "endOffset": 99251
+                    "endOffset": 99240
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7044,10 +7044,10 @@
                 "to": {
                     "startLine": 1358,
                     "startColumn": 4,
-                    "startOffset": 99256,
+                    "startOffset": 99245,
                     "endLine": 1362,
                     "endColumn": 12,
-                    "endOffset": 99529
+                    "endOffset": 99518
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7065,10 +7065,10 @@
                 "to": {
                     "startLine": 1363,
                     "startColumn": 4,
-                    "startOffset": 99534,
+                    "startOffset": 99523,
                     "endLine": 1404,
                     "endColumn": 12,
-                    "endOffset": 102707
+                    "endOffset": 102696
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7086,10 +7086,10 @@
                 "to": {
                     "startLine": 1405,
                     "startColumn": 4,
-                    "startOffset": 102712,
+                    "startOffset": 102701,
                     "endLine": 1447,
                     "endColumn": 12,
-                    "endOffset": 106028
+                    "endOffset": 106017
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7107,9 +7107,9 @@
                 "to": {
                     "startLine": 1448,
                     "startColumn": 4,
-                    "startOffset": 106033,
+                    "startOffset": 106022,
                     "endColumn": 61,
-                    "endOffset": 106090
+                    "endOffset": 106079
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7126,10 +7126,10 @@
                 "to": {
                     "startLine": 1449,
                     "startColumn": 4,
-                    "startOffset": 106095,
+                    "startOffset": 106084,
                     "endLine": 1458,
                     "endColumn": 12,
-                    "endOffset": 106720
+                    "endOffset": 106709
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7147,10 +7147,10 @@
                 "to": {
                     "startLine": 1459,
                     "startColumn": 4,
-                    "startOffset": 106725,
+                    "startOffset": 106714,
                     "endLine": 1467,
                     "endColumn": 12,
-                    "endOffset": 107334
+                    "endOffset": 107323
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7168,9 +7168,9 @@
                 "to": {
                     "startLine": 1468,
                     "startColumn": 4,
-                    "startOffset": 107339,
+                    "startOffset": 107328,
                     "endColumn": 85,
-                    "endOffset": 107420
+                    "endOffset": 107409
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7187,10 +7187,10 @@
                 "to": {
                     "startLine": 1469,
                     "startColumn": 4,
-                    "startOffset": 107425,
+                    "startOffset": 107414,
                     "endLine": 1470,
                     "endColumn": 12,
-                    "endOffset": 107533
+                    "endOffset": 107522
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7208,10 +7208,10 @@
                 "to": {
                     "startLine": 1471,
                     "startColumn": 4,
-                    "startOffset": 107538,
+                    "startOffset": 107527,
                     "endLine": 1474,
                     "endColumn": 12,
-                    "endOffset": 107762
+                    "endOffset": 107751
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7229,10 +7229,10 @@
                 "to": {
                     "startLine": 1475,
                     "startColumn": 4,
-                    "startOffset": 107767,
+                    "startOffset": 107756,
                     "endLine": 1477,
                     "endColumn": 12,
-                    "endOffset": 107922
+                    "endOffset": 107911
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7250,10 +7250,10 @@
                 "to": {
                     "startLine": 1478,
                     "startColumn": 4,
-                    "startOffset": 107927,
+                    "startOffset": 107916,
                     "endLine": 1480,
                     "endColumn": 12,
-                    "endOffset": 108074
+                    "endOffset": 108063
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7271,10 +7271,10 @@
                 "to": {
                     "startLine": 1481,
                     "startColumn": 4,
-                    "startOffset": 108079,
+                    "startOffset": 108068,
                     "endLine": 1483,
                     "endColumn": 12,
-                    "endOffset": 108245
+                    "endOffset": 108234
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7292,10 +7292,10 @@
                 "to": {
                     "startLine": 1484,
                     "startColumn": 4,
-                    "startOffset": 108250,
+                    "startOffset": 108239,
                     "endLine": 1486,
                     "endColumn": 12,
-                    "endOffset": 108412
+                    "endOffset": 108401
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7313,10 +7313,10 @@
                 "to": {
                     "startLine": 1487,
                     "startColumn": 4,
-                    "startOffset": 108417,
+                    "startOffset": 108406,
                     "endLine": 1490,
                     "endColumn": 12,
-                    "endOffset": 108655
+                    "endOffset": 108644
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7334,10 +7334,10 @@
                 "to": {
                     "startLine": 1491,
                     "startColumn": 4,
-                    "startOffset": 108660,
+                    "startOffset": 108649,
                     "endLine": 1493,
                     "endColumn": 12,
-                    "endOffset": 108825
+                    "endOffset": 108814
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7355,10 +7355,10 @@
                 "to": {
                     "startLine": 1494,
                     "startColumn": 4,
-                    "startOffset": 108830,
+                    "startOffset": 108819,
                     "endLine": 1496,
                     "endColumn": 12,
-                    "endOffset": 108998
+                    "endOffset": 108987
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7376,10 +7376,10 @@
                 "to": {
                     "startLine": 1497,
                     "startColumn": 4,
-                    "startOffset": 109003,
+                    "startOffset": 108992,
                     "endLine": 1499,
                     "endColumn": 12,
-                    "endOffset": 109169
+                    "endOffset": 109158
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7397,10 +7397,10 @@
                 "to": {
                     "startLine": 1500,
                     "startColumn": 4,
-                    "startOffset": 109174,
+                    "startOffset": 109163,
                     "endLine": 1503,
                     "endColumn": 12,
-                    "endOffset": 109443
+                    "endOffset": 109432
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7418,10 +7418,10 @@
                 "to": {
                     "startLine": 1504,
                     "startColumn": 4,
-                    "startOffset": 109448,
+                    "startOffset": 109437,
                     "endLine": 1506,
                     "endColumn": 12,
-                    "endOffset": 109642
+                    "endOffset": 109631
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7439,10 +7439,10 @@
                 "to": {
                     "startLine": 1507,
                     "startColumn": 4,
-                    "startOffset": 109647,
+                    "startOffset": 109636,
                     "endLine": 1510,
                     "endColumn": 12,
-                    "endOffset": 109847
+                    "endOffset": 109836
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7460,10 +7460,10 @@
                 "to": {
                     "startLine": 1511,
                     "startColumn": 4,
-                    "startOffset": 109852,
+                    "startOffset": 109841,
                     "endLine": 1514,
                     "endColumn": 12,
-                    "endOffset": 110177
+                    "endOffset": 110166
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7481,9 +7481,9 @@
                 "to": {
                     "startLine": 1515,
                     "startColumn": 4,
-                    "startOffset": 110182,
+                    "startOffset": 110171,
                     "endColumn": 83,
-                    "endOffset": 110261
+                    "endOffset": 110250
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7500,9 +7500,9 @@
                 "to": {
                     "startLine": 1516,
                     "startColumn": 4,
-                    "startOffset": 110266,
+                    "startOffset": 110255,
                     "endColumn": 95,
-                    "endOffset": 110357
+                    "endOffset": 110346
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7519,9 +7519,9 @@
                 "to": {
                     "startLine": 1517,
                     "startColumn": 4,
-                    "startOffset": 110362,
+                    "startOffset": 110351,
                     "endColumn": 95,
-                    "endOffset": 110453
+                    "endOffset": 110442
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7538,9 +7538,9 @@
                 "to": {
                     "startLine": 1518,
                     "startColumn": 4,
-                    "startOffset": 110458,
+                    "startOffset": 110447,
                     "endColumn": 97,
-                    "endOffset": 110551
+                    "endOffset": 110540
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7557,9 +7557,9 @@
                 "to": {
                     "startLine": 1519,
                     "startColumn": 4,
-                    "startOffset": 110556,
+                    "startOffset": 110545,
                     "endColumn": 99,
-                    "endOffset": 110651
+                    "endOffset": 110640
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7576,9 +7576,9 @@
                 "to": {
                     "startLine": 1520,
                     "startColumn": 4,
-                    "startOffset": 110656,
+                    "startOffset": 110645,
                     "endColumn": 101,
-                    "endOffset": 110753
+                    "endOffset": 110742
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7595,9 +7595,9 @@
                 "to": {
                     "startLine": 1521,
                     "startColumn": 4,
-                    "startOffset": 110758,
+                    "startOffset": 110747,
                     "endColumn": 101,
-                    "endOffset": 110855
+                    "endOffset": 110844
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7614,9 +7614,9 @@
                 "to": {
                     "startLine": 1522,
                     "startColumn": 4,
-                    "startOffset": 110860,
+                    "startOffset": 110849,
                     "endColumn": 101,
-                    "endOffset": 110957
+                    "endOffset": 110946
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7633,9 +7633,9 @@
                 "to": {
                     "startLine": 1523,
                     "startColumn": 4,
-                    "startOffset": 110962,
+                    "startOffset": 110951,
                     "endColumn": 101,
-                    "endOffset": 111059
+                    "endOffset": 111048
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7652,9 +7652,9 @@
                 "to": {
                     "startLine": 1524,
                     "startColumn": 4,
-                    "startOffset": 111064,
+                    "startOffset": 111053,
                     "endColumn": 101,
-                    "endOffset": 111161
+                    "endOffset": 111150
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7671,9 +7671,9 @@
                 "to": {
                     "startLine": 1525,
                     "startColumn": 4,
-                    "startOffset": 111166,
+                    "startOffset": 111155,
                     "endColumn": 99,
-                    "endOffset": 111261
+                    "endOffset": 111250
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7690,9 +7690,9 @@
                 "to": {
                     "startLine": 1526,
                     "startColumn": 4,
-                    "startOffset": 111266,
+                    "startOffset": 111255,
                     "endColumn": 95,
-                    "endOffset": 111357
+                    "endOffset": 111346
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7709,9 +7709,9 @@
                 "to": {
                     "startLine": 1527,
                     "startColumn": 4,
-                    "startOffset": 111362,
+                    "startOffset": 111351,
                     "endColumn": 111,
-                    "endOffset": 111469
+                    "endOffset": 111458
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7728,9 +7728,9 @@
                 "to": {
                     "startLine": 1528,
                     "startColumn": 4,
-                    "startOffset": 111474,
+                    "startOffset": 111463,
                     "endColumn": 128,
-                    "endOffset": 111598
+                    "endOffset": 111587
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7747,9 +7747,9 @@
                 "to": {
                     "startLine": 1529,
                     "startColumn": 4,
-                    "startOffset": 111603,
+                    "startOffset": 111592,
                     "endColumn": 122,
-                    "endOffset": 111721
+                    "endOffset": 111710
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7766,9 +7766,9 @@
                 "to": {
                     "startLine": 1530,
                     "startColumn": 4,
-                    "startOffset": 111726,
+                    "startOffset": 111715,
                     "endColumn": 130,
-                    "endOffset": 111852
+                    "endOffset": 111841
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7785,9 +7785,9 @@
                 "to": {
                     "startLine": 1531,
                     "startColumn": 4,
-                    "startOffset": 111857,
+                    "startOffset": 111846,
                     "endColumn": 130,
-                    "endOffset": 111983
+                    "endOffset": 111972
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7804,9 +7804,9 @@
                 "to": {
                     "startLine": 1532,
                     "startColumn": 4,
-                    "startOffset": 111988,
+                    "startOffset": 111977,
                     "endColumn": 97,
-                    "endOffset": 112081
+                    "endOffset": 112070
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7823,9 +7823,9 @@
                 "to": {
                     "startLine": 1533,
                     "startColumn": 4,
-                    "startOffset": 112086,
+                    "startOffset": 112075,
                     "endColumn": 113,
-                    "endOffset": 112195
+                    "endOffset": 112184
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7842,9 +7842,9 @@
                 "to": {
                     "startLine": 1534,
                     "startColumn": 4,
-                    "startOffset": 112200,
+                    "startOffset": 112189,
                     "endColumn": 93,
-                    "endOffset": 112289
+                    "endOffset": 112278
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7861,10 +7861,10 @@
                 "to": {
                     "startLine": 1535,
                     "startColumn": 4,
-                    "startOffset": 112294,
+                    "startOffset": 112283,
                     "endLine": 1536,
                     "endColumn": 12,
-                    "endOffset": 112429
+                    "endOffset": 112418
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7882,10 +7882,10 @@
                 "to": {
                     "startLine": 1537,
                     "startColumn": 4,
-                    "startOffset": 112434,
+                    "startOffset": 112423,
                     "endLine": 1538,
                     "endColumn": 12,
-                    "endOffset": 112563
+                    "endOffset": 112552
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7903,9 +7903,9 @@
                 "to": {
                     "startLine": 1539,
                     "startColumn": 4,
-                    "startOffset": 112568,
+                    "startOffset": 112557,
                     "endColumn": 95,
-                    "endOffset": 112659
+                    "endOffset": 112648
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7922,9 +7922,9 @@
                 "to": {
                     "startLine": 1540,
                     "startColumn": 4,
-                    "startOffset": 112664,
+                    "startOffset": 112653,
                     "endColumn": 111,
-                    "endOffset": 112771
+                    "endOffset": 112760
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7941,9 +7941,9 @@
                 "to": {
                     "startLine": 1541,
                     "startColumn": 4,
-                    "startOffset": 112776,
+                    "startOffset": 112765,
                     "endColumn": 99,
-                    "endOffset": 112871
+                    "endOffset": 112860
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7960,9 +7960,9 @@
                 "to": {
                     "startLine": 1542,
                     "startColumn": 4,
-                    "startOffset": 112876,
+                    "startOffset": 112865,
                     "endColumn": 115,
-                    "endOffset": 112987
+                    "endOffset": 112976
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7979,9 +7979,9 @@
                 "to": {
                     "startLine": 1543,
                     "startColumn": 4,
-                    "startOffset": 112992,
+                    "startOffset": 112981,
                     "endColumn": 95,
-                    "endOffset": 113083
+                    "endOffset": 113072
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -7998,9 +7998,9 @@
                 "to": {
                     "startLine": 1544,
                     "startColumn": 4,
-                    "startOffset": 113088,
+                    "startOffset": 113077,
                     "endColumn": 111,
-                    "endOffset": 113195
+                    "endOffset": 113184
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8017,10 +8017,10 @@
                 "to": {
                     "startLine": 1545,
                     "startColumn": 4,
-                    "startOffset": 113200,
+                    "startOffset": 113189,
                     "endLine": 1546,
                     "endColumn": 12,
-                    "endOffset": 113335
+                    "endOffset": 113324
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8038,9 +8038,9 @@
                 "to": {
                     "startLine": 1547,
                     "startColumn": 4,
-                    "startOffset": 113340,
+                    "startOffset": 113329,
                     "endColumn": 135,
-                    "endOffset": 113471
+                    "endOffset": 113460
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8057,10 +8057,10 @@
                 "to": {
                     "startLine": 1548,
                     "startColumn": 4,
-                    "startOffset": 113476,
+                    "startOffset": 113465,
                     "endLine": 1549,
                     "endColumn": 12,
-                    "endOffset": 113635
+                    "endOffset": 113624
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8078,9 +8078,9 @@
                 "to": {
                     "startLine": 1550,
                     "startColumn": 4,
-                    "startOffset": 113640,
+                    "startOffset": 113629,
                     "endColumn": 129,
-                    "endOffset": 113765
+                    "endOffset": 113754
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8097,10 +8097,10 @@
                 "to": {
                     "startLine": 1551,
                     "startColumn": 4,
-                    "startOffset": 113770,
+                    "startOffset": 113759,
                     "endLine": 1552,
                     "endColumn": 12,
-                    "endOffset": 113923
+                    "endOffset": 113912
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8118,10 +8118,10 @@
                 "to": {
                     "startLine": 1553,
                     "startColumn": 4,
-                    "startOffset": 113928,
+                    "startOffset": 113917,
                     "endLine": 1554,
                     "endColumn": 12,
-                    "endOffset": 114073
+                    "endOffset": 114062
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8139,9 +8139,9 @@
                 "to": {
                     "startLine": 1555,
                     "startColumn": 4,
-                    "startOffset": 114078,
+                    "startOffset": 114067,
                     "endColumn": 140,
-                    "endOffset": 114214
+                    "endOffset": 114203
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8158,10 +8158,10 @@
                 "to": {
                     "startLine": 1556,
                     "startColumn": 4,
-                    "startOffset": 114219,
+                    "startOffset": 114208,
                     "endLine": 1557,
                     "endColumn": 12,
-                    "endOffset": 114358
+                    "endOffset": 114347
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8179,9 +8179,9 @@
                 "to": {
                     "startLine": 1558,
                     "startColumn": 4,
-                    "startOffset": 114363,
+                    "startOffset": 114352,
                     "endColumn": 134,
-                    "endOffset": 114493
+                    "endOffset": 114482
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8198,9 +8198,9 @@
                 "to": {
                     "startLine": 1559,
                     "startColumn": 4,
-                    "startOffset": 114498,
+                    "startOffset": 114487,
                     "endColumn": 111,
-                    "endOffset": 114605
+                    "endOffset": 114594
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8217,9 +8217,9 @@
                 "to": {
                     "startLine": 1560,
                     "startColumn": 4,
-                    "startOffset": 114610,
+                    "startOffset": 114599,
                     "endColumn": 127,
-                    "endOffset": 114733
+                    "endOffset": 114722
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8236,10 +8236,10 @@
                 "to": {
                     "startLine": 1561,
                     "startColumn": 4,
-                    "startOffset": 114738,
+                    "startOffset": 114727,
                     "endLine": 1562,
                     "endColumn": 12,
-                    "endOffset": 114869
+                    "endOffset": 114858
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8257,9 +8257,9 @@
                 "to": {
                     "startLine": 1563,
                     "startColumn": 4,
-                    "startOffset": 114874,
+                    "startOffset": 114863,
                     "endColumn": 131,
-                    "endOffset": 115001
+                    "endOffset": 114990
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8276,9 +8276,9 @@
                 "to": {
                     "startLine": 1564,
                     "startColumn": 4,
-                    "startOffset": 115006,
+                    "startOffset": 114995,
                     "endColumn": 129,
-                    "endOffset": 115131
+                    "endOffset": 115120
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8295,9 +8295,9 @@
                 "to": {
                     "startLine": 1565,
                     "startColumn": 4,
-                    "startOffset": 115136,
+                    "startOffset": 115125,
                     "endColumn": 129,
-                    "endOffset": 115261
+                    "endOffset": 115250
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8314,9 +8314,9 @@
                 "to": {
                     "startLine": 1566,
                     "startColumn": 4,
-                    "startOffset": 115266,
+                    "startOffset": 115255,
                     "endColumn": 111,
-                    "endOffset": 115373
+                    "endOffset": 115362
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8333,9 +8333,9 @@
                 "to": {
                     "startLine": 1567,
                     "startColumn": 4,
-                    "startOffset": 115378,
+                    "startOffset": 115367,
                     "endColumn": 139,
-                    "endOffset": 115513
+                    "endOffset": 115502
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8352,9 +8352,9 @@
                 "to": {
                     "startLine": 1568,
                     "startColumn": 4,
-                    "startOffset": 115518,
+                    "startOffset": 115507,
                     "endColumn": 67,
-                    "endOffset": 115581
+                    "endOffset": 115570
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8371,9 +8371,9 @@
                 "to": {
                     "startLine": 1569,
                     "startColumn": 4,
-                    "startOffset": 115586,
+                    "startOffset": 115575,
                     "endColumn": 72,
-                    "endOffset": 115654
+                    "endOffset": 115643
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8390,9 +8390,9 @@
                 "to": {
                     "startLine": 1570,
                     "startColumn": 4,
-                    "startOffset": 115659,
+                    "startOffset": 115648,
                     "endColumn": 73,
-                    "endOffset": 115728
+                    "endOffset": 115717
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8409,9 +8409,9 @@
                 "to": {
                     "startLine": 1571,
                     "startColumn": 4,
-                    "startOffset": 115733,
+                    "startOffset": 115722,
                     "endColumn": 72,
-                    "endOffset": 115801
+                    "endOffset": 115790
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8428,9 +8428,9 @@
                 "to": {
                     "startLine": 1572,
                     "startColumn": 4,
-                    "startOffset": 115806,
+                    "startOffset": 115795,
                     "endColumn": 73,
-                    "endOffset": 115875
+                    "endOffset": 115864
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8447,10 +8447,10 @@
                 "to": {
                     "startLine": 1573,
                     "startColumn": 4,
-                    "startOffset": 115880,
+                    "startOffset": 115869,
                     "endLine": 1574,
                     "endColumn": 12,
-                    "endOffset": 116021
+                    "endOffset": 116010
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8468,10 +8468,10 @@
                 "to": {
                     "startLine": 1575,
                     "startColumn": 4,
-                    "startOffset": 116026,
+                    "startOffset": 116015,
                     "endLine": 1576,
                     "endColumn": 12,
-                    "endOffset": 116165
+                    "endOffset": 116154
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8489,10 +8489,10 @@
                 "to": {
                     "startLine": 1577,
                     "startColumn": 4,
-                    "startOffset": 116170,
+                    "startOffset": 116159,
                     "endLine": 1578,
                     "endColumn": 12,
-                    "endOffset": 116303
+                    "endOffset": 116292
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8510,9 +8510,9 @@
                 "to": {
                     "startLine": 1579,
                     "startColumn": 4,
-                    "startOffset": 116308,
+                    "startOffset": 116297,
                     "endColumn": 65,
-                    "endOffset": 116369
+                    "endOffset": 116358
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8529,9 +8529,9 @@
                 "to": {
                     "startLine": 1580,
                     "startColumn": 4,
-                    "startOffset": 116374,
+                    "startOffset": 116363,
                     "endColumn": 89,
-                    "endOffset": 116459
+                    "endOffset": 116448
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8548,9 +8548,9 @@
                 "to": {
                     "startLine": 1581,
                     "startColumn": 4,
-                    "startOffset": 116464,
+                    "startOffset": 116453,
                     "endColumn": 75,
-                    "endOffset": 116535
+                    "endOffset": 116524
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8567,9 +8567,9 @@
                 "to": {
                     "startLine": 1582,
                     "startColumn": 4,
-                    "startOffset": 116540,
+                    "startOffset": 116529,
                     "endColumn": 103,
-                    "endOffset": 116639
+                    "endOffset": 116628
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8586,9 +8586,9 @@
                 "to": {
                     "startLine": 1583,
                     "startColumn": 4,
-                    "startOffset": 116644,
+                    "startOffset": 116633,
                     "endColumn": 89,
-                    "endOffset": 116729
+                    "endOffset": 116718
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8605,9 +8605,9 @@
                 "to": {
                     "startLine": 1584,
                     "startColumn": 4,
-                    "startOffset": 116734,
+                    "startOffset": 116723,
                     "endColumn": 101,
-                    "endOffset": 116831
+                    "endOffset": 116820
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8624,9 +8624,9 @@
                 "to": {
                     "startLine": 1585,
                     "startColumn": 4,
-                    "startOffset": 116836,
+                    "startOffset": 116825,
                     "endColumn": 107,
-                    "endOffset": 116939
+                    "endOffset": 116928
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8643,9 +8643,9 @@
                 "to": {
                     "startLine": 1586,
                     "startColumn": 4,
-                    "startOffset": 116944,
+                    "startOffset": 116933,
                     "endColumn": 107,
-                    "endOffset": 117047
+                    "endOffset": 117036
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8662,9 +8662,9 @@
                 "to": {
                     "startLine": 1587,
                     "startColumn": 4,
-                    "startOffset": 117052,
+                    "startOffset": 117041,
                     "endColumn": 99,
-                    "endOffset": 117147
+                    "endOffset": 117136
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8681,9 +8681,9 @@
                 "to": {
                     "startLine": 1588,
                     "startColumn": 4,
-                    "startOffset": 117152,
+                    "startOffset": 117141,
                     "endColumn": 79,
-                    "endOffset": 117227
+                    "endOffset": 117216
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8700,9 +8700,9 @@
                 "to": {
                     "startLine": 1589,
                     "startColumn": 4,
-                    "startOffset": 117232,
+                    "startOffset": 117221,
                     "endColumn": 91,
-                    "endOffset": 117319
+                    "endOffset": 117308
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8719,9 +8719,9 @@
                 "to": {
                     "startLine": 1590,
                     "startColumn": 4,
-                    "startOffset": 117324,
+                    "startOffset": 117313,
                     "endColumn": 97,
-                    "endOffset": 117417
+                    "endOffset": 117406
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8738,10 +8738,10 @@
                 "to": {
                     "startLine": 1591,
                     "startColumn": 4,
-                    "startOffset": 117422,
+                    "startOffset": 117411,
                     "endLine": 1592,
                     "endColumn": 12,
-                    "endOffset": 117527
+                    "endOffset": 117516
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8759,9 +8759,9 @@
                 "to": {
                     "startLine": 1593,
                     "startColumn": 4,
-                    "startOffset": 117532,
+                    "startOffset": 117521,
                     "endColumn": 77,
-                    "endOffset": 117605
+                    "endOffset": 117594
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8778,9 +8778,9 @@
                 "to": {
                     "startLine": 1594,
                     "startColumn": 4,
-                    "startOffset": 117610,
+                    "startOffset": 117599,
                     "endColumn": 105,
-                    "endOffset": 117711
+                    "endOffset": 117700
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8797,9 +8797,9 @@
                 "to": {
                     "startLine": 1595,
                     "startColumn": 4,
-                    "startOffset": 117716,
+                    "startOffset": 117705,
                     "endColumn": 91,
-                    "endOffset": 117803
+                    "endOffset": 117792
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8816,9 +8816,9 @@
                 "to": {
                     "startLine": 1596,
                     "startColumn": 4,
-                    "startOffset": 117808,
+                    "startOffset": 117797,
                     "endColumn": 103,
-                    "endOffset": 117907
+                    "endOffset": 117896
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8835,9 +8835,9 @@
                 "to": {
                     "startLine": 1597,
                     "startColumn": 4,
-                    "startOffset": 117912,
+                    "startOffset": 117901,
                     "endColumn": 109,
-                    "endOffset": 118017
+                    "endOffset": 118006
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8854,10 +8854,10 @@
                 "to": {
                     "startLine": 1598,
                     "startColumn": 4,
-                    "startOffset": 118022,
+                    "startOffset": 118011,
                     "endLine": 1599,
                     "endColumn": 12,
-                    "endOffset": 118139
+                    "endOffset": 118128
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8875,10 +8875,10 @@
                 "to": {
                     "startLine": 1600,
                     "startColumn": 4,
-                    "startOffset": 118144,
+                    "startOffset": 118133,
                     "endLine": 1603,
                     "endColumn": 12,
-                    "endOffset": 118302
+                    "endOffset": 118291
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8896,10 +8896,10 @@
                 "to": {
                     "startLine": 1604,
                     "startColumn": 4,
-                    "startOffset": 118307,
+                    "startOffset": 118296,
                     "endLine": 1607,
                     "endColumn": 12,
-                    "endOffset": 118459
+                    "endOffset": 118448
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8917,9 +8917,9 @@
                 "to": {
                     "startLine": 1608,
                     "startColumn": 4,
-                    "startOffset": 118464,
+                    "startOffset": 118453,
                     "endColumn": 79,
-                    "endOffset": 118539
+                    "endOffset": 118528
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8936,9 +8936,9 @@
                 "to": {
                     "startLine": 1609,
                     "startColumn": 4,
-                    "startOffset": 118544,
+                    "startOffset": 118533,
                     "endColumn": 99,
-                    "endOffset": 118639
+                    "endOffset": 118628
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8955,9 +8955,9 @@
                 "to": {
                     "startLine": 1610,
                     "startColumn": 4,
-                    "startOffset": 118644,
+                    "startOffset": 118633,
                     "endColumn": 89,
-                    "endOffset": 118729
+                    "endOffset": 118718
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8974,9 +8974,9 @@
                 "to": {
                     "startLine": 1611,
                     "startColumn": 4,
-                    "startOffset": 118734,
+                    "startOffset": 118723,
                     "endColumn": 109,
-                    "endOffset": 118839
+                    "endOffset": 118828
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -8993,9 +8993,9 @@
                 "to": {
                     "startLine": 1612,
                     "startColumn": 4,
-                    "startOffset": 118844,
+                    "startOffset": 118833,
                     "endColumn": 93,
-                    "endOffset": 118933
+                    "endOffset": 118922
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9012,9 +9012,9 @@
                 "to": {
                     "startLine": 1613,
                     "startColumn": 4,
-                    "startOffset": 118938,
+                    "startOffset": 118927,
                     "endColumn": 105,
-                    "endOffset": 119039
+                    "endOffset": 119028
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9031,9 +9031,9 @@
                 "to": {
                     "startLine": 1614,
                     "startColumn": 4,
-                    "startOffset": 119044,
+                    "startOffset": 119033,
                     "endColumn": 91,
-                    "endOffset": 119131
+                    "endOffset": 119120
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9050,10 +9050,10 @@
                 "to": {
                     "startLine": 1615,
                     "startColumn": 4,
-                    "startOffset": 119136,
+                    "startOffset": 119125,
                     "endLine": 1616,
                     "endColumn": 12,
-                    "endOffset": 119231
+                    "endOffset": 119220
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9071,10 +9071,10 @@
                 "to": {
                     "startLine": 1617,
                     "startColumn": 4,
-                    "startOffset": 119236,
+                    "startOffset": 119225,
                     "endLine": 1618,
                     "endColumn": 12,
-                    "endOffset": 119343
+                    "endOffset": 119332
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9092,10 +9092,10 @@
                 "to": {
                     "startLine": 1619,
                     "startColumn": 4,
-                    "startOffset": 119348,
+                    "startOffset": 119337,
                     "endLine": 1620,
                     "endColumn": 12,
-                    "endOffset": 119457
+                    "endOffset": 119446
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9113,10 +9113,10 @@
                 "to": {
                     "startLine": 1621,
                     "startColumn": 4,
-                    "startOffset": 119462,
+                    "startOffset": 119451,
                     "endLine": 1622,
                     "endColumn": 12,
-                    "endOffset": 119573
+                    "endOffset": 119562
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9134,10 +9134,10 @@
                 "to": {
                     "startLine": 1623,
                     "startColumn": 4,
-                    "startOffset": 119578,
+                    "startOffset": 119567,
                     "endLine": 1624,
                     "endColumn": 12,
-                    "endOffset": 119689
+                    "endOffset": 119678
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9155,9 +9155,9 @@
                 "to": {
                     "startLine": 1625,
                     "startColumn": 4,
-                    "startOffset": 119694,
+                    "startOffset": 119683,
                     "endColumn": 93,
-                    "endOffset": 119783
+                    "endOffset": 119772
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9174,9 +9174,9 @@
                 "to": {
                     "startLine": 1626,
                     "startColumn": 4,
-                    "startOffset": 119788,
+                    "startOffset": 119777,
                     "endColumn": 113,
-                    "endOffset": 119897
+                    "endOffset": 119886
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9193,9 +9193,9 @@
                 "to": {
                     "startLine": 1627,
                     "startColumn": 4,
-                    "startOffset": 119902,
+                    "startOffset": 119891,
                     "endColumn": 111,
-                    "endOffset": 120009
+                    "endOffset": 119998
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9212,10 +9212,10 @@
                 "to": {
                     "startLine": 1628,
                     "startColumn": 4,
-                    "startOffset": 120014,
+                    "startOffset": 120003,
                     "endLine": 1629,
                     "endColumn": 12,
-                    "endOffset": 120111
+                    "endOffset": 120100
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9233,10 +9233,10 @@
                 "to": {
                     "startLine": 1630,
                     "startColumn": 4,
-                    "startOffset": 120116,
+                    "startOffset": 120105,
                     "endLine": 1631,
                     "endColumn": 12,
-                    "endOffset": 120231
+                    "endOffset": 120220
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9254,10 +9254,10 @@
                 "to": {
                     "startLine": 1632,
                     "startColumn": 4,
-                    "startOffset": 120236,
+                    "startOffset": 120225,
                     "endLine": 1633,
                     "endColumn": 12,
-                    "endOffset": 120353
+                    "endOffset": 120342
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9275,9 +9275,9 @@
                 "to": {
                     "startLine": 1634,
                     "startColumn": 4,
-                    "startOffset": 120358,
+                    "startOffset": 120347,
                     "endColumn": 81,
-                    "endOffset": 120435
+                    "endOffset": 120424
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9294,9 +9294,9 @@
                 "to": {
                     "startLine": 1635,
                     "startColumn": 4,
-                    "startOffset": 120440,
+                    "startOffset": 120429,
                     "endColumn": 103,
-                    "endOffset": 120539
+                    "endOffset": 120528
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9313,9 +9313,9 @@
                 "to": {
                     "startLine": 1636,
                     "startColumn": 4,
-                    "startOffset": 120544,
+                    "startOffset": 120533,
                     "endColumn": 119,
-                    "endOffset": 120659
+                    "endOffset": 120648
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9332,9 +9332,9 @@
                 "to": {
                     "startLine": 1637,
                     "startColumn": 4,
-                    "startOffset": 120664,
+                    "startOffset": 120653,
                     "endColumn": 125,
-                    "endOffset": 120785
+                    "endOffset": 120774
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9351,9 +9351,9 @@
                 "to": {
                     "startLine": 1638,
                     "startColumn": 4,
-                    "startOffset": 120790,
+                    "startOffset": 120779,
                     "endColumn": 97,
-                    "endOffset": 120883
+                    "endOffset": 120872
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9370,9 +9370,9 @@
                 "to": {
                     "startLine": 1639,
                     "startColumn": 4,
-                    "startOffset": 120888,
+                    "startOffset": 120877,
                     "endColumn": 93,
-                    "endOffset": 120977
+                    "endOffset": 120966
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9389,9 +9389,9 @@
                 "to": {
                     "startLine": 1640,
                     "startColumn": 4,
-                    "startOffset": 120982,
+                    "startOffset": 120971,
                     "endColumn": 87,
-                    "endOffset": 121065
+                    "endOffset": 121054
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9408,9 +9408,9 @@
                 "to": {
                     "startLine": 1641,
                     "startColumn": 4,
-                    "startOffset": 121070,
+                    "startOffset": 121059,
                     "endColumn": 111,
-                    "endOffset": 121177
+                    "endOffset": 121166
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9427,9 +9427,9 @@
                 "to": {
                     "startLine": 1642,
                     "startColumn": 4,
-                    "startOffset": 121182,
+                    "startOffset": 121171,
                     "endColumn": 115,
-                    "endOffset": 121293
+                    "endOffset": 121282
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9446,9 +9446,9 @@
                 "to": {
                     "startLine": 1643,
                     "startColumn": 4,
-                    "startOffset": 121298,
+                    "startOffset": 121287,
                     "endColumn": 121,
-                    "endOffset": 121415
+                    "endOffset": 121404
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9465,9 +9465,9 @@
                 "to": {
                     "startLine": 1644,
                     "startColumn": 4,
-                    "startOffset": 121420,
+                    "startOffset": 121409,
                     "endColumn": 111,
-                    "endOffset": 121527
+                    "endOffset": 121516
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9484,10 +9484,10 @@
                 "to": {
                     "startLine": 1645,
                     "startColumn": 4,
-                    "startOffset": 121532,
+                    "startOffset": 121521,
                     "endLine": 1647,
                     "endColumn": 12,
-                    "endOffset": 121702
+                    "endOffset": 121691
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9505,9 +9505,9 @@
                 "to": {
                     "startLine": 1648,
                     "startColumn": 4,
-                    "startOffset": 121707,
+                    "startOffset": 121696,
                     "endColumn": 115,
-                    "endOffset": 121818
+                    "endOffset": 121807
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9524,9 +9524,9 @@
                 "to": {
                     "startLine": 1649,
                     "startColumn": 4,
-                    "startOffset": 121823,
+                    "startOffset": 121812,
                     "endColumn": 85,
-                    "endOffset": 121904
+                    "endOffset": 121893
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9543,9 +9543,9 @@
                 "to": {
                     "startLine": 1650,
                     "startColumn": 4,
-                    "startOffset": 121909,
+                    "startOffset": 121898,
                     "endColumn": 91,
-                    "endOffset": 121996
+                    "endOffset": 121985
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9562,10 +9562,10 @@
                 "to": {
                     "startLine": 1651,
                     "startColumn": 4,
-                    "startOffset": 122001,
+                    "startOffset": 121990,
                     "endLine": 1652,
                     "endColumn": 12,
-                    "endOffset": 122108
+                    "endOffset": 122097
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9583,10 +9583,10 @@
                 "to": {
                     "startLine": 1653,
                     "startColumn": 4,
-                    "startOffset": 122113,
+                    "startOffset": 122102,
                     "endLine": 1654,
                     "endColumn": 12,
-                    "endOffset": 122232
+                    "endOffset": 122221
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9604,9 +9604,9 @@
                 "to": {
                     "startLine": 1655,
                     "startColumn": 4,
-                    "startOffset": 122237,
+                    "startOffset": 122226,
                     "endColumn": 66,
-                    "endOffset": 122299
+                    "endOffset": 122288
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9623,10 +9623,10 @@
                 "to": {
                     "startLine": 1656,
                     "startColumn": 4,
-                    "startOffset": 122304,
+                    "startOffset": 122293,
                     "endLine": 1657,
                     "endColumn": 12,
-                    "endOffset": 122425
+                    "endOffset": 122414
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9644,9 +9644,9 @@
                 "to": {
                     "startLine": 1658,
                     "startColumn": 4,
-                    "startOffset": 122430,
+                    "startOffset": 122419,
                     "endColumn": 67,
-                    "endOffset": 122493
+                    "endOffset": 122482
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9663,10 +9663,10 @@
                 "to": {
                     "startLine": 1659,
                     "startColumn": 4,
-                    "startOffset": 122498,
+                    "startOffset": 122487,
                     "endLine": 1660,
                     "endColumn": 12,
-                    "endOffset": 122621
+                    "endOffset": 122610
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9684,10 +9684,10 @@
                 "to": {
                     "startLine": 1661,
                     "startColumn": 4,
-                    "startOffset": 122626,
+                    "startOffset": 122615,
                     "endLine": 1662,
                     "endColumn": 12,
-                    "endOffset": 122765
+                    "endOffset": 122754
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9705,10 +9705,10 @@
                 "to": {
                     "startLine": 1663,
                     "startColumn": 4,
-                    "startOffset": 122770,
+                    "startOffset": 122759,
                     "endLine": 1664,
                     "endColumn": 12,
-                    "endOffset": 122893
+                    "endOffset": 122882
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9726,9 +9726,9 @@
                 "to": {
                     "startLine": 1665,
                     "startColumn": 4,
-                    "startOffset": 122898,
+                    "startOffset": 122887,
                     "endColumn": 68,
-                    "endOffset": 122962
+                    "endOffset": 122951
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9745,9 +9745,9 @@
                 "to": {
                     "startLine": 1666,
                     "startColumn": 4,
-                    "startOffset": 122967,
+                    "startOffset": 122956,
                     "endColumn": 94,
-                    "endOffset": 123057
+                    "endOffset": 123046
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9764,9 +9764,9 @@
                 "to": {
                     "startLine": 1667,
                     "startColumn": 4,
-                    "startOffset": 123062,
+                    "startOffset": 123051,
                     "endColumn": 114,
-                    "endOffset": 123172
+                    "endOffset": 123161
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9783,9 +9783,9 @@
                 "to": {
                     "startLine": 1668,
                     "startColumn": 4,
-                    "startOffset": 123177,
+                    "startOffset": 123166,
                     "endColumn": 112,
-                    "endOffset": 123285
+                    "endOffset": 123274
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9802,9 +9802,9 @@
                 "to": {
                     "startLine": 1669,
                     "startColumn": 4,
-                    "startOffset": 123290,
+                    "startOffset": 123279,
                     "endColumn": 98,
-                    "endOffset": 123384
+                    "endOffset": 123373
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9821,9 +9821,9 @@
                 "to": {
                     "startLine": 1670,
                     "startColumn": 4,
-                    "startOffset": 123389,
+                    "startOffset": 123378,
                     "endColumn": 108,
-                    "endOffset": 123493
+                    "endOffset": 123482
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9840,9 +9840,9 @@
                 "to": {
                     "startLine": 1671,
                     "startColumn": 4,
-                    "startOffset": 123498,
+                    "startOffset": 123487,
                     "endColumn": 110,
-                    "endOffset": 123604
+                    "endOffset": 123593
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9859,9 +9859,9 @@
                 "to": {
                     "startLine": 1672,
                     "startColumn": 4,
-                    "startOffset": 123609,
+                    "startOffset": 123598,
                     "endColumn": 110,
-                    "endOffset": 123715
+                    "endOffset": 123704
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9878,9 +9878,9 @@
                 "to": {
                     "startLine": 1673,
                     "startColumn": 4,
-                    "startOffset": 123720,
+                    "startOffset": 123709,
                     "endColumn": 100,
-                    "endOffset": 123816
+                    "endOffset": 123805
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9897,9 +9897,9 @@
                 "to": {
                     "startLine": 1674,
                     "startColumn": 4,
-                    "startOffset": 123821,
+                    "startOffset": 123810,
                     "endColumn": 104,
-                    "endOffset": 123921
+                    "endOffset": 123910
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9916,9 +9916,9 @@
                 "to": {
                     "startLine": 1675,
                     "startColumn": 4,
-                    "startOffset": 123926,
+                    "startOffset": 123915,
                     "endColumn": 99,
-                    "endOffset": 124021
+                    "endOffset": 124010
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9935,10 +9935,10 @@
                 "to": {
                     "startLine": 1676,
                     "startColumn": 4,
-                    "startOffset": 124026,
+                    "startOffset": 124015,
                     "endLine": 1677,
                     "endColumn": 12,
-                    "endOffset": 124151
+                    "endOffset": 124140
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9956,9 +9956,9 @@
                 "to": {
                     "startLine": 1678,
                     "startColumn": 4,
-                    "startOffset": 124156,
+                    "startOffset": 124145,
                     "endColumn": 90,
-                    "endOffset": 124242
+                    "endOffset": 124231
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9975,9 +9975,9 @@
                 "to": {
                     "startLine": 1679,
                     "startColumn": 4,
-                    "startOffset": 124247,
+                    "startOffset": 124236,
                     "endColumn": 122,
-                    "endOffset": 124365
+                    "endOffset": 124354
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -9994,9 +9994,9 @@
                 "to": {
                     "startLine": 1680,
                     "startColumn": 4,
-                    "startOffset": 124370,
+                    "startOffset": 124359,
                     "endColumn": 93,
-                    "endOffset": 124459
+                    "endOffset": 124448
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10013,10 +10013,10 @@
                 "to": {
                     "startLine": 1681,
                     "startColumn": 4,
-                    "startOffset": 124464,
+                    "startOffset": 124453,
                     "endLine": 1682,
                     "endColumn": 12,
-                    "endOffset": 124571
+                    "endOffset": 124560
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10034,9 +10034,9 @@
                 "to": {
                     "startLine": 1683,
                     "startColumn": 4,
-                    "startOffset": 124576,
+                    "startOffset": 124565,
                     "endColumn": 85,
-                    "endOffset": 124657
+                    "endOffset": 124646
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10053,9 +10053,9 @@
                 "to": {
                     "startLine": 1684,
                     "startColumn": 4,
-                    "startOffset": 124662,
+                    "startOffset": 124651,
                     "endColumn": 103,
-                    "endOffset": 124761
+                    "endOffset": 124750
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10072,9 +10072,9 @@
                 "to": {
                     "startLine": 1685,
                     "startColumn": 4,
-                    "startOffset": 124766,
+                    "startOffset": 124755,
                     "endColumn": 95,
-                    "endOffset": 124857
+                    "endOffset": 124846
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10091,9 +10091,9 @@
                 "to": {
                     "startLine": 1686,
                     "startColumn": 4,
-                    "startOffset": 124862,
+                    "startOffset": 124851,
                     "endColumn": 87,
-                    "endOffset": 124945
+                    "endOffset": 124934
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10110,10 +10110,10 @@
                 "to": {
                     "startLine": 1687,
                     "startColumn": 4,
-                    "startOffset": 124950,
+                    "startOffset": 124939,
                     "endLine": 1688,
                     "endColumn": 12,
-                    "endOffset": 125063
+                    "endOffset": 125052
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10131,10 +10131,10 @@
                 "to": {
                     "startLine": 1689,
                     "startColumn": 4,
-                    "startOffset": 125068,
+                    "startOffset": 125057,
                     "endLine": 1690,
                     "endColumn": 12,
-                    "endOffset": 125167
+                    "endOffset": 125156
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10152,10 +10152,10 @@
                 "to": {
                     "startLine": 1691,
                     "startColumn": 4,
-                    "startOffset": 125172,
+                    "startOffset": 125161,
                     "endLine": 1692,
                     "endColumn": 12,
-                    "endOffset": 125271
+                    "endOffset": 125260
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10173,10 +10173,10 @@
                 "to": {
                     "startLine": 1693,
                     "startColumn": 4,
-                    "startOffset": 125276,
+                    "startOffset": 125265,
                     "endLine": 1694,
                     "endColumn": 12,
-                    "endOffset": 125397
+                    "endOffset": 125386
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10194,9 +10194,9 @@
                 "to": {
                     "startLine": 1695,
                     "startColumn": 4,
-                    "startOffset": 125402,
+                    "startOffset": 125391,
                     "endColumn": 87,
-                    "endOffset": 125485
+                    "endOffset": 125474
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10213,9 +10213,9 @@
                 "to": {
                     "startLine": 1696,
                     "startColumn": 4,
-                    "startOffset": 125490,
+                    "startOffset": 125479,
                     "endColumn": 107,
-                    "endOffset": 125593
+                    "endOffset": 125582
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10232,9 +10232,9 @@
                 "to": {
                     "startLine": 1697,
                     "startColumn": 4,
-                    "startOffset": 125598,
+                    "startOffset": 125587,
                     "endColumn": 99,
-                    "endOffset": 125693
+                    "endOffset": 125682
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10251,9 +10251,9 @@
                 "to": {
                     "startLine": 1698,
                     "startColumn": 4,
-                    "startOffset": 125698,
+                    "startOffset": 125687,
                     "endColumn": 89,
-                    "endOffset": 125783
+                    "endOffset": 125772
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10270,9 +10270,9 @@
                 "to": {
                     "startLine": 1699,
                     "startColumn": 4,
-                    "startOffset": 125788,
+                    "startOffset": 125777,
                     "endColumn": 109,
-                    "endOffset": 125893
+                    "endOffset": 125882
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10289,9 +10289,9 @@
                 "to": {
                     "startLine": 1700,
                     "startColumn": 4,
-                    "startOffset": 125898,
+                    "startOffset": 125887,
                     "endColumn": 83,
-                    "endOffset": 125977
+                    "endOffset": 125966
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10308,9 +10308,9 @@
                 "to": {
                     "startLine": 1701,
                     "startColumn": 4,
-                    "startOffset": 125982,
+                    "startOffset": 125971,
                     "endColumn": 101,
-                    "endOffset": 126079
+                    "endOffset": 126068
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10327,9 +10327,9 @@
                 "to": {
                     "startLine": 1702,
                     "startColumn": 4,
-                    "startOffset": 126084,
+                    "startOffset": 126073,
                     "endColumn": 83,
-                    "endOffset": 126163
+                    "endOffset": 126152
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10346,9 +10346,9 @@
                 "to": {
                     "startLine": 1703,
                     "startColumn": 4,
-                    "startOffset": 126168,
+                    "startOffset": 126157,
                     "endColumn": 53,
-                    "endOffset": 126217
+                    "endOffset": 126206
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10365,9 +10365,9 @@
                 "to": {
                     "startLine": 1704,
                     "startColumn": 4,
-                    "startOffset": 126222,
+                    "startOffset": 126211,
                     "endColumn": 63,
-                    "endOffset": 126281
+                    "endOffset": 126270
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10384,9 +10384,9 @@
                 "to": {
                     "startLine": 1705,
                     "startColumn": 4,
-                    "startOffset": 126286,
+                    "startOffset": 126275,
                     "endColumn": 105,
-                    "endOffset": 126387
+                    "endOffset": 126376
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10403,9 +10403,9 @@
                 "to": {
                     "startLine": 1706,
                     "startColumn": 4,
-                    "startOffset": 126392,
+                    "startOffset": 126381,
                     "endColumn": 109,
-                    "endOffset": 126497
+                    "endOffset": 126486
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10422,9 +10422,9 @@
                 "to": {
                     "startLine": 1707,
                     "startColumn": 4,
-                    "startOffset": 126502,
+                    "startOffset": 126491,
                     "endColumn": 83,
-                    "endOffset": 126581
+                    "endOffset": 126570
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10441,9 +10441,9 @@
                 "to": {
                     "startLine": 1708,
                     "startColumn": 4,
-                    "startOffset": 126586,
+                    "startOffset": 126575,
                     "endColumn": 119,
-                    "endOffset": 126701
+                    "endOffset": 126690
                 },
                 "from": {
                     "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values/values.xml",
@@ -10453,6 +10453,48 @@
                         "startOffset": 123994,
                         "endColumn": 119,
                         "endOffset": 124109
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1709,
+                    "startColumn": 4,
+                    "startOffset": 126695,
+                    "endLine": 1720,
+                    "endColumn": 12,
+                    "endOffset": 127308
+                },
+                "from": {
+                    "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1006,
+                        "endLine": 33,
+                        "endColumn": 12,
+                        "endOffset": 1619
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1721,
+                    "startColumn": 4,
+                    "startOffset": 127313,
+                    "endLine": 1733,
+                    "endColumn": 12,
+                    "endOffset": 127940
+                },
+                "from": {
+                    "file": "/Users/KS_MacAir/Desktop/CapstoneDesign/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 362,
+                        "endLine": 21,
+                        "endColumn": 12,
+                        "endOffset": 1001
                     }
                 }
             }

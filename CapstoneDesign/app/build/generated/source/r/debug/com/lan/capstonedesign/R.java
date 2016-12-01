@@ -1777,12 +1777,13 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020051;
         public static final int abc_vector_test=0x7f020052;
         public static final int custom_map_present=0x7f020053;
-        public static final int firebase_lockup_400=0x7f020054;
-        public static final int forest_center=0x7f020055;
-        public static final int ic_stat_ic_notification=0x7f020056;
-        public static final int lan_team_logo=0x7f020057;
-        public static final int notification_template_icon_bg=0x7f020059;
-        public static final int weather_center=0x7f020058;
+        public static final int draw_button=0x7f020054;
+        public static final int firebase_lockup_400=0x7f020055;
+        public static final int forest_center=0x7f020056;
+        public static final int ic_stat_ic_notification=0x7f020057;
+        public static final int lan_team_logo=0x7f020058;
+        public static final int notification_template_icon_bg=0x7f02005a;
+        public static final int weather_center=0x7f020059;
     }
     public static final class id {
         public static final int action0=0x7f0c0072;
@@ -2367,6 +2368,8 @@ containing a value of this type.
         public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f090149;
         public static final int Widget_AppCompat_Toolbar=0x7f09014a;
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f09014b;
+        public static final int btnStylelivid_brown=0x7f09014c;
+        public static final int custom_button=0x7f09014d;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.

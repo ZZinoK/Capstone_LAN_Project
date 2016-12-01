@@ -25,7 +25,6 @@ import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * Created by kslee7746 on 2016. 11. 9..
@@ -45,7 +44,6 @@ public class AdminActivity extends Activity {
     Thread checkDangerThread;
     Runnable checkDangerRegion = new Runnable() {
         public void run() {
-
             while(true){
                 if(checkThreadStatus){
                     try {
@@ -57,18 +55,20 @@ public class AdminActivity extends Activity {
                         for(NodeInfo node : nodeInfoArrayList){
                             if(node.getVariation() == Constants.DANGER){
                                 dangerCount++;
+                                showToast("Danger Count : " + dangerCount);
                             }
                         }
-                        if(dangerCount >= 2){
+                        if(dangerCount > 1){
                             sendPushToFCMServer("alert");
-                            Thread.sleep(15000);
+                            Thread.sleep(8000);
                             Log.d(TAG, "관리자 알람 보냄");
                             dangerCount = 0;
+                        } else {
+                            dangerCount = 0;
+                            Log.d(TAG, "Check Thread 돌고 있당~!");
+                            Log.d(TAG, "Danger Count : " + dangerCount);
+                            Thread.sleep(3000);
                         }
-                        Log.d(TAG, "Check Thread 돌고 있당~!");
-                        Log.d(TAG, "Danger Count : " + dangerCount);
-                        Thread.sleep(3000);
-
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
