@@ -64,7 +64,7 @@
         android:textSize="25dp"
         android:textStyle="bold"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:visibility="visible"/>
+        android:visibility="invisible"/>
 
     <LinearLayout
         android:layout_width="match_parent"

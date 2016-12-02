@@ -60,9 +60,17 @@ public class MainActivity extends AppCompatActivity {
                 editor.commit();
                 //lat = data.getDoubleExtra("latitude", 000.000000);
                 //lon = data.getDoubleExtra("longitude", 000.000000);
-                //Toast.makeText(MainActivity.this, "MT_ID from user : " + mt_id, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, mt_name + "을 선택했습니다.", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        FirebaseMessaging.getInstance().unsubscribeFromTopic("admin");
+        FirebaseMessaging.getInstance().subscribeToTopic("lan"); //Setting Topic for receive Push
+        Log.d(TAG, "Topic 변경 : LAN");
     }
 
     @Override

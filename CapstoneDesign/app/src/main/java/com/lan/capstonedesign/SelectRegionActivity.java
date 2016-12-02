@@ -48,6 +48,10 @@ public class SelectRegionActivity extends Activity {
         public void run() {
             try{
                 regionInfoArrayList = dbManager.getRegionInfoList();
+                if(regionInfoArrayList == null){
+                    regionInfoArrayList = dbManager.getRegionInfoList();
+                    Thread.sleep(1500);
+                }
             }catch (Exception e){
                 e.printStackTrace();
             }
@@ -63,7 +67,7 @@ public class SelectRegionActivity extends Activity {
         mythread = new Thread(runnable);
         mythread.start();
         try {
-            mythread.sleep(1200);
+            mythread.sleep(1600);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -230,7 +230,7 @@ public class DaumMapActivity extends Activity implements MapView.MapViewEventLis
             mapPolyline.setLineColor(Color.argb(128, 0, 0, 0));
             route = parsingNodeRoute(node.getRoute());
 
-            if(route.length == 1){
+            if(route.length == 1 || node.getVariation() == 0){
                 continue;
             }
             for(int i = 0; i<route.length; i++){

@@ -21,6 +21,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.auth.CognitoCachingCredentialsProvider;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBAttribute;
@@ -148,6 +149,8 @@ public class DynamoDBManager {
 
         } catch (AmazonServiceException ex) {
             wipeCredentialsOnAuthError(ex);
+        } catch (AmazonClientException e) {
+            wipeCredentialsOnAuthError((AmazonServiceException) e);
         }
 
         return null;

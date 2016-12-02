@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -53,21 +54,21 @@ public class AdminActivity extends Activity {
                             Thread.sleep(1500);
                         }
                         for(NodeInfo node : nodeInfoArrayList){
-                            if(node.getVariation() == Constants.DANGER){
+                            if(node.getVariation() == Constants.DANGER && node.getRoute() != 0){
                                 dangerCount++;
-                                showToast("Danger Count : " + dangerCount);
                             }
                         }
                         if(dangerCount > 1){
                             sendPushToFCMServer("alert");
-                            Thread.sleep(8000);
                             Log.d(TAG, "관리자 알람 보냄");
+                            Thread.sleep(9000);
                             dangerCount = 0;
                         } else {
+                            showToast("Danger Count : " + dangerCount);
                             dangerCount = 0;
                             Log.d(TAG, "Check Thread 돌고 있당~!");
                             Log.d(TAG, "Danger Count : " + dangerCount);
-                            Thread.sleep(3000);
+                            Thread.sleep(5000);
                         }
                     } catch (InterruptedException e) {
                         e.printStackTrace();
@@ -83,6 +84,14 @@ public class AdminActivity extends Activity {
         checkDangerThread.interrupt();
         checkThreadStatus = false;
         finish();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        FirebaseMessaging.getInstance().unsubscribeFromTopic("lan");
+        FirebaseMessaging.getInstance().subscribeToTopic("admin"); //Setting Topic for receive Push
+        Log.d(TAG, "Topic 변경 : Admin");
     }
 
     @Override
@@ -120,7 +129,7 @@ public class AdminActivity extends Activity {
             }
         });
 
-        Button pushAlertBtn = (Button) findViewById(R.id.sendPush);
+        final Button pushAlertBtn = (Button) findViewById(R.id.sendPush);
         pushAlertBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -149,13 +158,14 @@ public class AdminActivity extends Activity {
                     public void run() {
                         if(alarmBtnStatus){
                             alarmMode.setText("모니터링 OFF");
+                            alarmMode.setTextColor(Color.WHITE);
                             checkThreadStatus = false;
                             alarmBtnStatus = false;
                         } else {
                             alarmMode.setText("모니터링 ON");
+                            alarmMode.setTextColor(Color.RED);
                             checkThreadStatus = true;
                             alarmBtnStatus = true;
-
                         }
                     }
                 });
@@ -175,8 +185,9 @@ public class AdminActivity extends Activity {
             PrintWriter output = new PrintWriter(out);
             output.flush();
             output.print(msgType);
-
-            showToast("Push 메시지 전송 완료");
+            if(!msgType.equals("alert")) {
+                showToast("Push 메시지 전송 완료");
+            }
             output.close();
             socket.close();
         } catch(Exception e) {
