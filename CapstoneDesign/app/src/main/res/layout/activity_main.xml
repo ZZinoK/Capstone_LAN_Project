@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lan.capstonedesign.MainActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/lan_team_logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="산사태 메인 화면"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/selectRegion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="지역 선택 하기"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <Button
+        android:id="@+id/stateRegion"
+        android:layout_width="@dimen/standard_field_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="지역 상태 확인"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/loginAdmin"
+        android:layout_width="@dimen/standard_field_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="관리자 로그인"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/dbCheck"
+        android:layout_width="@dimen/standard_field_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="AWS DB 확인"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/weather_center"
+            android:clickable="true"
+            android:id="@+id/weather_btn"
+            android:layout_weight="5"/>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/forest_center"
+            android:clickable="true"
+            android:id="@+id/forest_btn"
+            android:layout_weight="5" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/mt_status"
+        android:text="설정 지역 : "/>
+</LinearLayout>

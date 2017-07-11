@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--<ImageView-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_weight="4"-->
+        <!--app:srcCompat="@drawable/lan_team_logo"-->
+        <!--android:id="@+id/imgView" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="Capston Design\nTeam LAN"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/textView"/>
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        >
+    </ExpandableListView>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="설정"
+        android:layout_below="@+id/lvExp"
+        android:layout_centerInParent="true"
+        android:id="@+id/settingButton" />
+</RelativeLayout>

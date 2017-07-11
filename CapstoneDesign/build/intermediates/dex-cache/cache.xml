@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_f7150bc82f9778e6990fdd3d9e547d646cf10a2c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.8.0_e96a073e843ad6827aaf6ee982d3109f24883a72/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/libs/libDaumMapAndroid.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b365841bba8bc2d592e4b22008885a6f0cd1c77d">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/2/libDaumMapAndroid_de813160bf6d526e0d7e58741da1b4870c2ef9e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_9f1e7ef7252ac1bf3b78a1da771dc640d787e621/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_3f720cfbd88e692acb50d808918de8df2fc5fb07/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_61aafe514b60cc6f0242db87f850c57794877bbe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4b5f95b8e9a638a738457133421187ebb113d53e">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5f353d75d24bc6060c3ab359728b08b1cce21bf3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_d5d1ebd77cc85a51ceafa33d7ec7f24fdd090c56/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_8377b289ca871c2f93933ec1e0cc79ed1c33b1e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.8.0_5681f7d24ce563c71a8a0be064f1d09cf3aa51f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a0825a8de5d1812e38a99a3a55e353e8883a1d9e">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_401cc5b43bd5f89d229fa1b7368c5fa5b5c46349/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_a0102479c1d097d196a4a27f877fd78151063d6a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_a0495e554a3865357468fc4d56b2bc0c2bf861d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_042a7e940b008b6b33ab95288ff69597b936b979/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.8.0_89e9b7bc36ec9c8a21036d806cb2af2f79862c67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_5b46581b7e055bff33392c38d521859c3e0bd431/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/libs/aws-android-sdk-cognito-2.3.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9ad72b624c6e1330b1405de27d51684e1731742f">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/2/aws-android-sdk-cognito-2.3.3_332aa4fd62399337a6c6659e9cf66301b14c319f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_f950d32b5bebb33c0a093fc7d9c7f439dc4a598f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_e7398e93822fa37a8aba538859f8739ded506661/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.8.0_59fa1749bc9beb479e20d3a9ee3d742b51d1655e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/libs/aws-android-sdk-ddb-mapper-2.3.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="318e28890e6048caa524995f9e960dd304674810">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/2/aws-android-sdk-ddb-mapper-2.3.3_8cd572b97f676f88744ceb60de0e010cb484b072/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_f14f24415a3b84a074b01d06303171f21f85688b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/libs/aws-android-sdk-s3-2.3.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b6b02130c945bdad38bda0ed60a50d212738faa5">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/2/aws-android-sdk-s3-2.3.3_56e9b622c93ffa330a23a60178edd8d39efa9400/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_6ff18b4989a647134641cac411890e88651e15ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/libs/aws-android-sdk-core-2.3.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f8214e759455107411c2899622f365548611b5bb">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/2/aws-android-sdk-core-2.3.3_d10cf43ecedf067e74fab0d76cd71201bc7becff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_48809eaa2f9b52f600bd0737e4d726ec65f51b4f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_f4c95935345ab25f6c5b960f43fcd7131b1c64f3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_cc34c88b75faca82ec798333c1b51edd3b8cce82/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_673ceccb1b708bfdcf6dd925f2ad2a9628760836/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KS_MacAir/Desktop/CapstoneDesign/app/libs/aws-android-sdk-ddb-2.3.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c62840941fe217f5e48ac6936b1a9a508d3d4239">
+        <dex dex="/Users/KS_MacAir/Desktop/CapstoneDesign/app/build/intermediates/transforms/dex/debug/folders/1000/2/aws-android-sdk-ddb-2.3.3_dbd554f4aaea7c1f0701b7bed5ae8c7937ecc455/classes.dex" />
+    </item>
+
+</items>
